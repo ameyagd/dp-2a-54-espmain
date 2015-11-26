@@ -1,5 +1,5 @@
 <?php 
-    $pagename="Lists1222";
+    $pagename="Lists";
     include('includes/header.php'); 
 ?>
                      
