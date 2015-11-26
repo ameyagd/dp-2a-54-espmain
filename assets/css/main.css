@@ -1,0 +1,299 @@
+body{background:#f8f9fc; background-size:cover; color:#353a3e}
+
+.table-striped>tbody>tr:nth-of-type(odd){background:rgba(0,0,0,0.5);}
+table{background:rgba(255,255,255,0.9); color:#000;}
+
+.navbar{margin-bottom: 0; position: fixed; top: 0; width: 100%; z-index: 999}
+.navbar-header{margin-left: 50px !important}
+.navbar-brand{text-transform: uppercase;font-size: 25px !important}
+a.simple-text {font-size: 20px; text-transform: uppercase; color: #ffffff}
+.nav>li>a{padding:10px 0}
+.nav>li>a>p{display: inline-block;padding-left: 5px}
+.logo{padding-bottom: 20px}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4{color: #353a3e}
+.card .title{color: #353a3e;font-size: 20px; text-transform: uppercase}
+.card label{font-size: 15px;text-transform: inherit;color: #484848;font-weight:400}
+/*.posRel{position: relative}*/
+.restrictedWidth{max-width: 1300px}
+
+/*----------------------MENU-----------------------*/
+
+html, body, .container, .content-wrap {overflow: hidden;width: 100%;height: 100%}
+.menu-wrap a {color: #ffffff}
+.menu-wrap a:hover,.menu-wrap a:focus {color: #c94e50}
+.content-wrap {overflow-y: scroll;-webkit-overflow-scrolling: touch}
+.content {/*position: relative;*/padding-top: 80px}
+.content::before {top: 0;left: 0;z-index: 10;width: 100%;height: 100%;background: rgba(0,0,0,0.3);
+    content: '';opacity: 0;-webkit-transform: translate3d(100%,0,0);transform: translate3d(100%,0,0);
+    -webkit-transition: opacity 0.4s, -webkit-transform 0s 0.4s;transition: opacity 0.4s, transform 0s 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+/* Menu Button */
+.menu-button {position: fixed;z-index: 1000;margin: 10px 0 0;padding: 0;width: 2.5em;height: 2.25em;border: none;
+    text-indent: 2.5em;font-size: 18px;color: transparent;background: transparent}
+.menu-button::before {position: absolute;top: 0.5em;right: 0.5em;bottom: 0.5em; left: 0.5em;
+    background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
+    content: ''}
+.menu-button:hover {opacity: 0.6;border:0}
+.menu-button:active, .menu-button:focus{border:0;outline: 0}
+
+/* Close Button */
+.close-button {width: 1em;height: 1em;position: absolute;right: 1em;top: 1em;overflow: hidden;text-indent: 1em;
+    font-size: 0.75em;border: none;background: transparent;color: transparent}
+.close-button::before,.close-button::after {content: '';position: absolute;width: 3px;height: 100%;top: 0;
+    left: 50%;background: #bdc3c7}
+.close-button::before {-webkit-transform: rotate(45deg);transform: rotate(45deg)}
+.close-button::after {-webkit-transform: rotate(-45deg);transform: rotate(-45deg)}
+
+/* Menu */
+.menu-wrap {position: absolute;z-index: 1001;width: 300px;height: 100%;background: #33373e;padding: 2.5em 1.5em 0;
+    font-size: 1.15em;-webkit-transform: translate3d(-320px,0,0);transform: translate3d(-320px,0,0);-webkit-transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    padding-top: 1.5em}
+.menu, .icon-list {height: 100%}
+.icon-list {-webkit-transform: translate3d(0,100%,0);transform: translate3d(0,100%,0)}
+.icon-list a {display: block;padding: 0.8em;-webkit-transform: translate3d(0,500px,0);transform: translate3d(0,500px,0);}
+.icon-list,.icon-list a {-webkit-transition: -webkit-transform 0s 0.4s;transition: transform 0s 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);transition-timing-function: cubic-bezier(0.7,0,0.3,1)}
+.icon-list a:nth-child(2) {-webkit-transform: translate3d(0,1000px,0); transform: translate3d(0,1000px,0)}
+.icon-list a:nth-child(3) {-webkit-transform: translate3d(0,1500px,0); transform: translate3d(0,1500px,0)}
+.icon-list a:nth-child(4) {-webkit-transform: translate3d(0,2000px,0); transform: translate3d(0,2000px,0)}
+.icon-list a:nth-child(5) {-webkit-transform: translate3d(0,2500px,0); transform: translate3d(0,2500px,0)}
+.icon-list a:nth-child(6) {-webkit-transform: translate3d(0,3000px,0); transform: translate3d(0,3000px,0)}
+.icon-list a span {margin-left: 10px;font-weight: 700}
+
+/* Shown menu */
+
+/*CUSTOM ADDED STYLES*/
+.show-menu{background: rgba(0,0,0,0.5);-webkit-transition: background 0.8s;transition: background 0.8s;-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1);-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0)}
+.show-menu .content-wrap{opacity: 0.5}
+/*END CUSTOM ADDED STYLES*/
+
+.show-menu .menu-wrap {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);-webkit-transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1)}
+.show-menu .icon-list,.show-menu .icon-list a {-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);
+    -webkit-transition: -webkit-transform 0.8s;transition: transform 0.8s;-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1)}
+.show-menu .icon-list a {-webkit-transition-duration: 0.9s;transition-duration: 0.9s}
+/*COMMENTED OG STYLES*/
+/*.show-menu .content::before {opacity: 1;-webkit-transition: opacity 0.8s;transition: opacity 0.8s;-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1);-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);
+}*/
+
+/*----------------------CREATIVES--------------------*/
+iframe{border:none;transition:all linear 0.45s;}
+.creativeHeader{text-align: center}
+.creativeContent img{width: 100%}
+.creativeContent{padding: 15px !important}
+.title .pull-right a{font-size: 15px;background-color: #ff0000;color: #ffffff;padding: 5px 10px;border-radius: 4px}
+.title .pull-right a:hover{cursor: pointer;background-color:#F93232 }
+#desktopView {border-top-right-radius: 0; border-bottom-right-radius: 0}
+#mobileView {border-top-left-radius: 0; border-bottom-left-radius: 0;border-left: 1px solid #fff}
+
+#txtCreativeRow, #imgCreativeRow{margin-top: 40px}
+
+.mainTitle{padding:10px;font-size: 18px; text-align: left;}
+.mainTitle i{font-size: 20px;margin:4px 10px 0 0px;float: left;}
+#imgCreativeRow .creativeHeader .title{font-size: 18px}
+#imgCreativeRow .card {min-height: 420px; height: auto}
+
+#txtCreativesWrapper .creativeHeader {padding: 10px}
+#txtCreativesWrapper .creativeHeader h4{font-size: 18px}
+
+input.search {color: #000; font-size: 15px; padding: 0 5px; border-radius: 4px; width: 242px;border:1px solid #dddddd}
+input.search1 {color: #000; font-size: 15px; padding: 0 5px; border-radius: 4px; width: 242px;border:1px solid #dddddd}
+.card{margin-bottom: 25px; background:#ffffff}
+.contentEditor{width: 70%;float: left;}
+.contentEditor .title{margin-top: 0}
+.rightSidebar{width: 30%;float: right;height: 100%;background:#DFE0E1}
+.rightSidebar .card{padding: 10px;margin-bottom: 15px}
+.rightSidebar .card h5{margin: 10px 0}
+.rightSidebar .card label{width: 40%; float: left; padding: 7px 0; color: #52575B; margin: 0}
+input{border: 0}
+.rightSidebar .card input[type="text"]{border:1px solid #dddddd;width: 60%;float: left;margin-bottom: 10px;padding: 5px;color: #000000;border-radius: 2px}
+.rightSidebar .card select{border:1px solid #dddddd;width: 60%;float: left;margin-bottom: 10px;padding: 5px;color: #000000;border-radius: 2px}
+.rightSidebar .card input[type="file"]{width: 60%;float: left;margin-bottom: 10px;padding: 5px 0;color: #ffffff;border-radius: 2px}
+
+
+/*----- Accordion -----*/
+.accordion, .accordion * {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box}
+ .accordion {overflow:hidden}
+ 
+/*----- Section Titles -----*/
+.accordion-section-title {width:100%; padding:5px 10px; display:inline-block; font-size: 16px; background: url(../img/plusGrey.png) no-repeat 98% center;
+    background-size: 18px; transition:all linear 0.15s; color:#353a3e}
+.accordion-section-title:hover, .accordion-section-title:focus{text-decoration:none;color: #353a3e}
+.accordion-section-title.active {text-decoration:none;background: url(../img/minusGrey.png) no-repeat 98% center;
+    background-size: 18px;color: #353a3e}
+ .accordion-section:last-child .accordion-section-title {border-bottom:none}
+ 
+/*----- Section Content -----*/
+.accordion-section-content {padding:10px 10px 0 10px;display:none}
+.accordion i {float: right; font-size: 15px; padding-top: 3px}
+#gcbtn{background-color: #62be7f}
+#mailCode{display: none;width: 100%;height: 140px;color: #000000;margin-top: 15px}
+#txtCreativeRow{display: none}
+#imgCreativeRow{display: none}
+
+/*----------------Offers----------------*/
+#createOffer{background-color: #4C8D4D;padding: 10px 20px}
+
+/*----------------Animation----------------*/
+body,.main-panel{overflow-x:hidden}
+.animated2 {-webkit-animation-duration: 1s;animation-duration: 1s;-webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;-webkit-animation-fill-mode: both;animation-fill-mode: both}
+div#zclip-ZeroClipboardMovie_1{bottom:0 !important}
+
+
+/*----------------------DASHBOARD--------------------*/
+/*.statsWrap .col-md-3 .card{margin-bottom: 25px}*/
+.card hr{margin-top: 0}
+.subHeading{font-size: 16px !important;text-align: center;line-height: 20px;text-transform: capitalize !important}
+.campTitle{padding-bottom: 15px}
+.card .statistics {text-align: center; font-size: 2.5em; color: #757474; font-weight: 300}
+.topPerformingCampaignWrap, .topPerformingListsWrap{padding: 0px 15px 0px 15px}
+.topPerformingCampaignWrap .card{padding: 10px}
+.topPerformingCampaignWrap .accordion-section-title.active{border-bottom: 1px solid #ccc}
+
+.topPerformingListsWrap .card{padding: 10px}
+.topPerformingListsWrap .accordion-section-title.active{border-bottom: 1px solid #ccc}
+
+.audited {position: absolute; top: 0; right: 14px; padding: 0 5px; background-color:#70B76B; color: #fff; font-size: 12px;
+    border-top-right-radius: 3px}
+
+.unaudited {position: absolute; top: 0; right: 14px; padding: 0 5px; background-color: #F95151; color: #fff; font-size: 12px; 
+    border-top-right-radius: 3px}
+
+/*owl slider*/
+.owlSlide{margin:0 10px 10px 10px;border:1px solid #d5d5d5;}
+.owlSlide h5{background: #a2a2a2;color: #fff;padding: 10px 5px;margin: 0; font-size: 15px; font-weight: 300}
+.owlSlide img{display: block; width: 100%;height: auto}
+
+.listTable th{font-size: 15px !important;padding-bottom: 12px !important}
+
+.listDetails h5{margin-bottom: 10px}
+.listCreatedOn{display: block;color: #555555}
+.listRating{display: block;color: #999999}
+
+.listStats{margin-top: 10px}
+.listSubs, .listOpens, .listClicks{display: block;margin-bottom: 6px;word-wrap:break-word;}
+.listLabel{display: block;color: #999999}
+
+.listStats .col-xs-4, .listStats .col-xs-6{padding-left: 0}
+@media not all and (min-width: 1250px){
+    .card .statistics{font-size: 1.6em}
+    .card .content{padding: 20px 5px 5px 5px}
+}
+
+/*----------------------CAMPAIGNS--------------------*/
+.btn-default{background-color: #e0e0e0;color: #484848;/*border-color: #e0e0e0*/}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .btn.dropdown-toggle{background-color: #e0e0e0;border-color: #e0e0e0}
+
+.btn-default.disabled{background-color: #e0e0e0;color: #484848;border-color: #e0e0e0}
+
+.title .dropdown .btn{background-color: #4F4F4F;color: #ffffff;font-size: 15px;border-color: #4F4F4F}
+.title .dropdown .btn .caret{border-top-color: #FFFFFF}
+.title .dropdown .btn:hover, .title .dropdown .btn:focus, .title .dropdown .btn:active, .title .dropdown .btn.active, .title .dropdown .open > .btn.dropdown-toggle{border-color: #4F4F4F;background-color: #4F4F4F;color: #ffffff}
+.dropdown-menu{border-radius: 3px;margin-top: 5px}
+
+.campaignFilters {margin-bottom: 20px}
+.campaignFilters .dropdown .btn{background-color: #e0e0e0;color: #484848;border-color: #e0e0e0}
+.campaignFilters .dropdown .btn:hover, .campaignFilters .dropdown .btn:focus, .campaignFilters .dropdown .btn:active, .campaignFilters .dropdown .btn.active, .campaignFilters .dropdown .open > .btn.dropdown-toggle{border-color: #e0e0e0;background-color: #e0e0e0}
+.campaignFilters .dropdown{display: inline-block;margin-right: 10px}
+.campaignFilters .dropdown-menu{min-width: 300px}
+
+.campaignDetailsWrap:first-child{border-top:1px solid #dddddd}
+.campaignDetailsWrap{padding: 20px 0;border-bottom: 1px solid #dddddd}
+.campaignDetailsWrap h5{margin-top:0px }
+.campaignDetailsWrap .btn-group .dropdown-menu{right: 0;left: auto}
+.campaignDetailsWrap .btn-group .btn{background-color: #e0e0e0;color: #484848;border-color: #e0e0e0}
+.campaignDetailsWrap .btn-group .btn:hover, .campaignDetailsWrap .btn-group .btn:focus, .campaignDetailsWrap .btn-group .btn:active, .campaignDetailsWrap .btn-group .btn.active, .campaignDetailsWrap .btn-group .open > .btn.dropdown-toggle{border-color: #e0e0e0}
+.campaignDetailsWrap .dropdown-toggle {border-left-color: #CCCCCC !important}
+.campaignDetailsWrap .col-md-2{width: 13.666667%}
+
+.allCampaignCheck{float: left;padding: 9px 20px 0 0}
+
+.filterForm {padding: 15px}
+.filterForm li {padding-bottom: 20px}
+.filterForm .divider{padding: 0}
+.filterForm .form-control{border-bottom-color: #E3E3E3;border-radius: 4px}
+.applyFilter{margin-right: 10px;font-size: 14px !important; background-color: #4F4F4F !important;
+    color: #ffffff !important;border-color: #4F4F4F !important}
+
+/*----------------------CREATE CAMPAIGN--------------------*/
+.createCampaignForm .posRel{padding:0 15px 20px 15px}
+.bootstrap-datetimepicker-widget.dropdown-menu{opacity:1 !important;visibility:visible !important}
+
+input[type="checkbox"] {display:none}
+input[type="checkbox"] + label span {display:inline-block; width:24px; height:24px; margin:-1px 4px 0 0;
+    vertical-align:middle; background:url(../img/check.png) left top no-repeat; cursor:pointer;
+    background-size: 24px 384px}
+input[type="checkbox"] + label span:hover{background:url(../img/check.png) left -24px no-repeat;
+    background-size: 24px 384px}
+input[type="checkbox"]:checked + label span {background:url(../img/check.png) left -96px no-repeat;
+    background-size: 24px 384px}
+
+input[type="radio"] {display:none}
+input[type="radio"] + label span {display:inline-block; width:24px; height:24px; margin:-1px 4px 0 0;
+    vertical-align:middle; background:url(../img/check.png) left -216px no-repeat; cursor:pointer;
+    background-size: 24px 384px}
+input[type="radio"] + label span:hover{background:url(../img/check.png) left -240px no-repeat;
+    background-size: 24px 384px}
+input[type="radio"]:checked + label span {background:url(../img/check.png) left -312px no-repeat;
+    background-size: 24px 384px}
+
+.stepFooter{height: 60px;width: 100%;background:#373737;position: absolute;text-align: center;bottom: 0;left:0}
+.stepFooter ul li{display: inline-block;color: #b7b7b7}
+.stepLink{line-height: 60px;color: #b7b7b7;padding: 10px;font-size: 15px}
+.stepLink:hover{color: #d7d7d7}
+.stepLink.active{color: #ffffff}
+
+.campaignListWrap{padding: 10px 0}
+
+
+.confirmResponseHeader{text-align: center;font-weight: bold;margin: 10px 0}
+.confirmResponseSubHeader{text-align: center;margin:0 0 40px 0}
+.confirmValueWrap:first-child{border-top: 1px solid #dddddd}
+.confirmValueWrap{border-bottom: 1px solid #dddddd;padding: 10px 0}
+.confirmSubHeading{font-size: 20px;font-weight: 600;margin-bottom: 5px}
+.checkListBox{float:left;margin-top:13px;display:inline-block; width:24px; height:24px;background:url(../img/check.png) left -96px no-repeat;background-size: 24px 384px}
+.confirmValueWrap .col-md-2{width: 14.666667%}
+.confirmValueWrap .col-md-2 .pull-right {padding-top: 10px}
+
+.stepList{padding: 0}
+
+.stepNext{position: absolute;top: 0;right: 0;padding-right: 20px}
+.stepPrev{position: absolute;top: 0;left: 0;padding-left: 20px}
+
+
+
+/*------------------------------------DOMAINS--------------------------------------*/
+button.btn.dropdown-toggle.btn-select {color: #000; background-color: #fff;border-color: #bbb;
+    border: 1px solid #bbb}
+.bs-searchbox .form-control{border-radius: 4px;border-color: #ccc;height: 35px;padding: 5px 8px}
+.bootstrap-select.btn-group .dropdown-menu > li:first-child > a{border-radius: 0}
+.bootstrap-select.btn-group .dropdown-menu > li:last-child > a{border-radius: 0}
+.bootstrap-select.btn-group .dropdown-menu{display: none}
+.btn-group.bootstrap-select.form-control.open .dropdown-menu {display: block; margin-top: 0}
+/*.subDomainList{display: none}*/
+
+.createDomainForm .posRel{padding: 0 15px 20px}
+
+.actionbuttonHead{width: 110px}
+.editButtonsChecked{display: none}
+.actionButtons ul{list-style: none;padding-left: 0;margin-bottom: 10px;float: left}
+.actionButtons ul li{float: left;margin-right: 10px}
+.actionButtons ul.pull-right{display: block}
+.actionButtons li.pull-right{margin-right: 0}
+
+.addDomainFormWrapper{display: none}
+
+.checkboxHead{width: 55px}
+
+.hidethisdiv{display: none}
+.domainsContainer .table > thead> tr> th{background-color: #eeeeee}
+
