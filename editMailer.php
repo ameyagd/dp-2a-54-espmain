@@ -1,5 +1,6 @@
 <?php 
     $pagename="Email Editor";
+    $pagetitle="Email Editor";
     include('includes/header.php'); 
 ?>
                      
@@ -69,22 +70,6 @@
 	</div>
 
 
-    <div class="stepFooter">
-        <ul>
-            <li><a href="campaignSetup.php" class="stepLink">Setup </a></li>
-            <li><i class="fa fa-chevron-right"></i></li>
-
-            <li><a href="campaignRecepients.php" class="stepLink">List</a></li>
-            <li><i class="fa fa-chevron-right"></i></li>            
-
-            <li><a href="creatives.php" class="stepLink">Template</a></li>
-            <li><i class="fa fa-chevron-right"></i></li>
-
-            <li><a href="editMailer.php" class="stepLink active">Design</a></li>
-            <li><i class="fa fa-chevron-right"></i></li>
-
-            <li><a href="campaignConfirm.php" class="stepLink">Confirm</a></li>
-        </ul>
-    </div>  
+    
 
 <?php include('includes/footer.php'); ?>

@@ -182,23 +182,7 @@
         
     </div>
 
-    <div class="stepFooter">
-        <ul>
-            <li><a href="campaignSetup.php" class="stepLink">Setup </a></li>
-            <li><i class="fa fa-chevron-right"></i></li>
-            
-            <li><a href="campaignRecepients.php" class="stepLink">List</a></li>
-            <li><i class="fa fa-chevron-right"></i></li>            
-
-            <li><a href="creatives.php" class="stepLink active">Template</a></li>
-            <li><i class="fa fa-chevron-right"></i></li>
-
-            <li><a href="#" class="stepLink">Design</a></li>
-            <li><i class="fa fa-chevron-right"></i></li>
-
-            <li><a href="campaignConfirm.php" class="stepLink">Confirm</a></li>
-        </ul>
-    </div>    
+    
 </div>
 
 <?php include('includes/footer.php'); ?>
