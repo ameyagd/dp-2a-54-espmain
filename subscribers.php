@@ -86,7 +86,7 @@
                                     <b class="fa fa-angle-down"></b>
                               </a>
                               <ul class="dropdown-menu">
-                                     <li class=""><a href="" id="madduser">Add a subscriber</a></li>
+                                     <li class=""><a href="" class="madduser">Add a subscriber</a></li>
                                      <li class=""><a href="import.php">Import subscribers</a></li>
                               </ul>
                         </li>
@@ -208,15 +208,23 @@
                         <div class="card card-plain mlistbox">
                             <div class="header">
                                 <h4 class="title">View Subscribers</h4>
+
                             </div>
                             <div class="row">
                                 <div class="col-md-8">
                                     <!-- <a href="javascript:void(0);" class="btn lgreybtn" id="exportmlistbtn">Export List</a> -->
                                 </div>
                                 <div  class="col-md-4">
-                                <div class="pull-right">
+                                <div class="pull-right unsubscribewrap">
+                                
                                     <a href="javascript:void(0);" class="btn lgreybtn" id="unsubscribemlistbtn">Unsubscribe</a>
-                                    <a href="javascript:void(0);" class="btn lgreybtn" id="exportmlistbtn">Export List</a>
+                                    <a href="javascript:void(0);" class="btn lgreybtn madduser">Add</a>
+                                    <a href="javascript:void(0);" class="btn lgreybtn mdeluser" id="">Delete</a>
+
+
+                                    
+
+
                                 </div>  
                                 </div>
                             </div>
@@ -310,7 +318,7 @@
     </tr>
     <tr>
     <td>
-        <div class="listcheckbox">
+        <div class="listcheckbox excludeThisClass">
             <input type="checkbox" name="list_2" id="mlist_2" class="lisinglecheck">
             <label for="mlist_2"><span></span></label>
         </div>
@@ -325,7 +333,7 @@
     </tr>
     <tr>
     <td>
-        <div class="listcheckbox">
+        <div class="listcheckbox excludeThisClass">
             <input type="checkbox" name="list_3" id="mlist_3" class="lisinglecheck">
             <label for="mlist_3"><span></span></label>
         </div>
@@ -338,6 +346,7 @@
     <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
     <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
     </tr>
+
 
 
     </tbody>
@@ -396,5 +405,7 @@
         
     </div>   
 </div>
+
+
 
 <?php include('includes/footer.php'); ?>

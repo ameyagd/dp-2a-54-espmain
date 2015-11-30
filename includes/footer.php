@@ -38,6 +38,34 @@
 	<!--bootstrap select with search script-->
 	<script src="assets/js/bootstrap-select.min.js" type="text/javascript"></script>
 
+
+    <!-- subscriber page stylesheet -->
+    <link href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+
+
+    <!-- datatable tools -->
+    <link href="datatables/tools/css/dataTables.tableTools.css" rel="stylesheet">
+    <!-- <link href="datatables/tools/css/dataTables.tableTools.bootstrap.css" rel="stylesheet"> -->
+    <script src="datatables/js/jquery.dataTables.js"></script>
+    <script src="datatables/tools/js/dataTables.tableTools.js"></script>
+    <!-- datatable tools -->
+
+    
+
+    <link href="assets/dragndrop/jquery.ezdz.css" rel="stylesheet" type="text/css">
+    <script src="assets/dragndrop/jquery.ezdz.js"></script>
+
+
+
+
+    <!-- subscriber page stylesheet -->    
+
+    <!-- list page scripts -->
+    <script src="assets/js/listscript.js"></script>
+    <script src="assets/js/jquery.table2excel.js"></script>
+    <!-- end list page scripts -->
+
     <script type="text/javascript">
         $(document).ready(function(){
 

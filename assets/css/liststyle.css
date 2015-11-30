@@ -1,0 +1,146 @@
+body{font-family:'Open Sans', 'Helvetica Neue', Arial, Helvetica, Verdana, sans-serif !important}
+    .listboxcontainer{width:1250px;position:relative;overflow: visible;padding-bottom: 30px }
+    .greybtn{background-color:#484848;color:#fff;border:0}
+    .greybtn:hover{background-color:#484848;color:#fff;border:0}
+
+    .lgreybtn{background:#E0E0E0;color:#484848;border:0}
+    .lgreybtn:hover{color:#484848;border:0}
+
+    .listtitle{font-size:30px;text-transform:capitalize}
+    .listsort{color:#545454;width: 300px;display: inline-block}
+    .listsort .btn{border: 0;background: #e0e0e0;border-radius: 3px!important}
+    .clist>ul>li{border-bottom:1px solid #e0e0e0;padding:20px 0;display:block}
+    .listdetailwrap{display:block;width:100%}
+    .listmeta{width:70%;float:left}
+    .checkboxwrap{display:inline!important;height:50px}
+    .checkbox{position:relative;height:20px;display:block;width:20px;padding:0;margin:0 5px;text-align:center;display:inline}
+    .sortbywrap{display:inline}
+    .li_title{font-size:20px;word-wrap:break-word}
+    .li_title a{color:#2c9ab7}
+    .li_title,.li_desc1,.li_desc12{margin:0}
+    .li_desc1{font-weight: bold;font-size: 20px}
+    .meta1 .date{font-weight: normal!important;font-size: 17px}
+    .li_block{width:auto;padding:0px 15px;float: left}
+    .meta1{width:auto}
+    .meta2{width:auto}
+    .listmetaaction{position: relative;height: 90px}
+    .dropdown_menu{display:inline-block}
+    .listcheckall{display: inline}
+    .listwrapper{padding: 0px 0px 30px;margin-bottom: 0}
+    .lisortrow{border-bottom: 1px solid #e0e0e0; padding: 0 0 18px}
+    .listboxcontainer .close{top:35%!important;right: 20px!important}
+    .listmetaaction .open .dropdown-menu {position: relative}
+    .adduser{margin-right: 15px;float: left;background-color: #e0e0e0;width: 48px; border-radius: 3px;padding: 10px 15px;cursor: pointer}
+    .listmetaaction .btn-group{width: 130px}
+    .listdetailwrap p{margin-bottom: 0px}
+    .listmetaaction button{background: #e0e0e0;border: 0; color: #484848;height: 35px;font-weight: bold}
+    .listmetaaction button:hover{background: #b9b5b5}
+    .btn1{border-right: 2px solid #ffffff!important}
+    .btn2{width: 40px}
+    .sortbytxt{padding-right: 10px}
+    .adduseredit{padding-top: 0px}
+    .infoicon{top: 40%!important;left: 33px!important}
+    .cancel{padding-left: 10px;text-decoration: underline}
+    .listboxcontainer .alert-info{background-color: #ccebf3; color:#484848 }
+    .morelink{display: none;float: right;padding-right: 50px;text-decoration: underline}
+    #adduseredit{display: none}
+    #madduseredit{display: none;margin-top: 0}
+    .madduseredit .content{padding-top: 0!important}
+
+/*subscriber page*/
+.memberlist th{background:#f2f2f2;font-weight: bold !important; color: #484848 !important;padding-top: 20px !important;padding-bottom: 15px!important;}
+.memberlist{background: none;border: 1px solid #ccc; margin: 10px 0 20px!important; position: relative;float: left;}
+.memberlist tr{ border: 1px solid #e0e0e0}
+.mlistbox{background: transparent}
+.mlistbox .dataTables_filter{float: right;}
+.mlistbox .header{padding-left: 0px}
+.mlistbox .title{font-size: 25px;text-transform: none;    padding: 20px 0px 10px;}
+.mlistswitch .btn{background: transparent;border: 0;padding: 0;color: #2c9ab7}
+.mlistswitch .btn:hover{background: none;color: #2c9ab7}
+.mlistnav{border-bottom: 1px solid #ccc;margin: 0 15px;padding: 0;}
+.mlistnav li{padding: 5px 15px 5px 0px;font-size: 15px;}
+.mlistnav .dropdown-menu > li{padding: 5px 0px 5px 0px}
+.mlistnav li a{color: #484848;border-radius: 5px}
+.mlistnav li a:hover{color: #2c9ab7;}
+.mlistnav{margin-top: 25px}
+.mlistnav .nav>li>a {padding: 10px}
+.mlistfchild{padding-left: 0!important}
+table.dataTable.no-footer{border-color: #ccc!important}
+table.dataTable thead th, table.dataTable thead td{border-bottom: 0px!important}
+.subscribertablewrap{margin-top: 20px}
+.subscribertablewrap .table-striped>tbody>tr:nth-of-type(odd) {background: none!important; }
+.mdeluser{display: none;}
+
+/*list new*/
+.addlistedit{padding-top: 0px;padding-left: 15px}
+.addlistedit .title{margin-top: 10px}
+.addlistedit select{-webkit-appearance: none;
+    position: relative;
+    height: 32px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .01em;
+    border-collapse: separate;
+    padding: 0 39px 0 18px;
+    background: url(assets/img/dropdown.svg) no-repeat right center #e0e0e0;
+    background-size: 30px auto;
+    width: 100%;
+    max-width: 635px;
+    color: #484848;
+    background-color: #e0e0e0;
+    -ms-transition: background-color 0.23s ease-in-out 0s;
+    transition: background-color 0.23s ease-in-out 0s;
+}
+.addlistedit textarea{ padding: 6px 0 0 6px; border: 2px solid #c9c9c9; margin: 0 0 24px 0; max-width: 635px; width: 100%; min-height: 32px;vertical-align: middle; border-radius: 3px;}
+.addlistedit h3 span{font-size: 15px;font-style: normal;}
+.addlistedit h3 {font-style: italic;}
+
+.nactive a{color: #2c9ab7!important;}
+/*import page*/
+.importboxcontainer{width:1250px;position:relative;overflow: visible; padding: 50px}
+.importboxcontainer .card{padding: 50px 100px}
+.manualimport{display: none;}
+.listimport{display: none;}
+.checkbox_description{margin-left: 44px;color: #555}
+.rdesc{display: block;margin-left: 44px;color: #555;}
+.rlabel{font-size: 18px!important;font-style: italic}
+.importboxcontainer input[type="radio"] + label span{padding-left: 40px}
+.importboxcontainer input[type="file"]{padding-left: 40px}
+.importboxcontainer textarea{margin-left: 40px}
+/**/
+/*tooltip*/
+/*.unsubscribewrap .editableform{width: 260px!important}
+.unsubscribewrap .popover{display: block;position: inherit!important;}
+.unsubscribewrap .form-group{width: 261px!important}
+.unsubscribewrap .editable-input{position: relative!important;float: left!important}
+.unsubscribewrap .editable-buttons{float: right!important;width: 70px!important;}*/
+.unsubscribewrap .popover{left: 101.883px!important}
+.unsubscribewrap a{border-bottom: none!important;}
+.unsubscribewrap .form-control {height: 30px!important}
+.subscribertablewrap div.DTTT_container{margin-right: 210px}
+.subscribertablewrap .dataTables_filter{position: absolute;right: 0;}
+.subscribertablewrap .dataTables_filter input{box-shadow:1px 1px 1px #cccccc;height: 28px}
+/**/
+@media screen and (max-width: 1200px) {
+.listboxcontainer{width: 90%}
+.importboxcontainer{width: 90%;padding: 20px}
+.importboxcontainer .card{padding: 20px}
+}
+@media screen and (max-width: 850px) {
+.listboxcontainer{width: 90%}
+.collapse{font-size: 12px;display:block}
+.collapse + input{display:none}
+.collapse + input + *{display:none}
+.collapse+ input:checked + *{display:block}
+.morelink{text-align: right}
+.listactionwrap{padding-top: 10px}
+.hideonmob{display: none}
+.listmetaaction {height: auto}
+.mlistbox .card .content{padding: 10px 0px 10px 0px}
+}
+@media screen and (max-width: 650px) {
+.listdetailwrap p{font-size: 12px}
+.li_title{font-size: 15px}
+.meta1 .date{font-size: 13px}
+}
