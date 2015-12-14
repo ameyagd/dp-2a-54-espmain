@@ -1,0 +1,89 @@
+.navbar-brand {text-transform: uppercase; font-size: 25px !important}
+.navbar-header{margin: 0 !important}
+.navbar-brand:hover{color:#777 !important }
+
+#addOfferSection{display: none;padding-top: 20px}
+.tabForm{padding: 20px 0}
+
+/*--------------TABS-----------------*/
+.nav-tabs>li>a{font-size: 15px}
+.tab-content>.active{border-left:1px solid #ddd;border-right:1px solid #ddd;border-bottom: 1px solid #ddd}
+
+
+.posRel {padding-bottom: 20px;position: relative}
+
+.dropdown-menu{border-radius: 5px}
+
+.addFWImageSection{display: none;margin-bottom: 20px}
+.card {background: #ffffff}
+.file-input.file-input-ajax-new{padding-bottom: 20px}
+#frameworkPages .file-drop-zone-title{padding: 25px 10px}
+/*--------------FORM CONTROLS------------------*/
+label {font-size: 15px;text-transform: inherit;color: #484848; font-weight: 400}
+
+/*--select with search--*/
+button.btn.dropdown-toggle.btn-select {color: #565656; background-color: #fff;border-color: #e3e3e3;
+    padding: 8px 12px;height: 40px}
+.bs-searchbox .form-control{border-radius: 4px;border-color: #ccc;height: 35px;padding: 5px 8px;margin-top: 3px}
+.bootstrap-select.btn-group .dropdown-menu > li:first-child > a{border-radius: 0}
+.bootstrap-select.btn-group .dropdown-menu > li:last-child > a{border-radius: 0}
+.bootstrap-select.btn-group .dropdown-menu{display: none}
+.btn-group.bootstrap-select.form-control.open .dropdown-menu {display: block; margin-top: 5px;border-radius: 4px}
+
+
+/*--radio button--*/
+input[type="radio"] {display:none}
+input[type="radio"] + label span {display:inline-block; width:24px; height:24px; margin:-1px 4px 0 0;
+    vertical-align:middle; background:url(../img/check.png) left -216px no-repeat; cursor:pointer;
+    background-size: 24px 384px}
+input[type="radio"] + label span:hover{background:url(../img/check.png) left -240px no-repeat;
+    background-size: 24px 384px}
+input[type="radio"]:checked + label span {background:url(../img/check.png) left -312px no-repeat;
+    background-size: 24px 384px}
+
+.radioWrap{padding-top: 5px}
+.radioWrap label{padding-right: 20px;font-size: 14px}
+
+
+/*--vertical tabs--*/
+#offer > .clearfix{padding: 15px 0 0;position: relative}
+#frameworkPages > .clearfix{padding: 15px 0;position: relative}
+#frameworkPages > .clearfix .col-md-12{
+	padding-bottom: 20px
+}
+#frameworkPages .tab-content>.active{
+	border:0;
+}
+.tabs-left{
+  border-bottom: none;
+  padding-top: 2px;
+}
+.tabs-left {
+  border-right: 1px solid #ddd;
+}
+.tabs-left>li, .tabs-right>li {
+  float: none;
+  margin-bottom: 2px;
+}
+.tabs-left>li {
+  margin-right: -1px;
+}
+.tabs-right>li {
+  margin-left: -1px;
+}
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+  border-bottom-color: #ddd;
+  border-right-color: transparent;
+}
+
+.tabs-left>li>a {
+  border-radius: 4px 0 0 4px;
+  margin-right: 0;
+  display:block;
+}
+
+.tabSaveBtn{padding-top:20px;padding-bottom: 0 !important}
+.tabNxtBtn{padding-bottom: 20px}
+.showJsonData{display: none;white-space: pre}
