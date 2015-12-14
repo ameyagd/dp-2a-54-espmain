@@ -803,8 +803,8 @@
             var offerMailerCode=$('#offerMailerCode').val();
 
             item ['offerCreativeName']=offerCreativeName;
-            item ['offerMailerCode']=offerMailerCode;            
-            
+            item ['offerMailerCode']="<pre>"+offerMailerCode+"</pre>";
+
             $('#creativeSettingTab').parent().removeClass("active");
             $('#frameworkPagesTab').parent().addClass("active");
         });
