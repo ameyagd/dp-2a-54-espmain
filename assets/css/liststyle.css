@@ -108,6 +108,12 @@ table.dataTable thead th, table.dataTable thead td{border-bottom: 0px!important}
 .importboxcontainer input[type="radio"] + label span{padding-left: 40px}
 .importboxcontainer input[type="file"]{padding-left: 40px}
 .importboxcontainer textarea{margin-left: 40px}
+
+.importdata th{background:#f2f2f2;font-weight: bold !important; color: #484848 !important;padding-top: 20px !important;padding-bottom: 15px!important;}
+.importdata{background: none;border: 1px solid #ccc; margin: 10px 0 20px!important; position: relative;float: left;}
+.importdata tr{ border: 1px solid #e0e0e0}
+
+.importdata .table-striped>tbody>tr:nth-of-type(odd) {background: #fff!important; }
 /**/
 /*tooltip*/
 /*.unsubscribewrap .editableform{width: 260px!important}
@@ -122,6 +128,10 @@ table.dataTable thead th, table.dataTable thead td{border-bottom: 0px!important}
 .subscribertablewrap .dataTables_filter{position: absolute;right: 0;}
 .subscribertablewrap .dataTables_filter input{box-shadow:1px 1px 1px #cccccc;height: 28px}
 /**/
+
+
+.listhr{margin: 100px 0 70px}
+
 @media screen and (max-width: 1200px) {
 .listboxcontainer{width: 90%}
 .importboxcontainer{width: 90%;padding: 20px}
@@ -129,15 +139,16 @@ table.dataTable thead th, table.dataTable thead td{border-bottom: 0px!important}
 }
 @media screen and (max-width: 850px) {
 .listboxcontainer{width: 90%}
-.collapse{font-size: 12px;display:block}
-.collapse + input{display:none}
-.collapse + input + *{display:none}
-.collapse+ input:checked + *{display:block}
+.listactionwrap .collapse{font-size: 12px;display:block}
+.listactionwrap .collapse + input{display:none}
+.listactionwrap .collapse + input + *{display:none}
+.listactionwrap .collapse+ input:checked + *{display:block}
 .morelink{text-align: right}
 .listactionwrap{padding-top: 10px}
 .hideonmob{display: none}
 .listmetaaction {height: auto}
 .mlistbox .card .content{padding: 10px 0px 10px 0px}
+.listhr{margin: 30px 0 20px}
 }
 @media screen and (max-width: 650px) {
 .listdetailwrap p{font-size: 12px}
