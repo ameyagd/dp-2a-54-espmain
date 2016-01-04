@@ -207,6 +207,7 @@ div#zclip-ZeroClipboardMovie_1{bottom:0 !important}
 .campaignFilters .dropdown-menu{min-width: 300px}
 
 .campaignDetailsWrap:first-child{border-top:1px solid #dddddd}
+.campaignDetailsWrap:last-child{border-bottom:0}
 .campaignDetailsWrap{padding: 20px 0;border-bottom: 1px solid #dddddd}
 .campaignDetailsWrap h5{margin-top:0px }
 .campaignDetailsWrap .btn-group .dropdown-menu{right: 0;left: auto}
@@ -224,6 +225,8 @@ div#zclip-ZeroClipboardMovie_1{bottom:0 !important}
 .applyFilter{margin-right: 10px;font-size: 14px !important; background-color: #4F4F4F !important;
     color: #ffffff !important;border-color: #4F4F4F !important}
 
+.crCampaign{background-color: #4F4F4F !important; color: #ffffff !important; font-size: 15px !important; border-color: #4F4F4F !important}
+.filterDD{display: inline-block;}
 /*----------------------CREATE CAMPAIGN--------------------*/
 .createCampaignForm .posRel{padding:0 15px 20px 15px}
 .bootstrap-datetimepicker-widget.dropdown-menu{opacity:1 !important;visibility:visible !important}
@@ -284,7 +287,7 @@ button.btn.dropdown-toggle.btn-select {color: #000; background-color: #fff;borde
 .createDomainForm .posRel{padding: 0 15px 20px}
 
 .actionbuttonHead{width: 110px}
-.editButtonsChecked{display: none}
+/*.editButtonsChecked{display: none}*/
 .actionButtons ul{list-style: none;padding-left: 0;margin-bottom: 10px;float: left}
 .actionButtons ul li{float: left;margin-right: 10px}
 .actionButtons ul.pull-right{display: block}

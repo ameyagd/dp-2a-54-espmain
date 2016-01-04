@@ -84,13 +84,13 @@
 
 		  	$(".domainList input[type='checkbox']").on('change', function(){
 		  		if ($(this).is(':checked')) {
-			  		$('.viewSubDomainList').removeClass('hidethisdiv');
-			  		$('.editButtonsChecked').css({'display':'block'});
-		  		}
-		  		else{
-		  			$('.viewSubDomainList').addClass('hidethisdiv');
-		  			$('.editButtonsChecked').css({'display':'none'});
-		  		}
+                    $('.viewSubDomainList').removeClass('hidethisdiv');
+                    $('.editButtonsChecked li a').removeClass('disabled');
+                }
+                else{
+                    $('.viewSubDomainList').addClass('hidethisdiv');
+                    $('.editButtonsChecked li a').addClass('disabled');
+                }
 		  	});
 
 		  	$("#checkalldomains").on('change', function(){

@@ -17,7 +17,7 @@
                             <div class="content"> 
                                 
                                     <div class="posRel">
-                                        <label>Name your campaign</label>
+                                        <label>Campaign Name</label>
                                         <input type="text" name="campaignName" class="form-control"/>
                                     </div>
 
@@ -32,7 +32,7 @@
                                     </div>
 
                                     <div class="posRel" id="sandbox-container">
-                                        <label>Campaign Start Date</label>
+                                        <label>Start Date</label>
                                         <div class='input-group date' id='datetimepicker1' name='campaignStartDate'>
                                             <input type='text' class="form-control" />
                                             <span class="input-group-addon">
@@ -42,7 +42,7 @@
                                     </div>
 
                                     <div class="posRel">
-                                        <label>Campaign End Date</label>
+                                        <label>End Date</label>
                                         <div class='input-group date' id='datetimepicker2' name='campaignEndDate'>
                                             <input type='text' class="form-control" />
                                             <span class="input-group-addon">
@@ -62,7 +62,7 @@
                             </div>
                             <div class="content">
                                 <div class="posRel">
-                                    <label>Email subject</label>
+                                    <label>Subject (avoid using junk characters)</label>
                                     <input type="text" name="emailSubject" class="form-control"/>
                                 </div>
                             </div>

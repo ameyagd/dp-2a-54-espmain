@@ -109,11 +109,11 @@
 		  	$(".domainList input[type='checkbox']").on('change', function(){
 		  		if ($(this).is(':checked')) {
 			  		$('.viewSubDomainList').removeClass('hidethisdiv');
-			  		$('.editButtonsChecked').css({'display':'block'});
+			  		$('.editButtonsChecked li a').removeClass('disabled');
 		  		}
 		  		else{
 		  			$('.viewSubDomainList').addClass('hidethisdiv');
-		  			$('.editButtonsChecked').css({'display':'none'});
+		  			$('.editButtonsChecked li a').addClass('disabled');
 		  		}
 		  	});
 

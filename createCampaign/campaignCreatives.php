@@ -81,7 +81,7 @@
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="card">
-                                    <a href="editMailer.php?title=Email-rentToOwn-v1-sept2015">
+                                    <a href="../editMailer.php?title=Email-rentToOwn-v1-sept2015">
                                         <div class="header creativeHeader">
                                             <h4 class="title">Email-rentToOwn-v1-sept2015</h4>
                                         </div>
@@ -94,7 +94,7 @@
 
                             <div class="col-md-2">
                                 <div class="card">
-                                    <a href="editMailer.php?title=Email-newCar-v2-sept2015">
+                                    <a href="../editMailer.php?title=Email-newCar-v2-sept2015">
                                         <div class="header creativeHeader">
                                             <h4 class="title">Email-newCar-v2-sept2015</h4>
                                         </div>
@@ -107,7 +107,7 @@
 
                             <div class="col-md-2">
                                 <div class="card">
-                                    <a href="editMailer.php?title=Email-laserHairRemoval-v2-sept2015">
+                                    <a href="../editMailer.php?title=Email-laserHairRemoval-v2-sept2015">
                                         <div class="header creativeHeader">
                                             <h4 class="title">Email-laserHairRemoval-v2-sept2015</h4>
                                         </div>
@@ -120,7 +120,7 @@
 
                             <div class="col-md-2">
                                 <div class="card">
-                                    <a href="editMailer.php?title=Email-RentalApartments-v2-sept2015">
+                                    <a href="../editMailer.php?title=Email-RentalApartments-v2-sept2015">
                                         <div class="header creativeHeader">
                                             <h4 class="title">Email-RentalApartments-v2-sept2015</h4>
                                         </div>
@@ -133,7 +133,7 @@
 
                             <div class="col-md-2">
                                 <div class="card">
-                                    <a href="editMailer.php?title=Email-houseCleaning-v2-aug2015">
+                                    <a href="../editMailer.php?title=Email-houseCleaning-v2-aug2015">
                                         <div class="header creativeHeader">
                                             <h4 class="title">Email-houseCleaning-v2-aug2015</h4>
                                         </div>
@@ -146,7 +146,7 @@
 
                             <div class="col-md-2">
                                 <div class="card">
-                                    <a href="editMailer.php?title=Email-checkingAccount-v1-sept2015">
+                                    <a href="../editMailer.php?title=Email-checkingAccount-v1-sept2015">
                                         <div class="header creativeHeader">
                                             <h4 class="title">Email-checkingAccount-v1-sept2015</h4>
                                         </div>
@@ -160,7 +160,7 @@
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="card">
-                                    <a href="editMailer.php?title=Email-VOIP-v2-sept2015">
+                                    <a href="../editMailer.php?title=Email-VOIP-v2-sept2015">
                                         <div class="header creativeHeader">
                                             <h4 class="title">Email-VOIP-v2-sept2015</h4>
                                         </div>

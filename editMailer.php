@@ -30,7 +30,7 @@
 			</div>
 		</div>
 
-		<div class="rightSidebar animated slideInRight">
+		<div class="rightSidebar animated">
 			<div class="col-md-12">
 				<h4>Settings</h4>
 
@@ -61,7 +61,7 @@
 
 
 
-                <input type="button" value="Get Code" class="btn-lg animated2 fadeIn" id="gcbtn"/>
+                <input type="button" value="Get Code" class="btn-lg" id="gcbtn"/>
 
                 
                 

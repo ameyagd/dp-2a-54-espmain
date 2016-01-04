@@ -51,7 +51,7 @@ $(window).load(function(){
     $('.rightSidebar .card').each(function(i) {
        delay =(i)*100;
        setTimeout(function (div) {
-                div.show().addClass('animated slideInRight');
+                div.show().addClass('animated');
             }, delay, $(this));
     });
     //END ANIMATION

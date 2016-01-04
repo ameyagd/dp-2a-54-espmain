@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<stl_head>
+<meta http-equiv="Content-Type" content="text/html; charset=<tag:charset />">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title><tag:page_title /></title>
+<style type="text/css">
+*{ margin:0; padding: 0 }
+.clearfix:before,
+.clearfix:after {content: '\0020';display: block;overflow: hidden;visibility: hidden;width: 0;height: 0}
+.clearfix:after {clear: both}
+.clearfix {zoom: 1}
+
+
+body{-webkit-text-size-adjust:100%;font-family:Arial, Helvetica, sans-serif; background:#ffffff url(<tag:image_path />/9543/main.jpg) no-repeat center center;background-size: cover;background-attachment: fixed}
+br{height:0;display: none}
+a{text-decoration: none; outline: none}
+a:hover{cursor: pointer}
+img{border: none}
+
+#wrapper{width:960px; margin:0 auto; padding-bottom: 15px}
+
+.inner-spons-links {color: #2d2d2d; padding:120px 0 10px; font-size: 12px; font-weight: bold;text-transform: uppercase}
+ul{list-style: none}
+.results{ display: block; overflow:hidden; margin: 0 auto; width:960px; padding-bottom: 220px }
+.results li{ display: block; overflow: hidden; margin: 0 0 20px 0; position: relative; overflow: hidden}
+a .num{font-size: 45px; color: #2d2d2d; float: left; width: 90px; text-align: center; padding: 16px 0 0}
+
+a.list{ word-wrap:break-word; display: block; overflow: hidden; padding:15px 0 15px 0px; border:1px solid #a9b5b8; background:#e6f7fb url(<tag:image_path />/9543/arrow.png) 96% center no-repeat;}
+a:hover.list{background-color:#fdb938; border:1px solid #fed07a}
+
+a .adTextWrap {float:left;width: 81%; padding: 7px 0px 7px 25px;  border-left: 1px solid #2d2d2d}
+
+a.list .title{font-size: 25px;color: #2d2d2d; line-height: 30px; margin-bottom: 4px; font-weight: bold }
+a.list .desc, a.list .sepr, a.list .url{color: #777e80;font-size: 14px; line-height: 20px}
+a:hover .desc, a:hover .sepr, a:hover .url{color: #2d2d2d}
+
+@media not all and (min-width: 980px){ 
+  #wrapper {width: 95%}
+  .results{width: auto}
+  .headIn{width: 95%}
+  a .adTextWrap {width: 77%}
+}
+@media not all and (min-width: 850px){ 
+  a .adTextWrap {width: 75%} 
+}
+@media not all and (min-width: 790px){
+  a .adTextWrap {width: 73%} 
+}
+@media not all and (min-width: 760px){ 
+  a .adTextWrap {width: 72%}
+}
+@media not all and (min-width: 740px){ 
+  body{background:#ffffff url(<tag:image_path />/9543/mobg.jpg) no-repeat center -45px;background-size: 100%}
+  a.list{background-color: #ffffff}
+}
+@media not all and (min-width: 665px){ 
+  a .adTextWrap {width: 68%}
+}
+@media not all and (min-width: 600px) { 
+  #wrapper{padding-top: 0}
+  .results li {margin-bottom: 8px}
+  .results .num {font-size: 25px; width: 40px; padding: 27px 0 0}
+  a .adTextWrap {padding:10px 0 10px 12px; width: 84%}
+  
+  a.list .title {font-size: 18px; line-height: 24px}
+  a.list .url {display: block}
+  a.list .desc {font-size: 14px; line-height: 19px; display: block}
+  .inner-spons-links {font-size: 11px; padding-top: 85px}
+  a.list .sepr {display: none}
+  a.list{padding:10px 0 10px 0;border:1px solid #000000;background-size:15px}
+  a:hover.list{border:1px solid #000000}
+  .results {padding-bottom: 0}
+}
+@media not all and (min-width: 560px){ 
+  a .adTextWrap {width: 81%}
+}
+@media not all and (min-width: 480px){
+  a .adTextWrap {width: 78%}
+}
+@media not all and (min-width: 410px){
+  a .adTextWrap {width: 73%}
+}
+@media not all and (min-width: 350px){
+  a .adTextWrap {width: 71%}
+}
+@media not all and (min-width: 320px){
+  .results li{background-image: none}
+  .results li:hover{background-image: none}
+  .results .num{display: none}
+  a.list{padding-left: 0}
+  a .adTextWrap, a:hover .adTextWrap {border-left: 0 none}
+}
+@media not all and (min-width: 318px){
+  a .adTextWrap {width: 85%}
+}
+</style>
+
+<!--[if lte IE 8]>
+  <style>
+  body{background-position:top center}
+  </style>
+<![endif]-->
+
+<script language="JavaScript" type="text/javascript" src="<tag:jssource />"></script>
+</stl_head>
+<stl_body>
+<tag:post_form_html />
+  
+       <div id="wrapper">
+           <div class="inner-spons-links">Sponsored Listings</div>
+           <ul class="results">
+               <if:ad_present1>
+                   <li>
+                       <a href="<ad_href_url:1 />" target="_blank" class="list clearfix">
+                           <div class="num"><span>1</span></div>   
+                           <div class="adTextWrap">
+                               <p class="title"><ad_title_text:1 /></p> 
+                               <p class="desc"><ad_desc:1 /></p>
+                               <p class="url"><ad_url_text:1 /></p>                               
+                           </div>
+                       </a>
+                   </li>
+               </if:ad_present1>
+               <if:ad_present2>
+                   <li>
+                       <a href="<ad_href_url:2 />" target="_blank" class="list clearfix">
+                           <div class="num"><span>2</span></div>
+                           <div class="adTextWrap">
+                               <p class="title"><ad_title_text:2 /></p> 
+                               <p class="desc"><ad_desc:2 /></p>
+                               <p class="url"><ad_url_text:2 /></p> 
+                           </div>
+                       </a>
+                   </li>
+               </if:ad_present2>
+               <if:ad_present3>
+                   <li>
+                       <a href="<ad_href_url:3 />" target="_blank" class="list clearfix">
+                           <div class="num"><span>3</span></div>
+                           <div class="adTextWrap">
+                               <p class="title"><ad_title_text:3 /></p> 
+                               <p class="desc"><ad_desc:3 /></p>
+                               <p class="url"><ad_url_text:3 /></p> 
+                           </div>
+                       </a>
+                   </li>
+               </if:ad_present3>
+           </ul>
+       </div>
+    </stl_body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<stl_head>
+<title><tag:page_title /></title>
+<meta http-equiv="Content-Type" content="text/html; charset=<tag:charset />">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<style type="text/css">
+*{margin:0; padding:0; font-family:Arial, Helvetica, sans-serif}
+a {text-decoration:none; outline:none}
+a img {border:none}
+li {list-style:none}
+.clear {clear:both; overflow:hidden; line-height:0; font-size:0; height:0}
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear: both;height:0}
+* html .clearfix{zoom:1}
+*:first-child+html .clearfix{zoom:1}
+a{text-decoration:none}
+input{outline:none}
+
+body{background:#fff; font-family:Arial, Helvetica, sans-serif}
+
+.main-container{width:780px; margin: 0 auto; padding:150px 0 0}
+/*.logo {text-align:center; font-size:30px; font-weight:bold; color:#0992DD; height:100px}*/
+div.search-form{width:570px; height:70px; margin:0 auto; padding:30px 0 0 25px}
+.text-search{width:416px; height:36px; font-size:20px; line-height:18px; padding:0 10px; float: left; outline:none}
+.btn-search{width:96px; height:40px; margin:0 0 0 10px; cursor: pointer; float:left; font-size:14px; font-weight:bold; background:#FFD14B; color:#000; border:0; -webkit-appearance: none}
+.popular-searches{width:780px; overflow: hidden}
+.popular-searches h2{font-size:18px; color:#888; height: 38px; padding-left:30px}
+.popular-searches h3{font-size:17px; color:#333; padding:0 0 10px 0;margin-bottom:10px; border-bottom:1px dotted #ccc}
+.popular-searches ul{float: left; width:220px; padding-left:40px; list-style:none}
+.popular-searches li{width:220px; float:left;background: url(<tag:image_path />/2777/list-marker.jpg) left 6px no-repeat; padding-left:22px;}
+.popular-searches li a{font-size:16px; font-weight:bold; color:#0992DD; text-decoration:underline; display: block; line-height:30px}
+.popular-searches li a:hover{text-decoration:none;}
+.footer {text-align:center; color:#ccc; width:100%; padding:40px 0 0}
+.footer a {color:#999; font-size:11px; text-decoration:none}
+.footer a:hover {text-decoration:underline; color:#333}
+.custom-msg { background:#fdffec; border-top: 1px solid #ffe594; border-bottom: 1px solid #ffe594; color:#000000; text-align: center; font: 11px/14px Arial, Helvetica, sans-serif; position:absolute; width:100%}
+.custom-msg a { text-decoration: none; color:#CC0000; font-size: 11px; }
+.custom-msg a:hover { text-decoration: underline; }
+.nores {text-align:center; word-wrap:break-word; color:#000; font-size:12px; line-height:18px}
+.nores span {font-size:14px; font-weight:bold; color:#666}
+
+.no-results {text-align:center;color:#000;font-size:14px; padding:10px 0; width:95%; margin:0 auto}
+.no-results span {font-weight:bold}
+@media only screen and (max-width:780px), only screen and (max-device-width: 640px) and (min-device-width : 320px)
+{
+.main-container {width:90%; padding:12px 0 0}
+/*.logo {height:auto; padding-bottom:10px}*/
+.nores {padding-bottom:10px}
+div.search-form{width:100%; height:auto; margin:0 auto; background:none; padding:0; border:0; box-shadow:none}
+.text-search{width:65%; padding:0 5px; outline:none; margin:0}
+.btn-search{width:28%; margin:0 0 0 2%}
+.popular-searches h2 {padding:10px 0 0; text-align:center}
+.popular-searches h3 {padding:15px 0 5px 0}
+.popular-searches{width:100%; overflow: hidden; margin:0 auto; padding:0}
+.footer {height:auto}
+.footer a {line-height:40px; padding:20px 0 0}
+}
+</style>
+<script language="JavaScript" type="text/javascript" src="<tag:jssource />"></script>
+</stl_head>
+
+<stl_body>
+<tag:post_form_html />
+<!-- sale notice start -->
+<if:is_custom_message>
+<div class="custom-msg"><tag:custom_message /></div>
+</if:is_custom_message>
+    
+    <div class="main-container">
+        <!-- <div class="logo"></div>  -->
+        <p class="no-results">We were unable to find results for your search term <span>"<tag:display_query />"</span></p>
+        <p class="nores">Please feel free to search our listings for anything else you may be looking for or check other popular topics that are trending below.</p>              
+            <div class="search-form">
+                <search_form:1>
+                    <search_input:1 class="text-search"  />                   
+                    <input name="go" value="Search" type="submit" class="btn-search" />   
+                </search_form:1>             
+            </div>
+            
+        <div class="popular-searches">
+        <h2>Popular Searches</h2>
+              <ul>                            
+                 <h3>Travel</h3>                 
+                 <li><manual_keyword:1 value="Low Airfares" /></li>
+                  <li><manual_keyword:2 value="Hotel Reservations" /></li>
+                  <li><manual_keyword:3 value="Car Rentals" /></li>
+             </ul>
+             
+            <ul>  
+                <h3>Shopping Deals</h3>
+                <li><manual_keyword:6 value="Designer Shoes" /></li>
+                <li><manual_keyword:7 value="Designer Handbags" /></li>
+                <li><manual_keyword:8 value="Party Dresses" /></li>                          
+            </ul>
+            
+            <ul> 
+            <h3>Healthy Living</h3>                     
+            <li><manual_keyword:11 value="Home Workouts" /></li>
+            <li><manual_keyword:12 value="Weight Loss Diets" /></li>
+            <li><manual_keyword:13 value="Nutrition Handbook" /></li>                           
+            </ul>
+            
+        </div>   
+    </div>  
+<script language="javascript">
+try{window.onload = document.searchform1.s.focus();}catch(e){};
+</script>
+</stl_body>
+</html>
