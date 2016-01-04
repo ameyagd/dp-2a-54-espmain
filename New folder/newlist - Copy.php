@@ -27,21 +27,22 @@
                 <div class="row">
                    <div class="clist">
                       <div class="row">
-                         <div class="col-md-12 ">
+                         <div class="col-md-6 ">
                             <div class="content addlistedit"  id="addlistedit">
                                <div class="header">
                                   <h4 class="title">List Details</h4>
                                </div>
                                <form>
                                 <div class="row">
-                                     <div class="col-md-6">
+                                     <div class="col-md-12">
                                         <div class="form-group">
                                            <label>List Name</label>
                                            <input type="text" class="form-control" placeholder="List Name">
                                         </div>
                                      </div>
-                                 
-                                     <div class="col-md-6">
+                                  </div>
+                                  <div class="row">
+                                     <div class="col-md-12">
                                         <div class="form-group">
                                            <label for="exampleInputEmail1">Default “from” email</label>
                                            <input type="email" class="form-control" placeholder="Email">
@@ -49,28 +50,46 @@
                                      </div>
                                   </div>
                                   <div class="row">
-                                     <div class="col-md-6">
+                                     <div class="col-md-12">
                                         <div class="form-group">
                                            <label>Default “from” name</label>
                                            <input type="text" class="form-control" placeholder="From name">
                                         </div>
                                      </div>
-                                 
-                                     
                                   </div>
-                                  <hr>
-                              
+
+                                  <div class="row">
+                                     <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="description" class="">Remind people how they signed up to your list</label> 
+                                            <select class="" id="">
+                                                <option value="">Reuse a reminder from another list</option>
+                                                <option value="42893">List Name 1</option>
+                                                <option value="42889">List Name 2</option> </select> 
+                                        </div>
+                                     </div>
+                                  </div>
+
+                                  <div class="row">
+                                     <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="description" id="description" class="">Write a short reminder about how the recipient joined your list</textarea>
+                                            <div class="field-help">Example: “You are receiving this email because you opted in at our website … ” or “We send special offers to customers who opted in at … ”</div>
+                                        </div>
+                                     </div>
+                                  </div>
 
                                
                                   <div class="row">
-                                     <div class="col-md-6">
+                                     <div class="col-md-12">
                                         <div class="form-group">
                                            <label>Company / organization</label>
                                            <input type="text" class="form-control" placeholder="Company / organization">
                                         </div>
                                      </div>
-                                
-                                     <div class="col-md-6">
+                                  </div>
+                                   <div class="row">
+                                     <div class="col-md-12">
                                         <div class="form-group">
                                            <label>Address</label>
                                            <input type="text" class="form-control" placeholder="Address">
@@ -78,14 +97,15 @@
                                      </div>
                                   </div>
                                  <div class="row">
-                                     <div class="col-md-6">
+                                     <div class="col-md-12">
                                         <div class="form-group">
                                            <label>City</label>
                                            <input type="text" class="form-control" placeholder="City">
                                         </div>
                                      </div>
-                                 
-                                     <div class="col-md-6">
+                                  </div>
+                                  <div class="row">
+                                     <div class="col-md-12">
                                         <div class="form-group">
                                            <label>Zip / Postal code</label>
                                            <input type="text" class="form-control" placeholder="Zip / Postal code">
@@ -93,7 +113,7 @@
                                      </div>
                                   </div>
                                   <div class="row">
-                                     <div class="col-md-6">
+                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label for="description" class="">Country</label> 
                                             <select name="country" class="" id="country">
@@ -335,9 +355,9 @@
                                             </select>
                                         </div>
                                      </div>
-                                 
-
-                                     <div class="col-md-6">
+                                  </div>
+                                  <div class="row">
+                                     <div class="col-md-12">
                                         <div class="form-group">
                                            <label>Phone </label>
                                            <label class="pull-right">Optional </label>
@@ -345,37 +365,15 @@
                                         </div>
                                      </div>
                                   </div>
-                                  <hr>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="description" class="">Remind people how they signed up to your list</label> 
-                                            <select class="" id="">
-                                                <option value="">Reuse a reminder from another list</option>
-                                                <option value="42893">List Name 1</option>
-                                                <option value="42889">List Name 2</option> </select> 
-                                        </div>
-                                     </div>
-                                      </div>
-
                                   <div class="row">
-                                     <div class="col-md-6">
+                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <textarea name="description" id="description" class="">Write a short reminder about how the recipient joined your list</textarea>
-                                            <div class="field-help">Example: “You are receiving this email because you opted in at our website … ” or “We send special offers to customers who opted in at … ”</div>
-                                        </div>
-                                     </div>
-                                  </div>
-                                  <hr>
-                                  <div class="row">
-                                     <div class="col-md-6">
-                                        <div class="form-group">
-                                           <h3>Notifications <span>sent to <input id="editnotifyinput" type="text" value="abc@gmail.com " disabled></ins><a href="javascript:void(0);" id="editnotifybtn">edit</a></span></h3> 
+                                           <h3>Notifications <span>sent to abc@gmail.com <a href="javascript:void(0);">edit</a></span></h3> 
                                         </div>
                                      </div>
                                   </div>
                                   <div class="row">
-                                     <div class="col-md-4">
+                                     <div class="col-md-12">
                                         <div class="form-group">
                                            <input type="checkbox" name="" id="terms">
                                            <label for="terms"><span></span></label>
@@ -383,27 +381,29 @@
                                            <span>Summary of subscribe/unsubscribe activity</span> 
                                         </div>
                                      </div>
-                                  
-                                     <div class="col-md-4">
+                                  </div>
+                                   <div class="row">
+                                     <div class="col-md-12">
                                         <div class="form-group">
-                                           <input type="checkbox" name="" id="terms2">
-                                           <label for="terms2"><span></span></label>
+                                           <input type="checkbox" name="" id="terms">
+                                           <label for="terms"><span></span></label>
                                            One-by-one<br>
                                            <span>Subscribe notifications as they happen</span> 
                                         </div>
                                      </div>
-                                
-                                     <div class="col-md-4">
+                                  </div>
+                                  <div class="row">
+                                     <div class="col-md-12">
                                         <div class="form-group">
-                                           <input type="checkbox" name="" id="terms3">
-                                           <label for="terms3"><span></span></label>
+                                           <input type="checkbox" name="" id="terms">
+                                           <label for="terms"><span></span></label>
                                            One-by-one<br>
                                            <span>Unsubscribe notifications as they happen</span> 
                                         </div>
                                      </div>
                                   </div>
                                   
-                                  <hr>
+                                  
                                   <button type="submit" class="btn btn-info greybtn">Save</button>
                                   <a href="javascript:void(0)" class="cancel">Cancel</a>
                                   <div class="clearfix"></div>

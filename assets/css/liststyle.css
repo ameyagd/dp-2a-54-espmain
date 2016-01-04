@@ -1,5 +1,9 @@
+#memberlist .dataTables_empty{display: none;}
+#memberlist_wrapper .DTTT_container{visibility: hidden!important;}
+
+#CSVTableimport th{width: 300px}
 body{font-family:'Open Sans', 'Helvetica Neue', Arial, Helvetica, Verdana, sans-serif !important}
-    .listboxcontainer{width:1250px;position:relative;overflow: visible;padding-bottom: 30px }
+    .listboxcontainer{/*width:1250px;*/width:90%;position:relative;overflow: visible;padding-bottom: 30px }
     .greybtn{background-color:#484848;color:#fff;border:0}
     .greybtn:hover{background-color:#484848;color:#fff;border:0}
 
@@ -44,8 +48,12 @@ body{font-family:'Open Sans', 'Helvetica Neue', Arial, Helvetica, Verdana, sans-
     .listboxcontainer .alert-info{background-color: #ccebf3; color:#484848 }
     .morelink{display: none;float: right;padding-right: 50px;text-decoration: underline}
     #adduseredit{display: none}
-    #madduseredit{display: none;margin-top: 0}
+    #madduseredit{display: none;margin:0px auto 25px;}
     .madduseredit .content{padding-top: 0!important}
+    .madduseredit .title{margin-top: 10px}
+
+
+    .listwrap{padding: 15px 30px 15px 30px}
 
 /*subscriber page*/
 .memberlist th{background:#f2f2f2;font-weight: bold !important; color: #484848 !important;padding-top: 20px !important;padding-bottom: 15px!important;}
@@ -53,16 +61,16 @@ body{font-family:'Open Sans', 'Helvetica Neue', Arial, Helvetica, Verdana, sans-
 .memberlist tr{ border: 1px solid #e0e0e0}
 .mlistbox{background: transparent}
 .mlistbox .dataTables_filter{float: right;}
-.mlistbox .header{padding-left: 0px}
-.mlistbox .title{font-size: 25px;text-transform: none;    padding: 20px 0px 10px;}
+.mlistbox .title{font-size: 25px;text-transform: none;}
 .mlistswitch .btn{background: transparent;border: 0;padding: 0;color: #2c9ab7}
 .mlistswitch .btn:hover{background: none;color: #2c9ab7}
-.mlistnav{border-bottom: 1px solid #ccc;margin: 0 15px;padding: 0;}
+.mlistnav{border-bottom: 1px solid #ccc;padding: 0;}
 .mlistnav li{padding: 5px 15px 5px 0px;font-size: 15px;}
 .mlistnav .dropdown-menu > li{padding: 5px 0px 5px 0px}
 .mlistnav li a{color: #484848;border-radius: 5px}
 .mlistnav li a:hover{color: #2c9ab7;}
-.mlistnav{margin-top: 25px}
+.mlistnav{margin: 15px 0px 25px}
+.mlistnav div{padding: 0}
 .mlistnav .nav>li>a {padding: 10px}
 .mlistfchild{padding-left: 0!important}
 table.dataTable.no-footer{border-color: #ccc!important}
@@ -70,6 +78,8 @@ table.dataTable thead th, table.dataTable thead td{border-bottom: 0px!important}
 .subscribertablewrap{margin-top: 20px}
 .subscribertablewrap .table-striped>tbody>tr:nth-of-type(odd) {background: none!important; }
 .mdeluser{display: none;}
+#mimportbox{display: none;}
+
 
 /*list new*/
 .addlistedit{padding-top: 0px;padding-left: 15px}
@@ -86,7 +96,7 @@ table.dataTable thead th, table.dataTable thead td{border-bottom: 0px!important}
     background: url(assets/img/dropdown.svg) no-repeat right center #e0e0e0;
     background-size: 30px auto;
     width: 100%;
-    max-width: 635px;
+    max-width: 100%;
     color: #484848;
     background-color: #e0e0e0;
     -ms-transition: background-color 0.23s ease-in-out 0s;
@@ -98,8 +108,8 @@ table.dataTable thead th, table.dataTable thead td{border-bottom: 0px!important}
 
 .nactive a{color: #2c9ab7!important;}
 /*import page*/
-.importboxcontainer{width:1250px;position:relative;overflow: visible; padding: 50px}
-.importboxcontainer .card{padding: 50px 100px}
+.importboxcontainer{width:100%;/*position:relative;*/overflow: visible; padding: 20px}
+.importboxcontainer .card{padding: 10px 100px}
 .manualimport{display: none;}
 .listimport{display: none;}
 .checkbox_description{margin-left: 44px;color: #555}
@@ -121,6 +131,7 @@ table.dataTable thead th, table.dataTable thead td{border-bottom: 0px!important}
 .unsubscribewrap .form-group{width: 261px!important}
 .unsubscribewrap .editable-input{position: relative!important;float: left!important}
 .unsubscribewrap .editable-buttons{float: right!important;width: 70px!important;}*/
+.unsubscribewrap{padding-top: 10px!important}
 .unsubscribewrap .popover{left: 101.883px!important}
 .unsubscribewrap a{border-bottom: none!important;}
 .unsubscribewrap .form-control {height: 30px!important}
@@ -129,9 +140,24 @@ table.dataTable thead th, table.dataTable thead td{border-bottom: 0px!important}
 .subscribertablewrap .dataTables_filter input{box-shadow:1px 1px 1px #cccccc;height: 28px}
 /**/
 
+/*modal css*/
+.graphmodal {
+    top: 70px;
+    bottom: auto;
+    width: 80%;
+    margin: 0px auto;
+    background: #ffffff;
+}
+/**/
+
+
 
 .listhr{margin: 100px 0 70px}
 
+@media screen and (max-width: 1280px) {
+.adduser{width: 38px;margin-right: 2px}
+.listmetaaction .btn-group{width: 100px}
+}
 @media screen and (max-width: 1200px) {
 .listboxcontainer{width: 90%}
 .importboxcontainer{width: 90%;padding: 20px}

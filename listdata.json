@@ -1,0 +1,54 @@
+{
+  "list": [
+    {
+      "listid": "1",
+      "listname": "List Name 1",
+      "subscriberscount": "100",
+      "opens": "10",
+      "clicks": "10",
+      "subscribers": {
+        "1": {
+          "id": "1",
+          "fname": "Ajay1",
+          "lname": "Dixit1",
+          "email": "Dixit1@gmail.com",
+          "ip": "198.168.l.12",
+          "lasteditdate": "11/20/15 3:05AM"
+        },
+        "2": {
+          "id": "2",
+          "fname": "Raman1",
+          "lname": "Saxena1",
+          "email": "Saxena1@gmail.com",
+          "ip": "198.168.l.68",
+          "lasteditdate": "11/20/15 3:05AM"
+        }
+      }
+    },
+    {
+      "listid": "2",
+      "listname": "List Name 2",
+      "subscriberscount": "100",
+      "opens": "10",
+      "clicks": "10",
+      "subscribers": {
+        "1": {
+          "id": "1",
+          "fname": "Ajay2",
+          "lname": "Dixit2",
+          "email": "Dixit2@gmail.com",
+          "ip": "198.168.l.72",
+          "lasteditdate": "11/20/15 3:05AM"
+        },
+        "2": {
+          "id": "2",
+          "fname": "Raman2",
+          "lname": "Saxena2",
+          "email": "Saxena2@gmail.com",
+          "ip": "198.168.l.61",
+          "lasteditdate": "11/20/15 3:05AM"
+        }
+      }
+    }
+  ]
+}

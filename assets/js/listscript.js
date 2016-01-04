@@ -1,6 +1,8 @@
 $(document).ready(function(){
 	// 
-$('input[type="file"]').ezdz();
+
+
+$('#importcsv').ezdz();
 
 var defaults = {
 className: '',
@@ -38,6 +40,9 @@ $(".adduser").click(function(){
     $(this).closest("li").find("#adduseredit").toggle("slow");
 })
 
+
+
+
 $(".cancel").click(function(){
    $(this).closest("li").find("#adduseredit").toggle("slow");
 })
@@ -45,8 +50,18 @@ $(".cancel").click(function(){
 
 $(".madduser").click(function(){
 $("#madduseredit").toggle("slow");
+$("#mimportbox").css("display","none");
 return false;
 })
+
+
+$(".mimportbtn").click(function(){
+$("#mimportbox").toggle("slow");
+$("#madduseredit").css("display","none");
+return false;
+})
+
+
 
 $("#mcancel").click(function(){
 $("#madduseredit").toggle("slow");
@@ -80,20 +95,38 @@ $(".lisinglecheck").prop('checked', $(this).prop("checked"));
 
 
 
-$('#memberlist').dataTable({
-    "dom": 'T<"clear">lfrtip',
-    "tableTools": {
-        "sSwfPath": "datatables/tools/TableTools-master/swf/copy_csv_xls_pdf.swf",
-        "aButtons": [ "copy", "print", "xls", "pdf" ]
-    },
-    "oLanguage": {
-        "sSearch": ''
-    }
-});          
+// var memberlist = $('#memberlist').dataTable({
+//     "dom": 'T<"clear">lfrtip',
+//     "tableTools": {
+//         "sSwfPath": "datatables/tools/TableTools-master/swf/copy_csv_xls_pdf.swf",
+//         "aButtons": [ "copy", "print", "xls", "pdf" ]
+//     },
+//     "oLanguage": {
+//         "sSearch": ''
+//     }
+
+// });          
+
+// $.ajax({
+//    dataType: 'JSON',
+//    url: 'listdata.json',
+//    async: false,
+//    success: function(json) {
+//       for (hash in json) {
+//            for (i = 0; i < json[hash].length; i++) {
+//                   memberlist.fnAddData([hash, "zfgv", json[hash][i][1]]);
+//             }
+//        }
+//    }
+    
+// });
 
 $('.dataTables_filter input').attr("placeholder", "Search");
 
-
+$("#editnotifybtn").click(function(){
+    $( "#editnotifyinput" ).prop( "disabled", false );
+    $( "#editnotifyinput" ).css( "border", "1px solid #52BAD5" );
+})
  
 });
 
