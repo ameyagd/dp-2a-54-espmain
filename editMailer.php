@@ -21,7 +21,7 @@
                                 echo "<div class='header'>
                                 <h4 class='title creativeTitle'> $title <div class='pull-right'><a id='desktopView'>Desktop</a><a id='mobileView'>Mobile</a></div></h4>
                             </div>
-                            <iframe src='Creatives/$title/index.html' width='650' height='800' id='1colmail' class='animated slideInLeft'></iframe>
+                            <iframe src='Creatives/$title/index.html' width='650' height='800' id='1colmail' class=''></iframe>
                             ";
                             }
 						?>
@@ -30,7 +30,7 @@
 			</div>
 		</div>
 
-		<div class="rightSidebar animated">
+		<div class="rightSidebar">
 			<div class="col-md-12">
 				<h4>Settings</h4>
 
