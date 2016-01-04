@@ -19,7 +19,23 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <!-- php code for json data-->
+                    <?php
+                        class camp {
+                            public $name = "";
+                            public $createdon  = "";
+                        }
+                            
+                        $e = new camp();
+                        $e->name = "Campaign 1";
+                        $e->createdon  = "May 20,2015 03:14am";
+                        
+
+                        $json= json_encode($e);
+
+                        // var_dump(json_decode($json));
+                        // var_dump(json_decode($json, true));
+                    ?>
                     <div class="col-md-7">
                         <div class="card">
                             <div class="content clearfix">
