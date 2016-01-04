@@ -51,7 +51,7 @@ body{font-family:'Open Sans', 'Helvetica Neue', Arial, Helvetica, Verdana, sans-
     #madduseredit{display: none;margin:0px auto 25px;}
     .madduseredit .content{padding-top: 0!important}
     .madduseredit .title{margin-top: 10px}
-
+    .madduseredit .header{padding-left: 0px}
 
     .listwrap{padding: 15px 30px 15px 30px}
 

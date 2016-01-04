@@ -133,7 +133,7 @@
       <!-- end import form -->
       <!-- add subscriber -->
       <div class="row madduseredit" id="madduseredit">
-         <div  class="col-md-1 col-xs-1 hideonmob">&nbsp;</div>
+         <!-- <div  class="col-md-1 col-xs-1 hideonmob">&nbsp;</div> -->
          <div  class="col-md-8 col-xs-12 ">
             <div class="content">
                <div class="header">
@@ -141,26 +141,26 @@
                </div>
                <form>
                   <div class="row">
-                     <div class="col-md-12">
+                    <div class="col-md-6">
                         <div class="form-group">
-                           <label for="exampleInputEmail1">Email address</label>
-                           <input type="email" class="form-control" placeholder="Email">
+                           <label>Last Name</label>
+                           <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
                         </div>
                      </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-md-12">
+                    
+                      <div class="col-md-6">
                         <div class="form-group">
                            <label>First Name</label>
                            <input type="text" class="form-control" placeholder="Company" value="Mike">
                         </div>
                      </div>
                   </div>
+                 
                   <div class="row">
-                     <div class="col-md-12">
+                      <div class="col-md-6">
                         <div class="form-group">
-                           <label>Last Name</label>
-                           <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
+                           <label for="exampleInputEmail1">Email address</label>
+                           <input type="email" class="form-control" placeholder="Email">
                         </div>
                      </div>
                   </div>
@@ -257,13 +257,13 @@
                            </div>
                            <div class="modal-body">
                               <div class="form-group">
-                                 <input class="form-control " type="email" value="kbl@gmail.com">
+                                 <input class="form-control" type="email" value="kbl@gmail.com" name="email">
                               </div>
                               <div class="form-group">
-                                 <input class="form-control " type="text" value="Ryan">
+                                 <input class="form-control" type="text" value="Ryan" name="fname">
                               </div>
                               <div class="form-group">
-                                 <input class="form-control " type="text" value="Desouza">
+                                 <input class="form-control" type="text" value="Desouza" name="lname">
                               </div>
                               <!-- <div class="form-group">
                                  <textarea rows="2" class="form-control" placeholder="CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan"></textarea>
@@ -474,7 +474,7 @@ $.getJSON("listdata.json", function(data){
          var subscribersdata =  data['list'][i]['subscribers'];
              $.each(subscribersdata, function (j, subscriber){
         
-           $('#memberlist').append("<tr role='row'> <td> <div class='listcheckbox excludeThisClass'> <input type='checkbox' name='list_"+j+"' id='mlist_"+j+"' class='lisinglecheck'> <label for='mlist_"+j+"'><span></span></label> </div> </td> <td>"+subscriber['email']+"</td> <td>"+subscriber['fname']+"</td> <td>"+subscriber['lname']+"</td> <td>"+subscriber['ip']+"</td> <td>"+subscriber['lasteditdate']+"</td> <td> <p data-placement='top' data-toggle='tooltip' title='Edit'><button class='btn btn-primary btn-xs' data-title='Edit' data-toggle='modal' data-target='#edit' ><span class='glyphicon glyphicon-pencil'></span></button></p> </td> <td> <p data-placement='top' data-toggle='tooltip' title='Delete'><button class='btn btn-danger btn-xs' data-title='Delete' data-toggle='modal' data-target='#delete' ><span class='glyphicon glyphicon-trash'></span></button></p> </td> </tr>");
+           $('#memberlist').append("<tr role='row'> <td> <div class='listcheckbox excludeThisClass'> <input type='checkbox' name='list_"+j+"' id='mlist_"+j+"' class='lisinglecheck'> <label for='mlist_"+j+"'><span></span></label> </div> </td> <td>"+subscriber['email']+"</td> <td>"+subscriber['fname']+"</td> <td>"+subscriber['lname']+"</td> <td>"+subscriber['ip']+"</td> <td>"+subscriber['lasteditdate']+"</td> <td> <p data-placement='top' data-toggle='tooltip' title='Edit' class='edit'><button class='btn btn-primary btn-xs' data-title='Edit' data-toggle='modal' data-target='#edit'  data-email="+subscriber['email']+" data-fname="+subscriber['fname']+" data-lname="+subscriber['lname']+" onclick='editsubscriberdetails($(this).data(\"email\"),$(this).data(\"fname\"),$(this).data(\"lname\"))'><span class='glyphicon glyphicon-pencil'></span></button></p> </td> <td> <p data-placement='top' data-toggle='tooltip' title='Delete'><button class='btn btn-danger btn-xs' data-title='Delete' data-toggle='modal' data-target='#delete' ><span class='glyphicon glyphicon-trash'></span></button></p> </td> </tr>");
 
 
          })

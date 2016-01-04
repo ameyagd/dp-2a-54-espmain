@@ -127,6 +127,14 @@ $("#editnotifybtn").click(function(){
     $( "#editnotifyinput" ).prop( "disabled", false );
     $( "#editnotifyinput" ).css( "border", "1px solid #52BAD5" );
 })
- 
+
+
+
+
 });
 
+function editsubscriberdetails(email,fname,lname){
+ $("input[name='email']").val(email);
+ $("input[name='fname']").val(fname);
+ $("input[name='lname']").val(lname);
+}
