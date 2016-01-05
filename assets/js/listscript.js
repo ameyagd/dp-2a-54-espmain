@@ -34,11 +34,12 @@ return filename;
 }
 };
 
-// 
-$(".adduser").click(function(){
-    $(this).closest("li").siblings().find("#adduseredit").slideUp('slow');
-    $(this).closest("li").find("#adduseredit").toggle("slow");
-})
+
+// $(".adduser").click(function(){
+// 	$(this).closest("li").siblings().find("#adduseredit").slideUp('slow');
+//     $(this).closest("li").find("#adduseredit").toggle("slow");
+// })
+
 
 
 
@@ -133,8 +134,38 @@ $("#editnotifybtn").click(function(){
 
 });
 
+
+
 function editsubscriberdetails(email,fname,lname){
  $("input[name='email']").val(email);
  $("input[name='fname']").val(fname);
  $("input[name='lname']").val(lname);
 }
+
+
+
+function adduseredit(){
+	 $.fn.addusereditfn();
+}
+
+$.fn.addusereditfn = function(e) { // has to be defined as a function, does not need to be inside a nested document ready function
+    $(event.target).closest("li").siblings().find("#adduseredit").slideUp('slow');
+    $(event.target).closest("li").find("#adduseredit").toggle("slow");
+};
+
+document.addEventListener('click', function(e) {
+    e = e || window.event;
+    var target = e.target || e.srcElement,
+        text = target.textContent ;   
+}, false);
+
+
+function morelink(){
+	 $.fn.morelinkfn();
+}
+
+$.fn.morelinkfn = function(e) { // has to be defined as a function, does not need to be inside a nested document ready function
+    $(event.target).closest("li").siblings().find(".listmetaaction").slideUp('slow');
+    $(event.target).closest("li").find(".listmetaaction").toggle("slow");
+};
+
