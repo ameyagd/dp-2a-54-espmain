@@ -99,6 +99,12 @@
                         <span class="icon-bar"></span>
                     </button>
                     <?php echo"<a class='navbar-brand' href='#'>".$pagename."</a>"; ?>
+
+                    <?php 
+                    if(isset($_REQUEST['listid'])){
+                        echo"<div class='navbar-brand'>>&nbsp;&nbsp;<span id='innerpage' href='#'></span></div>";
+                    }
+                   ?> 
                 </div>
                 <div class="collapse navbar-collapse">       
                     

@@ -468,7 +468,7 @@ $.getJSON("listdata.json", function(data){
         $.each(data['list'], function (i, list) {
         
         if(listidfrmurl==(list['listid'])){
-          $(".navbar-brand").html(list['listname']);
+          $("#innerpage").html(list['listname']);
          console.log(data['list'][i]['subscribers']);
           
          var subscribersdata =  data['list'][i]['subscribers'];
