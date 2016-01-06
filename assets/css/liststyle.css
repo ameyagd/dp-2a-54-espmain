@@ -1,6 +1,6 @@
 #memberlist .dataTables_empty{display: none;}
 #memberlist_wrapper .DTTT_container{visibility: hidden!important;}
-
+.listwrapper .header{padding-left: 0}
 #CSVTableimport th{width: 300px}
 body{font-family:'Open Sans', 'Helvetica Neue', Arial, Helvetica, Verdana, sans-serif !important}
     .listboxcontainer{/*width:1250px;*/width:90%;position:relative;overflow: visible;padding-bottom: 30px }
@@ -42,12 +42,12 @@ body{font-family:'Open Sans', 'Helvetica Neue', Arial, Helvetica, Verdana, sans-
     .btn1{border-right: 2px solid #ffffff!important}
     .btn2{width: 40px}
     .sortbytxt{padding-right: 10px}
-    .adduseredit{padding-top: 0px}
+    .adduseredit{padding-top: 0px;padding-left: 0px!important;}
     .infoicon{top: 40%!important;left: 33px!important}
     .cancel{padding-left: 10px;text-decoration: underline}
     .listboxcontainer .alert-info{background-color: #ccebf3; color:#484848 }
     .morelink{display: none;float: right;padding-right: 50px;text-decoration: underline}
-    #adduseredit{display: none}
+    #adduseredit{display: none;padding-left: 0px!important}
     #madduseredit{display: none;margin:0px auto 25px;}
     .madduseredit .content{padding-top: 0!important}
     .madduseredit .title{margin-top: 10px}
@@ -181,3 +181,9 @@ table.dataTable thead th, table.dataTable thead td{border-bottom: 0px!important}
 .li_title{font-size: 15px}
 .meta1 .date{font-size: 13px}
 }
+@media screen and (max-width: 990px) {
+.listmetaaction{display: none;width: 160px;height: 15px}
+.morelink{display: block;}
+#adduseredit{padding-left: 60px!important}
+}
+
