@@ -1,6 +1,8 @@
 /*#memberlist .dataTables_empty{display: none;}*/
 /*#memberlist_wrapper .DTTT_container{visibility: hidden!important;}*/
 .listwrapper .header{padding-left: 0}
+.innerpage{font-size: 15px}
+.innerpage:before{content: "> "}
 #CSVTableimport th{width: 300px}
 body{font-family:'Open Sans', 'Helvetica Neue', Arial, Helvetica, Verdana, sans-serif !important}
     .listboxcontainer{/*width:1250px;*/width:90%;position:relative;overflow: visible;padding-bottom: 30px }

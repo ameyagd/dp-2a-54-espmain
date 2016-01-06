@@ -229,12 +229,13 @@
                         <?php
                         $json = file_get_contents('listdata.json');
                         $obj = json_decode($json, true);
-                        $listdata = $obj['list'];
+                        $listdata = $obj['lists'];
                         $currentlistid = $listid - 1; //to acheived for array
-
                         $subscribersdata = $listdata[$currentlistid]['subscribers'];
+                      
+
                         foreach ($subscribersdata as $value) {
-                        $checkID = $value['id'];
+                         $checkID = $value['id'];
                         ?>
                            <tr>
                               <td>
@@ -259,6 +260,7 @@
 
 
 <?php
+
 }
 ?>
 

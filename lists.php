@@ -42,31 +42,31 @@
                         <?php
                         $json = file_get_contents('listdata.json');
                         $obj = json_decode($json, true);
-                        $listdata = $obj['list'];
+                        $listdata = $obj['lists'];
                         // print_r($listdata);
                         foreach ($listdata as $value) {
-                        $checkID=$value['listid'];  
+                        $checkID = $value['info']['list_id'];  
                         ?>
                         <div class="campaignDetailsWrap clearfix">
                             <div class="pull-left">
                                 <input type="checkbox" id="list<?php echo $checkID; ?>Check" name="list<?php echo $checkID; ?>Check" ><label for="list<?php echo $checkID; ?>Check"><span></span></label>
                             </div>
                             <div class="col-md-5">
-                                <h5><a href="list.php?listid=<?php echo $value['listid'] ?>"><?php echo $value['listname'] ?></a></h5>
-                                <span class="listCreatedOn"><b>Created On:</b> <?php echo $value['listCreatedOn']; ?></span>
-                                <span class="listCreatedBy"><b>Created By:</b> <?php echo $value['listCreatedBy']; ?></span>
+                                <h5><a href="list.php?listid=<?php echo $value['info']['list_id'] ?>"><?php echo $value['info']['list_name']; ?></a></h5>
+                                <span class="listCreatedOn"><b>Created On:</b> <?php echo $value['info']['created_at']; ?></span>
+                                <span class="listCreatedBy"><b>Created By:</b> <?php echo $value['info']['created_by']; ?></span>
                             </div>
                             <div class="col-md-5">
                                 <div class="col-sm-5 col-xs-6">
-                                    <span class="listOpens"><?php echo $value['subscriberscount'] ?></span>
+                                    <span class="listOpens"><?php echo count($value['subscribers']); ?></span>
                                     <span class="listLabel">Subscribers</span>
                                 </div>
                                 <div class="col-sm-4 col-xs-3">
-                                    <span class="listOpens"><?php echo $value['opens'] ?>%</span>
+                                    <span class="listOpens"><?php echo $value['performance_details']['open_rate']; ?>%</span>
                                     <span class="listLabel">Opens</span>
                                 </div>
                                 <div class="col-sm-3 col-xs-3">
-                                    <span class="listOpens"><?php echo $value['clicks'] ?>%</span>
+                                    <span class="listOpens"><?php echo $value['performance_details']['click_rate']; ?>%</span>
                                     <span class="listLabel">Opens</span>
                                 </div>
                             </div>
@@ -79,9 +79,9 @@
                                         <span class="sr-only">Toggle Dropdown</span>
                                       </button>
                                       <ul class="dropdown-menu">
-                                        <li><a href="list.php?listid=<?php echo $value['listid'] ?>">Manage subscribers</a></li>
-                                        <li><a href="list.php?listid=<?php echo $value['listid'] ?>">Import</a></li>
-                                        <li><a href="list.php?listid=<?php echo $value['listid'] ?>">Export</a></li>
+                                        <li><a href="list.php?listid=<?php echo $value['info']['list_id'] ?>">Manage subscribers</a></li>
+                                        <li><a href="list.php?listid=<?php echo $value['info']['list_id'] ?>">Import</a></li>
+                                        <li><a href="list.php?listid=<?php echo $value['info']['list_id'] ?>">Export</a></li>
                                       </ul>
                                     </div>
                                 </div>

@@ -103,13 +103,13 @@
                     <?php 
                     if(isset($_REQUEST['listid'])){
 
-$json = file_get_contents('listdata.json');
-$obj = json_decode($json, true);
-$listdata = $obj['list'];
-$currentlistid = $_REQUEST['listid'] - 1; //to acheived for array
-$listname = $listdata[$currentlistid]['listname'];
+                    $json = file_get_contents('listdata.json');
+                    $obj = json_decode($json, true);
+                    $listdata = $obj['lists'];
+                    $currentlistid = $_REQUEST['listid'] -1; //to acheived for array
+                    $listname = $listdata[$currentlistid]['info']['list_name'];
 
-                        echo"<div class='navbar-brand'>>&nbsp;&nbsp;<span id='innerpage' href='#'>".$listname."</span></div>";
+                    echo"<div class='navbar-brand'><span class='innerpage' href='#'>".$listname."</span></div>";
                     }
                    ?> 
                 </div>
