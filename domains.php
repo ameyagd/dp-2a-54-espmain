@@ -15,10 +15,10 @@
 					<div class="content">
 						<div class="actionButtons">
 							<ul class="editButtonsChecked">
-								<li><a href="#" class="btn btn-primary">Edit Domains</a></li>
-								<li><a href="#" class="btn btn-info">Map Domains</a></li>
-								<li><a href="#" class="btn btn-success">Generate Subdomains</a></li>
-								<li><a href="#" class="btn btn-danger">Delete Domains</a></li>
+								<li><a href="#" class="btn btn-primary disabled">Edit Domains</a></li>
+								<li><a href="#" class="btn btn-info disabled">Map Domains</a></li>
+								<li><a href="#" class="btn btn-success disabled">Generate Subdomains</a></li>
+								<li><a href="#" class="btn btn-danger disabled">Delete Domains</a></li>
 							</ul>
 							<ul class="pull-right">
 								<li class="pull-right"><a href="#" class="btn btn-success" id="addDomainsBtn">Add Domains</a></li>
@@ -111,7 +111,7 @@
                                 <input type="text" class="form-control" name="domainName"/>
                             </div>
                             <div class="posRel">
-                                <input type="submit" value="Add Domain" class="btn btn-success"/>
+                                <input type="submit" value="Add" class="btn btn-success"/>
                             </div>
                         </form>
                     </div>

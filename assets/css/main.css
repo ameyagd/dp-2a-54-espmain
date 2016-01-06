@@ -177,6 +177,7 @@ div#zclip-ZeroClipboardMovie_1{bottom:0 !important}
 
 .listDetails h5{margin-bottom: 10px}
 .listCreatedOn{display: block;color: #555555}
+.listCreatedBy{display: block;color: #555555}
 .listRating{display: block;color: #999999}
 
 .listStats{margin-top: 10px}
@@ -209,7 +210,7 @@ div#zclip-ZeroClipboardMovie_1{bottom:0 !important}
 .campaignDetailsWrap:first-child{border-top:1px solid #dddddd}
 .campaignDetailsWrap:last-child{border-bottom:0}
 .campaignDetailsWrap{padding: 20px 0;border-bottom: 1px solid #dddddd}
-.campaignDetailsWrap h5{margin-top:0px }
+.campaignDetailsWrap h5{margin-top:0px;margin-bottom: 9px }
 .campaignDetailsWrap .btn-group .dropdown-menu{right: 0;left: auto}
 .campaignDetailsWrap .btn-group .btn{background-color: #e0e0e0;color: #484848;border-color: #e0e0e0}
 .campaignDetailsWrap .btn-group .btn:hover, .campaignDetailsWrap .btn-group .btn:focus, .campaignDetailsWrap .btn-group .btn:active, .campaignDetailsWrap .btn-group .btn.active, .campaignDetailsWrap .btn-group .open > .btn.dropdown-toggle{border-color: #e0e0e0}

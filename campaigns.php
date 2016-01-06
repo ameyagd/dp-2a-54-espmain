@@ -19,23 +19,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- php code for json data-->
-                    <?php
-                        class camp {
-                            public $name = "";
-                            public $createdon  = "";
-                        }
-                            
-                        $e = new camp();
-                        $e->name = "Campaign 1";
-                        $e->createdon  = "May 20,2015 03:14am";
-                        
-
-                        $json= json_encode($e);
-
-                        // var_dump(json_decode($json));
-                        // var_dump(json_decode($json, true));
-                    ?>
+                    
                     <div class="col-md-7">
                         <div class="card">
                             <div class="content clearfix">
@@ -59,107 +43,58 @@
                                 </div>
                                 
                                 <div class="campaignList">
-                                    <div class="campaignDetailsWrap clearfix">
-                                        <div class="pull-left">
-                                            <input type="checkbox" id="list1Check" name="list1Check" ><label for="list1Check"><span></span></label>
-                                        </div>
-                                        <div class="col-md-10">
-                                            <h5><a href="#">Campaign 1</a></h5>
-                                            <span class="listCreatedOn">Created May 20,2015 03:14am</span>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="pull-right">
-                                                <div class="btn-group">
-                                                  <button type="button" class="btn btn-default">Edit</button>
-                                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <span class="caret"></span>
-                                                    <span class="sr-only">Toggle Dropdown</span>
-                                                  </button>
-                                                  <ul class="dropdown-menu">
-                                                    <li><a href="#">View email</a></li>
-                                                    <li><a href="#">Clone</a></li>
-                                                  </ul>
+                                    <!-- php code for json data-->
+                                    <?php
+                                        $str = file_get_contents('campaign.json');
+                                        $json = json_decode($str, true);
+                                        // var_dump(json_decode($json));
+                                        
+                                        foreach ($json['list'] as $field => $value) {
+                                        $checkID=$value['campid'];
+                                    ?>
+                                        <div class="campaignDetailsWrap clearfix">
+                                            <div class="pull-left">
+                                                <input type="checkbox" id="list<?php echo $checkID; ?>Check" name="list<?php echo $checkID; ?>Check" ><label for="list<?php echo $checkID; ?>Check"><span></span></label>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <h5><a href="#"><?php echo $value['campname']; ?> </a></h5>
+                                                <span class="listCreatedOn"><b>Created On:</b> <?php echo $value['campCreatedOn']; ?></span>
+                                                <span class="listCreatedBy"><b>Created By:</b> <?php echo $value['campCreatedBy']; ?></span>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="col-sm-5 col-xs-6">
+                                                    <span class="listOpens"><?php echo $value['campDomainMapped']; ?></span>
+                                                    <span class="listLabel">Domain Mapped</span>
+                                                </div>
+                                                <div class="col-sm-4 col-xs-3">
+                                                    <span class="listOpens"><?php echo $value['campListMapped']; ?></span>
+                                                    <span class="listLabel">List Mapped</span>
+                                                </div>
+                                                <div class="col-sm-3 col-xs-3">
+                                                    <span class="listOpens"><?php echo $value['campOpens']; ?></span>
+                                                    <span class="listLabel">Opens</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="pull-right">
+                                                    <div class="btn-group">
+                                                      <button type="button" class="btn btn-default">Edit</button>
+                                                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="caret"></span>
+                                                        <span class="sr-only">Toggle Dropdown</span>
+                                                      </button>
+                                                      <ul class="dropdown-menu">
+                                                        <li><a href="#">View email</a></li>
+                                                        <li><a href="#">Clone</a></li>
+                                                      </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    
-
-                                    <div class="campaignDetailsWrap clearfix">
-                                        <div class="pull-left">
-                                            <input type="checkbox" id="list2Check" name="list2Check" ><label for="list2Check"><span></span></label>
-                                        </div>
-                                        <div class="col-md-10">
-                                            <h5><a href="#">Campaign 2</a></h5>
-                                            <span class="listCreatedOn">Created May 21,2015 01:34am</span>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="pull-right">
-                                                <div class="btn-group">
-                                                  <button type="button" class="btn btn-default">Edit</button>
-                                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <span class="caret"></span>
-                                                    <span class="sr-only">Toggle Dropdown</span>
-                                                  </button>
-                                                  <ul class="dropdown-menu">
-                                                    <li><a href="#">View email</a></li>
-                                                    <li><a href="#">Clone</a></li>
-                                                  </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="campaignDetailsWrap clearfix">
-                                        <div class="pull-left">
-                                            <input type="checkbox" id="list3Check" name="list3Check" ><label for="list3Check"><span></span></label>
-                                        </div>
-                                        <div class="col-md-10">
-                                            <h5><a href="#">Campaign 3</a></h5>
-                                            <span class="listCreatedOn">Created May 23,2015 13:14pm</span>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="pull-right">
-                                                <div class="btn-group">
-                                                  <button type="button" class="btn btn-default">Edit</button>
-                                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <span class="caret"></span>
-                                                    <span class="sr-only">Toggle Dropdown</span>
-                                                  </button>
-                                                  <ul class="dropdown-menu">
-                                                    <li><a href="#">View email</a></li>
-                                                    <li><a href="#">Clone</a></li>
-                                                  </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="campaignDetailsWrap clearfix">
-                                        <div class="pull-left">
-                                            <input type="checkbox" id="list4Check" name="list4Check" ><label for="list4Check"><span></span></label>
-                                        </div>
-                                        <div class="col-md-10">
-                                            <h5><a href="#">Campaign 4</a></h5>
-                                            <span class="listCreatedOn">Created May 25,2015 11:14am</span>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="pull-right">
-                                                <div class="btn-group">
-                                                  <button type="button" class="btn btn-default">Edit</button>
-                                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <span class="caret"></span>
-                                                    <span class="sr-only">Toggle Dropdown</span>
-                                                  </button>
-                                                  <ul class="dropdown-menu">
-                                                    <li><a href="#">View email</a></li>
-                                                    <li><a href="#">Clone</a></li>
-                                                  </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <?php
+                                        }
+                                    ?>
 
                                 </div>
                             </div>

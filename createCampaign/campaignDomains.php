@@ -111,7 +111,7 @@
                                 <input type="text" class="form-control" name="domainName"/>
                             </div>
                             <div class="posRel">
-                                <input type="submit" value="Add Domain" class="btn btn-success"/>
+                                <input type="submit" value="Add" class="btn btn-success"/>
                             </div>
                         </form>
                     </div>

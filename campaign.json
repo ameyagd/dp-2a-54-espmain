@@ -1,0 +1,40 @@
+{
+  "list": [
+    {
+      "campid": "1",
+      "campname": "Campaign 1",
+      "campCreatedOn": "May 20,2015 03:14am",
+      "campCreatedBy": "User 1",
+      "campDomainMapped":"www.Domain1.com",
+      "campListMapped":"List 1",
+      "campOpens":"80.0%"
+    },
+    {
+      "campid": "2",
+      "campname": "Campaign 2",
+      "campCreatedOn": "May 21,2015 01:34am",
+      "campCreatedBy": "User 2",
+      "campDomainMapped":"www.Domain2.com",
+      "campListMapped":"List 2",
+      "campOpens":"70.0%"
+    },
+    {
+      "campid": "3",
+      "campname": "Campaign 3",
+      "campCreatedOn": "May 23,2015 13:14pm",
+      "campCreatedBy": "User 2",
+      "campDomainMapped":"www.Domain3.com",
+      "campListMapped":"List 3",
+      "campOpens":"30.0%"
+    },
+    {
+      "campid": "4",
+      "campname": "Campaign 4",
+      "campCreatedOn": "May 25,2015 11:14am",
+      "campCreatedBy": "User 1",
+      "campDomainMapped":"www.Domain4.com",
+      "campListMapped":"List 4",
+      "campOpens":"50.0%"
+    }
+  ]
+}
