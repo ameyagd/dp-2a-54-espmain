@@ -7,7 +7,8 @@
       "campCreatedBy": "User 1",
       "campDomainMapped":"www.Domain1.com",
       "campListMapped":"List 1",
-      "campOpens":"80.0%"
+      "campOpens":"80.0%",
+      "creativeMapped":"Creative ID"
     },
     {
       "campid": "2",
@@ -16,7 +17,8 @@
       "campCreatedBy": "User 2",
       "campDomainMapped":"www.Domain2.com",
       "campListMapped":"List 2",
-      "campOpens":"70.0%"
+      "campOpens":"70.0%",
+      "creativeMapped":"Creative ID"
     },
     {
       "campid": "3",
@@ -25,7 +27,8 @@
       "campCreatedBy": "User 2",
       "campDomainMapped":"www.Domain3.com",
       "campListMapped":"List 3",
-      "campOpens":"30.0%"
+      "campOpens":"30.0%",
+      "creativeMapped":"Creative ID"
     },
     {
       "campid": "4",
@@ -34,7 +37,8 @@
       "campCreatedBy": "User 1",
       "campDomainMapped":"www.Domain4.com",
       "campListMapped":"List 4",
-      "campOpens":"50.0%"
+      "campOpens":"50.0%",
+      "creativeMapped":"Creative ID"
     }
   ]
 }

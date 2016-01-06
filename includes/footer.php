@@ -121,6 +121,10 @@
 		        $(".domainList input[type='checkbox']").prop('checked', $(this).prop("checked"));
 		    });
 
+            $("#allListCheck").on('change', function(){
+                $(".campaignList input[type='checkbox']").prop('checked', $(this).prop("checked"));
+            });
+
             $(".checkallsubdomains").on('change', function(){
                 $(this).closest('table').find(".subDomainList input[type='checkbox']").prop('checked', $(this).prop("checked"));
             });
