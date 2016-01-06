@@ -121,6 +121,7 @@ table.dataTable thead th, table.dataTable thead td{border-bottom: 0px!important}
 .importboxcontainer input[type="radio"] + label span{padding-left: 40px}
 .importboxcontainer input[type="file"]{padding-left: 40px}
 .importboxcontainer textarea{margin-left: 40px}
+.importboxcontainer .listtitle{margin-top: 10px}
 
 .importdata th{background:#f2f2f2;font-weight: bold !important; color: #484848 !important;padding-top: 20px !important;padding-bottom: 15px!important;}
 .importdata{background: none;border: 1px solid #ccc; margin: 10px 0 20px!important; position: relative;float: left;}

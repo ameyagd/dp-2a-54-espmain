@@ -1,6 +1,6 @@
 <?php 
-    $pagename="List Name";
-    $pagetitle="List Name";
+    $pagename="Lists";
+    $pagetitle="Lists";
     include('includes/header.php');
     if(isset($_REQUEST['listid'])){
        $listid = $_REQUEST['listid'];
