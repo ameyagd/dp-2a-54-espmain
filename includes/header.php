@@ -102,7 +102,14 @@
 
                     <?php 
                     if(isset($_REQUEST['listid'])){
-                        echo"<div class='navbar-brand'>>&nbsp;&nbsp;<span id='innerpage' href='#'></span></div>";
+
+$json = file_get_contents('listdata.json');
+$obj = json_decode($json, true);
+$listdata = $obj['list'];
+$currentlistid = $_REQUEST['listid'] - 1; //to acheived for array
+$listname = $listdata[$currentlistid]['listname'];
+
+                        echo"<div class='navbar-brand'>>&nbsp;&nbsp;<span id='innerpage' href='#'>".$listname."</span></div>";
                     }
                    ?> 
                 </div>

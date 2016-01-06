@@ -3,69 +3,111 @@
     $pagetitle="Lists";
     include('includes/header.php'); 
 ?>
-         
-<div class="content">
-   <div class="container">
+                     
+                     
+        <div class="content">
+            <div class="container-fluid"> 
+               
+
       <div class="row">
          <div class="col-md-5">
             <div class="card">
                <div class="content clearfix">
-                  <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-                  <hr class="listhr">
+                  <div id="container" style="width:100%; height:400px;"></div>
                </div>
             </div>
          </div>
          <div class="col-md-7">
-            <div class="card listwrap">
-               <div class="content clearfix">
-                  <!--  -->
-                 
-                  <div class="row lisortrow">
-                     <div  class="col-md-8  col-xs-12">
-                        <!-- sort by left -->
-                        <div>
-                           <div class="sortbywrap">
-                              <div class="listcheckall">
-                                 <input type="checkbox" name="radioList1" id="listcheckall">
-                                 <label for="listcheckall"><span></span></label>
-                              </div>
-                              <span class="sortbytxt">Sort by </span>
-                              <div class="dropdown listsort">
-                                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuCamp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                 Custom Order
-                                 <span class="caret"></span>
-                                 </button>
-                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuCamp">
-                                    <li><a href="#">Name</a></li>
-                                    <li><a href="#">Date created</a></li>
-                                 </ul>
-                              </div>
-                           </div>
+                        <div class="card">
+                            <div class="content clearfix">
+                                <div class="campaignFilters">
+                                    <div class="allCampaignCheck">
+                                        <input type="checkbox" id="allListCheck" name="allListCheck" ><label for="allListCheck"><span></span></label>
+                                    </div>
+
+                                    <div class="filterDD">
+                                        <select class="form-control">
+                                            <option value="">Name</option>
+                                            <option value="">Date created</option>
+                                        </select>
+                                    </div> 
+
+                                    <div class="pull-right">
+                                        <a href="newlist.php" class="btn btn-default crCampaign">Create List</a>
+                                    </div>                               
+                                </div>
+                  <div class="campaignList">
+                        <!-- php code for json data-->
+
+                        <?php
+                        $json = file_get_contents('listdata.json');
+                        $obj = json_decode($json, true);
+                        $listdata = $obj['list'];
+                        // print_r($listdata);
+                        foreach ($listdata as $value) {
+                        $checkID=$value['listid'];  
+                        ?>
+                        <div class="campaignDetailsWrap clearfix">
+                            <div class="pull-left">
+                                <input type="checkbox" id="list<?php echo $checkID; ?>Check" name="list<?php echo $checkID; ?>Check" ><label for="list<?php echo $checkID; ?>Check"><span></span></label>
+                            </div>
+                            <div class="col-md-5">
+                                <h5><a href="list.php?listid=<?php echo $value['listid'] ?>"><?php echo $value['listname'] ?></a></h5>
+                                <span class="listCreatedOn"><b>Created On:</b> <?php echo $value['listCreatedOn']; ?></span>
+                                <span class="listCreatedBy"><b>Created By:</b> <?php echo $value['listCreatedBy']; ?></span>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="col-sm-5 col-xs-6">
+                                    <span class="listOpens"><?php echo $value['subscriberscount'] ?></span>
+                                    <span class="listLabel">Subscribers</span>
+                                </div>
+                                <div class="col-sm-4 col-xs-3">
+                                    <span class="listOpens"><?php echo $value['opens'] ?>%</span>
+                                    <span class="listLabel">Opens</span>
+                                </div>
+                                <div class="col-sm-3 col-xs-3">
+                                    <span class="listOpens"><?php echo $value['clicks'] ?>%</span>
+                                    <span class="listLabel">Opens</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="pull-right">
+                                    <div class="btn-group">
+                                      <button type="button" class="btn btn-default">Edit</button>
+                                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                      </button>
+                                      <ul class="dropdown-menu">
+                                        <li><a href="list.php?listid=<?php echo $value['listid'] ?>">Manage subscribers</a></li>
+                                        <li><a href="list.php?listid=<?php echo $value['listid'] ?>">Import</a></li>
+                                        <li><a href="list.php?listid=<?php echo $value['listid'] ?>">Export</a></li>
+                                      </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <!-- end sort by left -->    
-                     </div>
-                     <div  class="col-md-4">
-                        <div class="pull-right"><a href="newlist.php" class="btn greybtn" id="addlistbtn">Create List</a></div>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div id="clist" class="clist">
-                        <ul id="listwrapper" class="listwrapper">
 
-                        </ul>
-                     </div>
-                     <!-- clist end -->
-                  </div>
-                  <!--  -->
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-</div>   
-</div>
 
+
+                          <?php
+                          }
+  
+                          ?>
+
+
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    
+                </div>  
+            </div>    
+        </div>
+        
+    </div> 
+</div>
 
 <?php include('includes/footer.php'); ?>
 <script type="text/javascript">
@@ -120,16 +162,4 @@ $(function () {
     });
 });
 
-$.getJSON("listdata.json", function(data){
-        console.log(data['list']);
-         $.each(data['list'], function (i, list) {
-                    //Create new row for each record
-
-                   $('#listwrapper').append("<li class='clearfix'><div class='listdetailwrap'><div class='row'><div class='col-md-9 '><div class='col-md-1 col-xs-1'> <div class='listcheckbox'> <input type='checkbox' name='list_"+list['listid']+"' id='list_"+list['listid']+"' class='lisinglecheck'> <label for='list_"+list['listid']+"'><span></span></label> </div> </div> <div class='col-md-5 col-xs-5'> <div class='meta1'> <p class='li_title'><a href='list.php?listid="+list['listid']+"'>"+list['listname']+"</a></p> <p class='date'>Created Nov 11, 2015 02:12 am</p> <p class='li_desc2'>No rating yet</p> </div> </div> <div class='col-md-2 col-xs-2'> <div class='meta2'> <p class='li_desc1'>"+list['subscriberscount']+"</p> <p class='li_desc2'>Subscribers</p> </div> </div> <div class='col-md-2 col-xs-2'> <div class='meta2'> <p class='li_desc1'>"+list['opens']+"%</p> <p class='li_desc2'>Opens</p> </div> </div> <div class='col-md-2 col-xs-2'> <div class='meta2'> <p class='li_desc1'>"+list['clicks']+"%</p> <p class='li_desc2'>Clicks</p> </div> </div> </div> <div class='col-md-3 col-xs-12 listactionwrap'> <label class='morelink' onclick=\"morelink();\" for='_"+list['listid']+"'>More</label> <input id='_"+list['listid']+"'  name='_"+list['listid']+"' type='checkbox'> <div class='listmetaaction pull-right'><span class='fa fa-user fa-1x adduser' for='_"+list['listid']+"2'  onclick=\"adduseredit();\"></span> <div class='btn-group'> <button type='button' class='btn btn-default btn1'>Stats</button> <button type='button' class='btn btn-default dropdown-toggle btn2' data-toggle='dropdown' aria-haspopup='true' aria-expanded='true'> <span class='fa fa-angle-down'></span> <span class='sr-only'>Toggle Dropdown</span> </button> <ul class='dropdown-menu'> <li><a href='list.php?listid="+list['listid']+"'>Manage subscribers</a></li> <li><a href='list.php?listid="+list['listid']+"'>Import</a></li> <li><a href='list.php?listid="+list['listid']+"'>Export</a></li> </ul> </div> </div> </div> </div> <div class='row'> <div class='col-md-1 col-xs-2 hideonmob'>&nbsp;</div> <div class='col-md-8 col-xs-10 '  id='adduseredit'> <div class='content adduseredit'> <div class='header'> <h4 class='title'>Add a subscriber</h4> </div> <form> <div class='row'> <div class='col-md-6'> <div class='form-group'> <label>First Name</label> <input type='text' class='form-control' placeholder='Company' value='Mike'> </div> </div> <div class='col-md-6'> <div class='form-group'> <label>Last Name</label> <input type='text' class='form-control' placeholder='Last Name' value='Andrew'> </div> </div> </div> <div class='row'> <div class='col-md-6'> <div class='form-group'> <label for='exampleInputEmail1'>Email address</label> <input type='email' class='form-control' placeholder='Email'> </div> </div> </div> <div class='row'> <div class='col-md-12'> <div class='form-group'> <input type='checkbox' name='' id='terms1_1'> <label for='terms1_1'><span></span></label> If this person is already on my list, update their profile. </div> </div> </div> <div class='row'> <div class='col-md-12'> <div class='form-group'> <input type='checkbox' name='' id='terms1_2'> <label for='terms1_2'><span></span></label> This person gave me permission to email them. </div> </div> </div> <div class='row'> <div class='col-md-12'> <div class='alert alert-info alert-with-icon' data-notify='container'> <span data-notify='icon' class='pe-7s-info infoicon'></span> <span data-notify='message'>This is a notification with close button and icon and have many lines. You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.</span> </div> </div> </div> <button type='submit' class='btn btn-info greybtn'>Update Profile</button> <a href='javascript:void(0)' class='cancel' id='cancel'>Cancel</a> <div class='clearfix'></div> </form> </div> </div> </div> </div> </li>");
-                // alert(list['listname']);
-                });
-
-              
-
-    });
 </script>

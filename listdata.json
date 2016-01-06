@@ -3,6 +3,8 @@
     {
       "listid": "1",
       "listname": "List Name 1",
+      "listCreatedOn": "May 20,2015 03:14am",
+      "listCreatedBy": "User 1",
       "subscriberscount": "100",
       "opens": "10",
       "clicks": "10",
@@ -26,25 +28,27 @@
       }
     },
     {
-      "listid": "1",
-      "listname": "List Name 1",
+      "listid": "2",
+      "listname": "List Name 2",
+       "listCreatedOn": "May 20,2015 03:14am",
+      "listCreatedBy": "User 2",
       "subscriberscount": "100",
       "opens": "10",
       "clicks": "10",
       "subscribers": {
         "1": {
           "id": "1",
-          "fname": "Ajay1",
-          "lname": "Dixit1",
-          "email": "Dixit1@gmail.com",
+          "fname": "Ajay2",
+          "lname": "Dixit2",
+          "email": "Dixit2@gmail.com",
           "ip": "198.168.l.12",
           "lasteditdate": "11/20/15 3:05AM"
         },
         "2": {
           "id": "2",
-          "fname": "Raman1",
-          "lname": "Saxena1",
-          "email": "Saxena1@gmail.com",
+          "fname": "Raman2",
+          "lname": "Saxena2",
+          "email": "Saxena2@gmail.com",
           "ip": "198.168.l.68",
           "lasteditdate": "11/20/15 3:05AM"
         }

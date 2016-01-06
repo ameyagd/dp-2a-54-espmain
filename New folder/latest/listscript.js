@@ -86,16 +86,9 @@ $("#importform").toggle("slow");
 return false;
 })
 
-// $("#memberlist input[type=checkbox]").change(function(){
-// 	if($(this).is(":checked")) {
-// 		$(".mdeluser").css("display","inline");
-// 	}else{
-// 		$(".mdeluser").css("display","none");
-// 	}
-	
-// })
-
-
+$("#memberlist input[type=checkbox]").change(function(){
+	$(".mdeluser").toggle();
+})
 
 $("#listcheckall").change(function(){
 $(".lisinglecheck").prop('checked', $(this).prop("checked"));
@@ -103,18 +96,31 @@ $(".lisinglecheck").prop('checked', $(this).prop("checked"));
 
 
 
-var memberlist = $('#memberlist').dataTable({
-    "dom": 'T<"clear">lfrtip',
-    "tableTools": {
-        "sSwfPath": "datatables/tools/TableTools-master/swf/copy_csv_xls_pdf.swf",
-        "aButtons": [ "copy", "print", "xls", "pdf" ]
-    },
-    "oLanguage": {
-        "sSearch": ''
-    }
+// var memberlist = $('#memberlist').dataTable({
+//     "dom": 'T<"clear">lfrtip',
+//     "tableTools": {
+//         "sSwfPath": "datatables/tools/TableTools-master/swf/copy_csv_xls_pdf.swf",
+//         "aButtons": [ "copy", "print", "xls", "pdf" ]
+//     },
+//     "oLanguage": {
+//         "sSearch": ''
+//     }
 
-});          
+// });          
 
+// $.ajax({
+//    dataType: 'JSON',
+//    url: 'listdata.json',
+//    async: false,
+//    success: function(json) {
+//       for (hash in json) {
+//            for (i = 0; i < json[hash].length; i++) {
+//                   memberlist.fnAddData([hash, "zfgv", json[hash][i][1]]);
+//             }
+//        }
+//    }
+    
+// });
 
 $('.dataTables_filter input').attr("placeholder", "Search");
 
@@ -129,25 +135,37 @@ $("#editnotifybtn").click(function(){
 });
 
 
-function editsubscriberdetails(email,fname,lname){
- $("input[name='email']").val(email);
- $("input[name='fname']").val(fname);
- $("input[name='lname']").val(lname);
-}
 
-function checkChecked() {
-    var anyBoxesChecked = false;
-    
-    $('.checklistclass input[type="checkbox"]').each(function() {
-        if ($(this).is(":checked")) {
-            anyBoxesChecked = true;
-        }
-    });
- 
-    if (anyBoxesChecked == false) {
-      //Do something
-      $(".mdeluser").css("display","none");
-    }else{
-      $(".mdeluser").css("display","inline");
-    } 
-}
+// function editsubscriberdetails(email,fname,lname){
+//  $("input[name='email']").val(email);
+//  $("input[name='fname']").val(fname);
+//  $("input[name='lname']").val(lname);
+// }
+
+
+
+// function adduseredit(){
+// 	 $.fn.addusereditfn();
+// }
+
+// $.fn.addusereditfn = function(e) { // has to be defined as a function, does not need to be inside a nested document ready function
+//     $(event.target).closest("li").siblings().find("#adduseredit").slideUp('slow');
+//     $(event.target).closest("li").find("#adduseredit").toggle("slow");
+// };
+
+// document.addEventListener('click', function(e) {
+//     e = e || window.event;
+//     var target = e.target || e.srcElement,
+//         text = target.textContent ;   
+// }, false);
+
+
+// function morelink(){
+// 	 $.fn.morelinkfn();
+// }
+
+// $.fn.morelinkfn = function(e) { // has to be defined as a function, does not need to be inside a nested document ready function
+//     $(event.target).closest("li").siblings().find(".listmetaaction").slideUp('slow');
+//     $(event.target).closest("li").find(".listmetaaction").toggle("slow");
+// };
+

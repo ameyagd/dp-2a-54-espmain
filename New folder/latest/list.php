@@ -12,6 +12,7 @@
             <div class="card">
                <div class="content clearfix" id="listsinglechart">
                   <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                  <hr class="listhr">
                </div>
             </div>
          </div>
@@ -207,11 +208,11 @@
                   </div>
                </div>
                <div class="table-responsive subscribertablewrap">
-                  <table id="memberlist" class="table table-bordred table-striped memberlist checklistclass">
+                  <table id="memberlist" class="table table-bordred table-striped memberlist">
                      <thead>
                         <th>
                            <div class="listcheckall">    
-                              <input type="checkbox" name="mlistcheckall" id="listcheckall" onclick="checkChecked()">
+                              <input type="checkbox" name="mlistcheckall" id="listcheckall">
                               <label for="listcheckall"><span></span></label>
                            </div>
                         </th>
@@ -224,47 +225,29 @@
                         <th>Delete</th>
                      </thead>
                      <tbody>
-
-                      <!-- php code for json data-->
-                        <?php
-                        $json = file_get_contents('listdata.json');
-                        $obj = json_decode($json, true);
-                        $listdata = $obj['list'];
-                        $currentlistid = $listid - 1; //to acheived for array
-
-                        $subscribersdata = $listdata[$currentlistid]['subscribers'];
-                        foreach ($subscribersdata as $value) {
-                        $checkID = $value['id'];
-                        ?>
+                        <!--
                            <tr>
                               <td>
                                  <div class="listcheckbox excludeThisClass">
-                                    <input type="checkbox" name="list<?php echo $checkID; ?>Check" id="list<?php echo $checkID; ?>Check" class="lisinglecheck" onclick="checkChecked()">
-                                    <label for="list<?php echo $checkID; ?>Check"><span></span></label>
+                                    <input type="checkbox" name="list_3" id="mlist_3" class="lisinglecheck">
+                                    <label for="mlist_3"><span></span></label>
                                  </div>
                               </td>
-                              <td><?php echo $value['email'] ?></td>
-                              <td><?php echo $value['fname'] ?></td>
-                              <td><?php echo $value['lname'] ?></td>
-                              <td><?php echo $value['ip'] ?></td>
-                              <td><?php echo $value['lasteditdate'] ?></td>
+                              <td>scott@gmail.com</td>
+                              <td>Scott</td>
+                              <td>Futardo</td>
+                              <td>198.168.l.l</td>
+                              <td>11/20/15 3:05AM</td>
                               <td>
-                                 <p data-placement="top" data-toggle="tooltip" title="Edit" onclick="editsubscriberdetails('<?php echo $value['email']; ?>','<?php echo $value['fname']; ?>','<?php echo $value['lname']; ?>')"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p>
+                                 <p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p>
                               </td>
                               <td>
                                  <p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p>
                               </td>
-                           </tr> 
-
-
-
-<?php
-}
-?>
-
+                           </tr> -->
                      </tbody>
                   </table>
-                   <!-- start modal modal -->
+                  <!-- start modal modal -->
                   <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
                      <div class="modal-dialog">
                         <div class="modal-content">
@@ -295,7 +278,6 @@
                      <!-- /.modal-dialog --> 
                   </div>
                   <!-- end modal editor   -->
-                  
                </div>
             </div>
          </div>
@@ -480,5 +462,27 @@ $("#importsubmit").click(function(){ // bCheck is a input type button
 });
 
 
+$.getJSON("listdata.json", function(data){
+
+        var listidfrmurl = $("#listid").val();
+        $.each(data['list'], function (i, list) {
+        
+        if(listidfrmurl==(list['listid'])){
+          $("#innerpage").html(list['listname']);
+         console.log(data['list'][i]['subscribers']);
+          
+         var subscribersdata =  data['list'][i]['subscribers'];
+             $.each(subscribersdata, function (j, subscriber){
+        
+           $('#memberlist').append("<tr role='row'> <td> <div class='listcheckbox excludeThisClass'> <input type='checkbox' name='list_"+j+"' id='mlist_"+j+"' class='lisinglecheck'> <label for='mlist_"+j+"'><span></span></label> </div> </td> <td>"+subscriber['email']+"</td> <td>"+subscriber['fname']+"</td> <td>"+subscriber['lname']+"</td> <td>"+subscriber['ip']+"</td> <td>"+subscriber['lasteditdate']+"</td> <td> <p data-placement='top' data-toggle='tooltip' title='Edit' class='edit'><button class='btn btn-primary btn-xs' data-title='Edit' data-toggle='modal' data-target='#edit'  data-email="+subscriber['email']+" data-fname="+subscriber['fname']+" data-lname="+subscriber['lname']+" onclick='editsubscriberdetails($(this).data(\"email\"),$(this).data(\"fname\"),$(this).data(\"lname\"))'><span class='glyphicon glyphicon-pencil'></span></button></p> </td> <td> <p data-placement='top' data-toggle='tooltip' title='Delete'><button class='btn btn-danger btn-xs' data-title='Delete' data-toggle='modal' data-target='#delete' ><span class='glyphicon glyphicon-trash'></span></button></p> </td> </tr>");
+
+
+         })
+
+
+        }//end if
+        })
+
+})
 
 </script>
