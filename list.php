@@ -2,7 +2,10 @@
     $pagename="List Name";
     $pagetitle="List Name";
     include('includes/header.php');
-    $listid = $_REQUEST['listid'];
+    if(isset($_REQUEST['listid'])){
+       $listid = $_REQUEST['listid'];
+    }
+   
 ?>
 <input type="hidden" id="listid" value="<?php echo $listid ?>"/>
 <div class="content">
@@ -73,7 +76,7 @@
          <div class="col-md-12">
             <div class="container importboxcontainer">
                <div class="card">
-                  <form id="importform" name="importform" method="post" action="http://localhost/dp-2a-54-espmain/list.php?listid=1&import=true" enctype="multipart/form-data">
+                  <form id="importform" name="importform" method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>&import=true" enctype="multipart/form-data">
                      <div class="row">
                         <div class="col-md-12">
                            <h4 class="listtitle">Where do you want to import subscribers from?</h4>
@@ -230,10 +233,11 @@
                         $json = file_get_contents('listdata.json');
                         $obj = json_decode($json, true);
                         $listdata = $obj['lists'];
-                        $currentlistid = $listid - 1; //to acheived for array
-                        $subscribersdata = $listdata[$currentlistid]['subscribers'];
-                      
-
+                        if(isset($listid)){
+                           $currentlistid = $listid - 1; //to acheived for array
+                           $subscribersdata = $listdata[$currentlistid]['subscribers'];
+                        
+                        
                         foreach ($subscribersdata as $value) {
                          $checkID = $value['id'];
                         ?>
@@ -260,7 +264,7 @@
 
 
 <?php
-
+}
 }
 ?>
 
