@@ -1,44 +1,173 @@
 {
-  "list": [
-    {
-      "campid": "1",
-      "campname": "Campaign 1",
-      "campCreatedOn": "May 20,2015 03:14am",
-      "campCreatedBy": "User 1",
-      "campDomainMapped":"www.Domain1.com",
-      "campListMapped":"List 1",
-      "campOpens":"80.0%",
-      "creativeMapped":"Creative ID"
-    },
-    {
-      "campid": "2",
-      "campname": "Campaign 2",
-      "campCreatedOn": "May 21,2015 01:34am",
-      "campCreatedBy": "User 2",
-      "campDomainMapped":"www.Domain2.com",
-      "campListMapped":"List 2",
-      "campOpens":"70.0%",
-      "creativeMapped":"Creative ID"
-    },
-    {
-      "campid": "3",
-      "campname": "Campaign 3",
-      "campCreatedOn": "May 23,2015 13:14pm",
-      "campCreatedBy": "User 2",
-      "campDomainMapped":"www.Domain3.com",
-      "campListMapped":"List 3",
-      "campOpens":"30.0%",
-      "creativeMapped":"Creative ID"
-    },
-    {
-      "campid": "4",
-      "campname": "Campaign 4",
-      "campCreatedOn": "May 25,2015 11:14am",
-      "campCreatedBy": "User 1",
-      "campDomainMapped":"www.Domain4.com",
-      "campListMapped":"List 4",
-      "campOpens":"50.0%",
-      "creativeMapped":"Creative ID"
-    }
+    "campaign": 
+    [
+      {
+        "info": {
+          "camp_id": "1",
+          "camp_name": "Campaign 1",
+          "status":"draft",
+          "created_on": "2015-12-10 07:40:54",
+          "created_by": "User 1"
+          },
+    "campaign_stats": {
+          "opens": "80.0",
+          "clean_emails": "int",
+          "unsubscribed": " int",
+          "marked_spam": "int",
+          "invalid": "int",
+          "campaign_count": "int"
+          },
+    "performance_details": {
+          "delivery_rate": "int",
+          "open_rate": "int",
+          "click_rate": "int",
+          "conversion_rate": "int",
+          "RPM": "int",
+          "revenue": "int",
+          "bounce_rate": "int",
+          "average_unsubscribe_rate": "int",
+          "RPCV": "int",
+          "RPC": "int"
+          },
+    "creative_details":{
+          "creative_id":"Creative ID",
+          "creative_name":"Email-newCar-v2-sept2015",
+          "creative_image":"creative2.jpg"
+          } ,
+    "list_details":{
+          "list_id":"l1",
+          "list_name":"List 1"
+          },
+    "domain_details":{
+          "domain_name":"www.Domain1.com"
+          }
+      },
+
+      {
+        "info": {
+          "camp_id": "2",
+          "camp_name": "Campaign 2",
+          "status":"scheduled",
+          "created_on": "2015-5-10 07:40:54",
+          "created_by": "User 2"
+          },
+    "campaign_stats": {
+          "opens": "50.0",
+          "clean_emails": "int",
+          "unsubscribed": " int",
+          "marked_spam": "int",
+          "invalid": "int",
+          "campaign_count": "int"
+          },
+    "performance_details": {
+          "delivery_rate": "int",
+          "open_rate": "int",
+          "click_rate": "int",
+          "conversion_rate": "int",
+          "RPM": "int",
+          "revenue": "int",
+          "bounce_rate": "int",
+          "average_unsubscribe_rate": "int",
+          "RPCV": "int",
+          "RPC": "int"
+          },
+    "creative_details":{
+          "creative_id":"Creative ID",
+          "creative_name":"Email-rentToOwn-v1-sept2015",
+          "creative_image":"creative1.jpg"
+          } ,
+    "list_details":{
+          "list_id":"l2",
+          "list_name":"List 2"
+          },
+    "domain_details":{
+          "domain_name":"www.Domain2.com"
+          }
+      },
+
+      {
+        "info": {
+          "camp_id": "3",
+          "camp_name": "Campaign 3",
+          "status":"all",
+          "created_on": "2015-1-20 07:40:54",
+          "created_by": "User 1"
+          },
+    "campaign_stats": {
+          "opens": "30.0",
+          "clean_emails": "int",
+          "unsubscribed": " int",
+          "marked_spam": "int",
+          "invalid": "int",
+          "campaign_count": "int"
+          },
+    "performance_details": {
+          "delivery_rate": "int",
+          "open_rate": "int",
+          "click_rate": "int",
+          "conversion_rate": "int",
+          "RPM": "int",
+          "revenue": "int",
+          "bounce_rate": "int",
+          "average_unsubscribe_rate": "int",
+          "RPCV": "int",
+          "RPC": "int"
+          },
+    "creative_details":{
+          "creative_id":"Creative ID",
+          "creative_name":"Email-RentalApartments-v2-sept2015",
+          "creative_image":"creative4.jpg"
+          } ,
+    "list_details":{
+          "list_id":"l3",
+          "list_name":"List 3"
+          },
+    "domain_details":{
+          "domain_name":"www.Domain3.com"
+          }
+      },
+
+      {
+        "info": {
+          "camp_id": "4",
+          "camp_name": "Campaign 4",
+          "status":"scheduled",
+          "created_on": "2015-6-11 07:40:54",
+          "created_by": "User 2"
+          },
+    "campaign_stats": {
+          "opens": "90.0",
+          "clean_emails": "int",
+          "unsubscribed": " int",
+          "marked_spam": "int",
+          "invalid": "int",
+          "campaign_count": "int"
+          },
+    "performance_details": {
+          "delivery_rate": "int",
+          "open_rate": "int",
+          "click_rate": "int",
+          "conversion_rate": "int",
+          "RPM": "int",
+          "revenue": "int",
+          "bounce_rate": "int",
+          "average_unsubscribe_rate": "int",
+          "RPCV": "int",
+          "RPC": "int"
+          },
+    "creative_details":{
+          "creative_id":"Creative ID",
+          "creative_name":"Email-checkingAccount-v1-sept2015",
+          "creative_image":"creative6.jpg"
+          } ,
+    "list_details":{
+          "list_id":"l4",
+          "list_name":"List 4"
+          },
+    "domain_details":{
+          "domain_name":"www.Domain4.com"
+          }
+      }
   ]
+   
 }

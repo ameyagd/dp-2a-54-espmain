@@ -133,6 +133,24 @@
 		  		$('.addDomainFormWrapper').css({'display':'block'});
 		  	});
 
+            //filter campaigns on select
+            $('#changeStatus').on('change',function(){
+                var ourClass=($(this).val());
+                
+                if(ourClass == 'all') {
+                  // show all our items
+                  $('.campaignList').children('div.campaignDetailsWrap').show();
+                }
+                else {
+                  // hide all elements that don't share ourClass
+                  //alert('div:not(.'+ourClass+')');
+                  $('.campaignList').children('div:not(.' + ourClass + ')').hide();
+                  // show all elements that do share ourClass
+                  $('.campaignList').children('.' + ourClass).show();
+                }
+                //return false;
+            });
+
         });
     </script>
 </html>
