@@ -18,6 +18,14 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="card">
+                            <div class="clearfix">
+                                <div class="content">
+                                    <div id="campChart1" style="width:100%; height:400px;"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="col-md-7">
@@ -49,10 +57,9 @@
                                         $json = json_decode($str, true);
                                         // var_dump(json_decode($json));
                                         // print_r ($json);
-                                        // echo '<pre>' . print_r($json, true) . '</pre>';
 
                                         foreach ($json['campaign'] as $field => $value) {
-                                            // print_r($value);
+                                        
                                         $checkID=$value['info']['camp_id'];
                                     ?>
                                         <div class="campaignDetailsWrap clearfix <?php echo $value['info']['status']; ?>">
@@ -81,7 +88,7 @@
                                             <div class="col-md-2">
                                                 <div class="pull-right">
                                                     <div class="btn-group">
-                                                      <button type="button" class="btn btn-default">Edit</button>
+                                                      <a href="editCampaign/editCampaignSetup.php?id=<?php echo $value['info']['camp_id']?>" class="btn btn-default">Edit</a>
                                                       <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <span class="caret"></span>
                                                         <span class="sr-only">Toggle Dropdown</span>
@@ -105,7 +112,7 @@
                                                     <img src="assets/img/<?php echo $value['creative_details']['creative_image'];?>" class="popCreativeImage">
                                                   </div>
                                                   <div class="modal-footer">
-                                                    <a href="" class="btn btn-primary" >Edit</a>
+                                                    <a href="" class="btn btn-primary">Edit</a>
                                                   </div>
                                                 </div>
                                               </div>

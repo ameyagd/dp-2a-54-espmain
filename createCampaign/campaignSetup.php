@@ -33,22 +33,12 @@
 
                                     <div class="posRel" id="sandbox-container">
                                         <label>Start Date</label>
-                                        <div class='input-group date' id='datetimepicker1' name='campaignStartDate'>
-                                            <input type='text' class="form-control" />
-                                            <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-calendar"></span>
-                                            </span>
-                                        </div>
+                                        <input type='text' class="form-control" id='datetimepicker1' name='campaignStartDate'/>
                                     </div>
 
                                     <div class="posRel">
                                         <label>End Date</label>
-                                        <div class='input-group date' id='datetimepicker2' name='campaignEndDate'>
-                                            <input type='text' class="form-control" />
-                                            <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-calendar"></span>
-                                            </span>
-                                        </div>
+                                        <input type='text' class="form-control" id='datetimepicker2' name='campaignEndDate'/>
                                     </div>
                                 
                             </div>

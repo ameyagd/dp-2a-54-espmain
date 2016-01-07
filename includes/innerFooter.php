@@ -106,8 +106,14 @@
 		  		$('.addDomainFormWrapper').css({'display':'block'});
 		  	});
 
-            $('#datetimepicker1').datetimepicker();
-            $('#datetimepicker2').datetimepicker();
+            //date picker for campaign scheduling
+            $('#datetimepicker1').datetimepicker({
+                 format: 'DD/MM/YYYY'
+            });
+
+            $('#datetimepicker2').datetimepicker({
+                 format: 'DD/MM/YYYY'
+            });
         });
     </script>
 </html>

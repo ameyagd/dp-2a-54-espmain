@@ -27,6 +27,7 @@
     <link href="../assets/css/animate.css" rel="stylesheet"/>
 
     <link href="../assets/css/bootstrap-select.min.css" rel="stylesheet"/>
+    <link href="../assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
     
 </head>
 <body> 
