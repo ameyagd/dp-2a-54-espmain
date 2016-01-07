@@ -42,12 +42,12 @@
 
                                 <div class="posRel" id="sandbox-container">
                                     <label>Start Date</label>
-                                    <input type="text" class="form-control" id="datetimepicker1" name='campaignStartDate' value="<?php echo $value['info']['start_date']; ?>"/>
+                                    <input type="text" class="form-control" id="datetimepicker1" name="campaignStartDate" value="<?php echo $value['info']['start_date']; ?>"/>
                                 </div>
 
                                 <div class="posRel">
                                     <label>End Date</label>
-                                    <input type="text" class="form-control" id="datetimepicker2" name='campaignEndDate' value="<?php echo $value['info']['end_date']; ?>"/>
+                                    <input type="text" class="form-control" id="datetimepicker2" name="campaignEndDate" value="<?php echo $value['info']['end_date']; ?>"/>
                                 </div>
                             </div>
                         </div>

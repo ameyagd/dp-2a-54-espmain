@@ -108,11 +108,11 @@
 
             //date picker for campaign scheduling
             $('#datetimepicker1').datetimepicker({
-                 format: 'DD/MM/YYYY'
+                 format: 'YYYY-MM-DD'
             });
 
             $('#datetimepicker2').datetimepicker({
-                 format: 'DD/MM/YYYY'
+                 format: 'YYYY-MM-DD'
             });
         });
     </script>

@@ -93,6 +93,48 @@ $(document).ready(function(){
     });
 
 
+
+
+    $(function () {
+            var processed_json = new Array();   
+            $.getJSON('campaign.json', function(data) {
+                // Populate series
+                var len=data.length;
+                
+                for (i = 0; i < data.length; i++){
+                    // alert(i);
+                    processed_json.push([data['campaign']['info'].camp_name]);
+                }
+
+                // $("#campChart1").html(processed_json.join(""));
+              
+                // draw chart
+                $('#campChart1').highcharts({
+                chart: {
+                    type: "column"
+                },
+                title: {
+                    text: "Total Opens"
+                },
+                xAxis: {
+                    type: 'category',
+                    allowDecimals: true,
+                    title: {
+                        text: ""
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: "Opens"
+                    }
+                },
+                series: [{
+                    name: 'Campaigns',
+                    data: processed_json
+                }]
+            }); 
+        });
+    });
 });
 
 
