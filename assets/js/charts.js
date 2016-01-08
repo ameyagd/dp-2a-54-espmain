@@ -94,19 +94,48 @@ $(document).ready(function(){
 
 
 
+//     var json = [{
+//     "key": "Apples",
+//     "value": "4"
+// }, {
+//     "key": "Pears",
+//     "value": "7"
+// }, {
+//     "key": "Bananas",
+//     "value": "9"
+// }];
+// var processed_json = new Array(); 
+// $.map(json, function(obj, i) {
+//     processed_json.push([obj.key, parseInt(obj.value)]);
+// });
 
+// $('#campChart1').highcharts({
+//         chart: {
+//             type: 'column'
+//         },
+//         xAxis: {
+//             type: "category"
+//         },
+//         series: [{
+//             data: processed_json
+//         }]
+//     });
     $(function () {
-            var processed_json = new Array();   
+
+            var processed_json = new Array();
+           
             $.getJSON('campaign.json', function(data) {
                 // Populate series
+
                 var len=data.length;
                 
                 for (i = 0; i < data.length; i++){
-                    // alert(i);
+                    alert(i);
                     processed_json.push([data['campaign']['info'].camp_name]);
+
                 }
 
-                // $("#campChart1").html(processed_json.join(""));
+               
               
                 // draw chart
                 $('#campChart1').highcharts({
@@ -135,6 +164,8 @@ $(document).ready(function(){
             }); 
         });
     });
+
+  
 });
 
 

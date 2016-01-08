@@ -7,7 +7,7 @@
                      
         <div class="content">
             <div class="container-fluid"> 
-            <form class="createCampaignForm" method="post">   
+            <form class="createCampaignForm" method="post" action="saveCampaignSetup.php">   
                 <div class="row">
                     <div class="col-md-6">
                         <div class="card">
@@ -61,6 +61,7 @@
                     </div>   
 
                 </div>
+                <input type="submit" value="Save" class="btn btn-success" id="saveCampaignSetup"/>
             </form>
             </div>    
         </div>

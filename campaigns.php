@@ -56,8 +56,7 @@
                                         $str = file_get_contents('campaign.json');
                                         $json = json_decode($str, true);
                                         // var_dump(json_decode($json));
-                                        // print_r ($json);
-
+                                        // echo '<pre>' . print_r($json, true) . '</pre>';
                                         foreach ($json['campaign'] as $field => $value) {
                                         
                                         $checkID=$value['info']['camp_id'];

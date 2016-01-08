@@ -58,7 +58,8 @@
           "start_date":"2015-5-10",
           "end_date":"2015-5-15",
           "from_name":"From Name 1",
-          "from_email_address":"def@test.com"
+          "from_email_address":"def@test.com",
+          "email_subject":"subject of email2"
           },
     "campaign_stats": {
           "opens": "50.0",
@@ -104,7 +105,8 @@
           "start_date":"2015-1-20",
           "end_date":"2015-1-30",
           "from_name":"From Name 1",
-          "from_email_address":"ghi@test.com"
+          "from_email_address":"ghi@test.com",
+          "email_subject":"Test Subject"
           },
     "campaign_stats": {
           "opens": "30.0",
@@ -150,7 +152,8 @@
           "start_date":"2015-6-11",
           "end_date":"2015-6-25",
           "from_name":"From Name 1",
-          "from_email_address":"jkl@test.com"
+          "from_email_address":"jkl@test.com",
+          "email_subject":"sub subject"
           },
     "campaign_stats": {
           "opens": "90.0",
@@ -183,6 +186,53 @@
           },
     "domain_details":{
           "domain_name":"www.Domain4.com"
+          }
+      },
+
+      {
+        "info": {
+          "camp_id": "5",
+          "camp_name": "Campaign 5",
+          "status":"draft",
+          "created_on": "2015-1-12 05:45:00",
+          "created_by": "User 1",
+          "start_date":"2015-9-11",
+          "end_date":"2015-9-21",
+          "from_name":"From Name 5",
+          "from_email_address":"mno@test.com",
+          "email_subject":"mno mail subject"
+          },
+    "campaign_stats": {
+          "opens": "10.0",
+          "clean_emails": "int",
+          "unsubscribed": " int",
+          "marked_spam": "int",
+          "invalid": "int",
+          "campaign_count": "int"
+          },
+    "performance_details": {
+          "delivery_rate": "int",
+          "open_rate": "int",
+          "click_rate": "int",
+          "conversion_rate": "int",
+          "RPM": "int",
+          "revenue": "int",
+          "bounce_rate": "int",
+          "average_unsubscribe_rate": "int",
+          "RPCV": "int",
+          "RPC": "int"
+          },
+    "creative_details":{
+          "creative_id":"Creative ID",
+          "creative_name":"Email-laserHairRemoval-v2-sept2015",
+          "creative_image":"creative3.jpg"
+          } ,
+    "list_details":{
+          "list_id":"l5",
+          "list_name":"List 5"
+          },
+    "domain_details":{
+          "domain_name":"www.Domain5.com"
           }
       }
   ]
