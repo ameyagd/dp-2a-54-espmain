@@ -12,9 +12,18 @@
    <div class="container">
       <div class="row">
          <div class="col-md-5">
-            <div class="card">
-               <div class="content clearfix" id="listsinglechart">
-                  <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+            <div>
+               <div class="card">
+                  <div class="content clearfix" id="listsinglechart">
+                     <div id="container1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                  </div>
+               </div>
+            </div>
+           <div>
+               <div class="card">
+                  <div class="content clearfix" id="listsinglechart">
+                     <div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                  </div>
                </div>
             </div>
          </div>
@@ -22,15 +31,6 @@
             <div class="card listwrap">
                <div class="content">
    <div class="container">
-      <!--  <div class="row">
-         <div class="col-md-12 col-xs-12">
-            <div id="liststats" class="collapse">
-               <div id="container" style="min-width: 800px; height: 500px; max-width: 600px; margin: 0 auto"></div>
-               <hr class="listhr">
-            </div>
-         </div>
-         </div> -->
-       
       <div class="row mlistnav">
          <div class="col-md-8 ">
             <ul class="nav navbar-nav">
@@ -58,9 +58,7 @@
                      <li class=""><a href="javascript:void(0);" id="liststats">List Statistics</a></li>
                      <li class=""><a href="javascript:void(0);" id="overallliststats">Overall Statistics</a></li>
                   </ul>
-                  <!-- <ul class="dropdown-menu">                 <li class=""><a href="javascript:void(0)" data-toggle="collapse" data-target="#liststats">List Statistics</a></li>
-                     <li class=""><a href="javascript:void(0)" data-toggle="collapse" data-target="#overallliststats">Overall Statistics</a></li>
-                     </ul> -->
+                  
                </li>
             </ul>
          </div>
@@ -71,12 +69,13 @@
             </div>
          </div>
       </div>
+      <div class="row" id="mimportbox">
       <!--import form -->
-      <div class="row" id="mimportbox" >
+      
          <div class="col-md-12">
             <div class="container importboxcontainer">
                <div class="card">
-                  <form id="importform" name="importform" method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>&import=true" enctype="multipart/form-data">
+                  <form id="importform" name="importform" method="post" action="" enctype="multipart/form-data">
                      <div class="row">
                         <div class="col-md-12">
                            <h4 class="listtitle">Where do you want to import subscribers from?</h4>
@@ -89,71 +88,45 @@
                               <label class="rlabel" for="radioList1"><span></span>CSV or tab-delimited text file</label>
                               <span class="rdesc">Import contacts from .csv files</span>
                            </div>
-                           <div class="form-group listimport">
+                           <div id="listimport" class="form-group listimport">
                               <input type="file" name="importcsv" id="importcsv">
                            </div>
-                           <!--   <div class="row">
-                              <div class="col-md-12">
-                                  <div class="form-group">
-                                       <input type="checkbox" name="" id="terms2">
-                                          <label for="terms2"><span></span></label>
-                                      <b>I understand that my billing plan may be automatically upgraded.</b> 
-                              <div class="checkbox_description">If your import causes your list to exceed your Forever Free Plan subscriber limit, you’ll need to <a href="" target="_blank">upgrade your billing plan</a> to accommodate the new subscribers before you can send. <a href="" target="_blank" >Undo your list import before you send</a> to revert to the Forever Free Plan.</div>
-                              
-                                  </div>        
-                              </div>
-                              
-                              </div> -->
+                         
                            <div class="form-group" style="padding-top:10px">
-                              <a href="javascript:void(0);" id="importsubmit" class="btn btn-info greybtn">Submit</a>
+                            <input type="submit" class="btn btn-info greybtn" value="Import Data">
                               <a href="lists.php" class="cancel">Back</a>
                               <div class="clearfix"></div>
                            </div>
                         </div>
                      </div>
                   </form>
-                  <?php
-                     // print_r($_FILES['importcsv']['tmp_name']);
-                     if(isset($_FILES['importcsv']['tmp_name'])){
-                       $sourcePath = $_FILES['importcsv']['tmp_name'];
-                       $targetPath = "csv/import/".$_FILES['importcsv']['name'];
-                     
-                       move_uploaded_file($sourcePath,$targetPath);
-                     
-                     $csv= file_get_contents($targetPath);
-                     $array = array_map("str_getcsv", explode("\n", $csv));
-                     $json = json_encode($array);
-                     print_r($json);
-                     echo "<br>This data added to database after that <br>We will Fetch JSON file & refresh subscriber data";
-                     }
-                       
-                     ?>
+                 
                </div>
             </div>
          </div>
-      </div>
+
       <!-- end import form -->
-      <!-- add subscriber -->
+     </div>
+        <!-- add subscriber -->
       <div class="row madduseredit" id="madduseredit">
          <!-- <div  class="col-md-1 col-xs-1 hideonmob">&nbsp;</div> -->
-         <div  class="col-md-8 col-xs-12 ">
-            <div class="content">
+         <div class="col-md-6 col-xs-12 leftrightpaddingzero">
+            <div class="">
                <div class="header">
                   <h4 class="title">Add a subscriber</h4>
                </div>
                <form>
                   <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                           <label>First Name</label>
+                           <input type="text" class="form-control" placeholder="First Name" value="Mike">
+                        </div>
+                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                            <label>Last Name</label>
                            <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
-                        </div>
-                     </div>
-                    
-                      <div class="col-md-6">
-                        <div class="form-group">
-                           <label>First Name</label>
-                           <input type="text" class="form-control" placeholder="Company" value="Mike">
                         </div>
                      </div>
                   </div>
@@ -168,20 +141,20 @@
                   </div>
                   <div class="row">
                      <div class="col-md-12">
-                        <div class="form-group">
+                        <label class="form-group">
                            <input type="checkbox" name="" id="terms">
                            <label for="terms"><span></span></label>
                            If this person is already on my list, update their profile.  
-                        </div>
+                        </label>
                      </div>
                   </div>
                   <div class="row">
                      <div class="col-md-12">
-                        <div class="form-group">
+                        <label class="form-group">
                            <input type="checkbox" name="" id="terms2">
                            <label for="terms2"><span></span></label>
                            This person gave me permission to email them. 
-                        </div>
+                        </label>
                      </div>
                   </div>
                   <div class="row">
@@ -193,7 +166,7 @@
                         </div>
                      </div>
                   </div>
-                  <button type="submit" class="btn btn-info greybtn">Update Profile</button>
+                  <button type="submit" class="btn btn-info greybtn">Save Profile</button>
                   <a href="javascript:void(0)" class="cancel" id="mcancel">Cancel</a>
                   <div class="clearfix"></div>
                </form>
@@ -315,9 +288,8 @@
 </div>
 <?php include('includes/footer.php'); ?>
 <script type="text/javascript">
-
 $(function () {
-     $('#container').highcharts({
+     $('#container2').highcharts({
              chart: {
             type: 'column'
         },
@@ -354,50 +326,9 @@ $(function () {
         }]
         });
 
-});
+     //overall stats
 
-$("#liststats").click(function(){
-  $('#listsinglechart  #container').highcharts({
-             chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'List Performance Compared To Others'
-        },
-        xAxis: {
-            categories: ['List Name 1', 'List Name 2', 'List Name 3', 'List Name 4']
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: 'Total List Reached'
-            }
-        },
-        tooltip: {
-            pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
-            shared: true
-        },
-        plotOptions: {
-            column: {
-                stacking: 'percent'
-            }
-        },
-        series: [{
-            name: 'Open',
-            data: [5, 2, 10, 20]
-        }, {
-            name: 'Clicks',
-            data: [3, 2, 5, 10]
-        }, {
-            name: 'Leads',
-            data: [2, 2, 3, 6]
-        }]
-        });
-})
-
-$("#overallliststats").click(function(){
-  
-    $('#listsinglechart #container').highcharts({
+     $('#container1').highcharts({
               chart: {
             plotBackgroundColor: null,
             plotBorderWidth: null,
@@ -447,44 +378,62 @@ $("#overallliststats").click(function(){
         }]
         });
 
-    
-   
+
+
 });
 
 
-$("#importsubmit").click(function(){ // bCheck is a input type button
-    var fileName = $("#importcsv").val();
+$(document).ready(function(){
+
+
+$("form#importform").submit(function(){
+// bCheck is a input type button
+ var fileName = $("#importcsv").val();
     var exts = ['csv'];
+      $('div[id^="error"]').remove();    
     if(fileName) { // returns true if the string is not empty
 
-        
-
-        if ( fileName ) {
         // split file name at dot
         var get_ext = fileName.split('.');
         // reverse name to check extension
         get_ext = get_ext.reverse();
         // check file type is valid as given in 'exts' array
         if ( $.inArray ( get_ext[0].toLowerCase(), exts ) > -1 ){
-          $( "#importform" ).submit();
+          
+
+         //submit code
+         var formData = new FormData($(this)[0]);
+
+          $.ajax({
+              url: "post.php",
+              type: 'POST',
+              data: formData,
+              async: false,
+              success: function (data) {
+                  alert(data);
+              },
+              cache: false,
+              contentType: false,
+              processData: false
+          });
+
+          return false;
+         // 
+
         } else {
-          alert( 'Invalid file!' );
+          $("#listimport").after("<div id='error' class='error' style='text-align:left'>Invalid File; Please Select CSV File</div>");
+           return false;
         }
-
-     }   
+     
     } else { // no file was selected
-
-        var importsdata = $("#importsdata").val();
-        if(importsdata==""){
-            alert("Neither file selected nor manual data added");
-        }else{
-            $( "#importform" ).submit();
-        }
-
-        
+          $("#listimport").after("<div id='error' class='error' style='text-align:left'>Please Select CSV File</div>");
+           return false;
     }
+
 });
 
+
+})
 
 
 </script>

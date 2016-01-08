@@ -40,14 +40,9 @@ $(".adduser").click(function(){
     $(this).closest("li").find("#adduseredit").toggle("slow");
 })
 
-
-
-
-
 $(".cancel").click(function(){
    $(this).closest("li").find("#adduseredit").toggle("slow");
 })
-
 
 $(".madduser").click(function(){
 $("#madduseredit").toggle("slow");
@@ -80,7 +75,6 @@ $(".listimport").css("display","none");
 })
 
 
-
 $("#icancel").click(function(){
 $("#importform").toggle("slow");
 return false;
@@ -94,7 +88,6 @@ return false;
 // 	}
 	
 // })
-
 
 
 $("#listcheckall").change(function(){
@@ -115,26 +108,25 @@ var memberlist = $('#memberlist').dataTable({
 
 });          
 
-
+// search att added for datatable
 $('.dataTables_filter input').attr("placeholder", "Search");
+
 
 $("#editnotifybtn").click(function(){
     $( "#editnotifyinput" ).prop( "disabled", false );
     $( "#editnotifyinput" ).css( "border", "1px solid #52BAD5" );
 })
 
-
-
-
 });
 
-
+// edit subscribers details popup
 function editsubscriberdetails(email,fname,lname){
  $("input[name='email']").val(email);
  $("input[name='fname']").val(fname);
  $("input[name='lname']").val(lname);
 }
 
+// check all condition
 function checkChecked() {
     var anyBoxesChecked = false;
     

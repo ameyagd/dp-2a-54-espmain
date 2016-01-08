@@ -67,7 +67,7 @@
                                 </div>
                                 <div class="col-sm-3 col-xs-3">
                                     <span class="listOpens"><?php echo $value['performance_details']['click_rate']; ?>%</span>
-                                    <span class="listLabel">Opens</span>
+                                    <span class="listLabel">Clicks</span>
                                 </div>
                             </div>
                             <div class="col-md-2">
