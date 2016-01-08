@@ -64,10 +64,34 @@
 
 	// print json_encode($data);
 	
+	if(file_exists("../campaign.json"))
+	{
+		array_push($json->campaign,$data);
+		file_put_contents('../campaign.json',json_encode($data));
+	}
+	else{
+		
+	}
 
-	file_put_contents('../campaign.json',json_encode($data));
-
-	unset($data);
 
 
+
+
+
+	// if(file_exists("upload.json"))
+	// {
+	//     $temp_array = array();
+	//     $temp_array = json_decode(file_get_contents('upload.json'));
+	//     $upload_info = array('media_name'=>'b','media_category'=>'v','media_info'=>'c','media_location'=>'x','media_artist'=>'z');
+	//     array_push($temp_array->upload->image, $upload_info);
+	//     file_put_contents('upload.json', json_encode($temp_array));
+	// }
+	// else
+	// {
+	//     $upload_info = array();
+	//     $upload_info['upload']['image'][] = array('media_name'=>'b','media_category'=>'v','media_info'=>'c','media_location'=>'x','media_artist'=>'z');
+	//     $json = json_encode($upload_info);
+	//     $file = "upload.json";
+	//     file_put_contents($file, $json);
+	// }
 ?>
