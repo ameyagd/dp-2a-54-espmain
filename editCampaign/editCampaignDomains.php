@@ -75,7 +75,7 @@
         </div>
         
         <div class="row">
-			<div class="col-md-12 viewSubDomainList">
+			<div class="col-md-12">
                 <div class="card">
                     <div class="header clearfix">
                         <h4 class="title">Sub Domains</h4>
