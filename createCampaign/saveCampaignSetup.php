@@ -1,9 +1,9 @@
 <?php
 	$file = file_get_contents('../campaign.json');
 	$json = json_decode($file, true);
-	unset($file);//prevent memory leaks for large json.
-
-
+	//unset($file);//prevent memory leaks for large json.
+ 	echo '<pre>' . print_r($json, true) . '</pre>';
+	
 	foreach ($json['campaign'] as $field => $value) {
 		$last_id=$value['info']['camp_id'];
 		$max = max($value);
@@ -29,7 +29,7 @@
 	echo "Email Subject: ".$email_subject."<br/>";
 
 
-	$data[]=array(
+	$data['campaign']=array(
 			'info'=>
 				array(
 					'camp_id'=>$camp_id,
@@ -45,19 +45,26 @@
 				),
 			'campaign_stats'=>
 				array(
-					'opens'=>''
+					'opens'=>'10.0'
 				),
 			'performance_details'=>
 				array(
+					'delivery_rate'=>'int'
 				),
 			'creative_details'=>
 				array(
-				),
+					'creative_id'=>'Creative ID',
+          			'creative_name'=>'Email-checkingAccount-v1-sept2015',
+          			'creative_image'=>'creative6.jpg'
+				),	
 			'list_details'=>
 				array(
+					'list_id'=>'l6',
+          			'list_name'=>'List 6'
 				),
 			'domain_details'=>
 				array(
+					'domain_name'=>'www.Domain6.com'
 				)
 			);
 
@@ -66,32 +73,12 @@
 	
 	if(file_exists("../campaign.json"))
 	{
-		array_push($json->campaign,$data);
-		file_put_contents('../campaign.json',json_encode($data));
+		//array_push($json,$data);
+		//file_put_contents('../campaign.json',json_encode($data));
 	}
 	else{
 		
 	}
 
 
-
-
-
-
-	// if(file_exists("upload.json"))
-	// {
-	//     $temp_array = array();
-	//     $temp_array = json_decode(file_get_contents('upload.json'));
-	//     $upload_info = array('media_name'=>'b','media_category'=>'v','media_info'=>'c','media_location'=>'x','media_artist'=>'z');
-	//     array_push($temp_array->upload->image, $upload_info);
-	//     file_put_contents('upload.json', json_encode($temp_array));
-	// }
-	// else
-	// {
-	//     $upload_info = array();
-	//     $upload_info['upload']['image'][] = array('media_name'=>'b','media_category'=>'v','media_info'=>'c','media_location'=>'x','media_artist'=>'z');
-	//     $json = json_encode($upload_info);
-	//     $file = "upload.json";
-	//     file_put_contents($file, $json);
-	// }
 ?>

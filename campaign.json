@@ -44,7 +44,27 @@
           "list_name":"List 1"
           },
     "domain_details":{
-          "domain_name":"www.Domain1.com"
+          "domain_name":"www.Domain1.com",
+          "campaign_mapped":"Campaign 1, Campaign 3, Campaign 5",
+          "sub_domains":[
+                          {"subdomain_name":"sub1.domain1.com"},
+                          {"subdomain_name":"sub2.domain1.com"},
+                          {"subdomain_name":"sub3.domain1.com"},
+                          {"subdomain_name":"sub4.domain1.com"},
+                          {"subdomain_name":"sub5.domain1.com"},
+                          {"subdomain_name":"sub6.domain1.com"},
+                          {"subdomain_name":"sub7.domain1.com"},
+                          {"subdomain_name":"sub8.domain1.com"},
+                          {"subdomain_name":"sub9.domain1.com"},
+                          {"subdomain_name":"sub10.domain1.com"},
+                          {"subdomain_name":"sub11.domain1.com"},
+                          {"subdomain_name":"sub12.domain1.com"},
+                          {"subdomain_name":"sub13.domain1.com"},
+                          {"subdomain_name":"sub14.domain1.com"},
+                          {"subdomain_name":"sub15.domain1.com"},
+                          {"subdomain_name":"sub16.domain1.com"}
+                        ]
+          
           }
       },
 
@@ -91,7 +111,29 @@
           "list_name":"List 2"
           },
     "domain_details":{
-          "domain_name":"www.Domain2.com"
+          "domain_name":"www.Domain2.com",
+          "campaign_mapped":"Campaign 2, Campaign 4",
+          "sub_domains":[
+                          {"subdomain_name":"sub1.domain2.com"},
+                          {"subdomain_name":"sub2.domain2.com"},
+                          {"subdomain_name":"sub3.domain2.com"},
+                          {"subdomain_name":"sub4.domain2.com"},
+                          {"subdomain_name":"sub5.domain2.com"},
+                          {"subdomain_name":"sub6.domain2.com"},
+                          {"subdomain_name":"sub7.domain2.com"},
+                          {"subdomain_name":"sub8.domain2.com"},
+                          {"subdomain_name":"sub9.domain2.com"},
+                          {"subdomain_name":"sub10.domain2.com"},
+                          {"subdomain_name":"sub11.domain2.com"},
+                          {"subdomain_name":"sub12.domain2.com"},
+                          {"subdomain_name":"sub13.domain2.com"},
+                          {"subdomain_name":"sub14.domain2.com"},
+                          {"subdomain_name":"sub15.domain2.com"},
+                          {"subdomain_name":"sub16.domain2.com"},
+                          {"subdomain_name":"sub17.domain2.com"},
+                          {"subdomain_name":"sub18.domain2.com"},
+                          {"subdomain_name":"sub19.domain2.com"}
+                        ]
           }
       },
 
@@ -138,7 +180,26 @@
           "list_name":"List 3"
           },
     "domain_details":{
-          "domain_name":"www.Domain3.com"
+          "domain_name":"www.Domain3.com",
+          "campaign_mapped":"Campaign 1, Campaign 3, campaign 5",
+          "sub_domains":[
+                          {"subdomain_name":"sub1.domain3.com"},
+                          {"subdomain_name":"sub2.domain3.com"},
+                          {"subdomain_name":"sub3.domain3.com"},
+                          {"subdomain_name":"sub4.domain3.com"},
+                          {"subdomain_name":"sub5.domain3.com"},
+                          {"subdomain_name":"sub6.domain3.com"},
+                          {"subdomain_name":"sub7.domain3.com"},
+                          {"subdomain_name":"sub8.domain3.com"},
+                          {"subdomain_name":"sub9.domain3.com"},
+                          {"subdomain_name":"sub10.domain3.com"},
+                          {"subdomain_name":"sub11.domain3.com"},
+                          {"subdomain_name":"sub12.domain3.com"},
+                          {"subdomain_name":"sub13.domain3.com"},
+                          {"subdomain_name":"sub14.domain3.com"},
+                          {"subdomain_name":"sub15.domain3.com"},
+                          {"subdomain_name":"sub16.domain3.com"}
+                        ]
           }
       },
 
@@ -185,7 +246,23 @@
           "list_name":"List 4"
           },
     "domain_details":{
-          "domain_name":"www.Domain4.com"
+          "domain_name":"www.Domain4.com",
+          "campaign_mapped":"Campaign 2, campaign 4",
+          "sub_domains":[
+                          {"subdomain_name":"sub1.domain4.com"},
+                          {"subdomain_name":"sub2.domain4.com"},
+                          {"subdomain_name":"sub3.domain4.com"},
+                          {"subdomain_name":"sub4.domain4.com"},
+                          {"subdomain_name":"sub5.domain4.com"},
+                          {"subdomain_name":"sub6.domain4.com"},
+                          {"subdomain_name":"sub7.domain4.com"},
+                          {"subdomain_name":"sub8.domain4.com"},
+                          {"subdomain_name":"sub9.domain4.com"},
+                          {"subdomain_name":"sub10.domain4.com"},
+                          {"subdomain_name":"sub11.domain4.com"},
+                          {"subdomain_name":"sub12.domain4.com"},
+                          {"subdomain_name":"sub13.domain4.com"}
+                        ]
           }
       },
 
@@ -232,7 +309,30 @@
           "list_name":"List 5"
           },
     "domain_details":{
-          "domain_name":"www.Domain5.com"
+          "domain_name":"www.Domain5.com",
+          "campaign_mapped":"Campaign 1, Campaign 3, campaign 5",
+          "sub_domains":[
+                          {"subdomain_name":"sub1.domain5.com"},
+                          {"subdomain_name":"sub2.domain5.com"},
+                          {"subdomain_name":"sub3.domain5.com"},
+                          {"subdomain_name":"sub4.domain5.com"},
+                          {"subdomain_name":"sub5.domain5.com"},
+                          {"subdomain_name":"sub6.domain5.com"},
+                          {"subdomain_name":"sub7.domain5.com"},
+                          {"subdomain_name":"sub8.domain5.com"},
+                          {"subdomain_name":"sub9.domain5.com"},
+                          {"subdomain_name":"sub10.domain5.com"},
+                          {"subdomain_name":"sub11.domain5.com"},
+                          {"subdomain_name":"sub12.domain5.com"},
+                          {"subdomain_name":"sub13.domain5.com"},
+                          {"subdomain_name":"sub14.domain5.com"},
+                          {"subdomain_name":"sub15.domain5.com"},
+                          {"subdomain_name":"sub16.domain5.com"},
+                          {"subdomain_name":"sub17.domain5.com"},
+                          {"subdomain_name":"sub18.domain5.com"},
+                          {"subdomain_name":"sub19.domain5.com"},
+                          {"subdomain_name":"sub20.domain5.com"}
+                        ]
           }
       }
   ]
