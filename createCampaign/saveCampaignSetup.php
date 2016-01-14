@@ -1,9 +1,9 @@
 <?php
 	$file = file_get_contents('../campaign.json');
 	$json = json_decode($file, true);
-	unset($file);//prevent memory leaks for large json.
-
-
+	//unset($file);//prevent memory leaks for large json.
+ 	echo '<pre>' . print_r($json, true) . '</pre>';
+	
 	foreach ($json['campaign'] as $field => $value) {
 		$last_id=$value['info']['camp_id'];
 		$max = max($value);
@@ -29,7 +29,7 @@
 	echo "Email Subject: ".$email_subject."<br/>";
 
 
-	$data[]=array(
+	$data['campaign']=array(
 			'info'=>
 				array(
 					'camp_id'=>$camp_id,
@@ -45,29 +45,40 @@
 				),
 			'campaign_stats'=>
 				array(
-					'opens'=>''
+					'opens'=>'10.0'
 				),
 			'performance_details'=>
 				array(
+					'delivery_rate'=>'int'
 				),
 			'creative_details'=>
 				array(
-				),
+					'creative_id'=>'Creative ID',
+          			'creative_name'=>'Email-checkingAccount-v1-sept2015',
+          			'creative_image'=>'creative6.jpg'
+				),	
 			'list_details'=>
 				array(
+					'list_id'=>'l6',
+          			'list_name'=>'List 6'
 				),
 			'domain_details'=>
 				array(
+					'domain_name'=>'www.Domain6.com'
 				)
 			);
 
 
 	// print json_encode($data);
 	
-
-	file_put_contents('../campaign.json',json_encode($data));
-
-	unset($data);
+	if(file_exists("../campaign.json"))
+	{
+		//array_push($json,$data);
+		//file_put_contents('../campaign.json',json_encode($data));
+	}
+	else{
+		
+	}
 
 
 ?>

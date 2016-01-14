@@ -5,25 +5,30 @@
 ?>
 
 <div class="content">
+     
 	<div class="container-fluid domainsContainer">
+        <?php
+            @($camp_id=$_REQUEST['id']);
+            $str = file_get_contents('../campaign.json');
+            $json = json_decode($str, true);
+
+            foreach ($json['campaign'] as $field => $value) {
+                if($value['info']['camp_id']==$camp_id){
+        ?>  
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-md-12">
 				<div class="card">
 					<div class="header clearfix">
-						<h4 class="title">Domain List </h4>
+						<h4 class="title">Domain Details </h4>
 					</div>
 					<div class="content">
 						<div class="actionButtons">
 							<ul class="editButtonsChecked">
-								<li><a href="#" class="btn btn-primary disabled">Edit Domains</a></li>
-								<li><a href="#" class="btn btn-info disabled">Map Domains</a></li>
 								<li><a href="#" class="btn btn-success disabled">Generate Subdomains</a></li>
-								<li><a href="#" class="btn btn-danger disabled">Delete Domains</a></li>
 							</ul>
 							<ul class="pull-right">
 								<li class="pull-right"><a href="#" class="btn btn-success" id="addDomainsBtn">Add Domains</a></li>
 							</ul>
-							
 						</div>
 						<div class="table-responsive">
                             <table class="table table-bordered">
@@ -33,9 +38,7 @@
                                 		<label for="checkalldomains"><span></span> </label>
                                 	</th>
                                     <th>Domain</th>
-                                    <th>Since</th>
                                     <th>Campaigns</th>
-                                    <th class="actionbuttonHead">actions</th>
                                 </thead>
                                 <tbody class="domainList">
                                     <tr>
@@ -43,14 +46,8 @@
                                     		<input type="checkbox" name="checkdomain1" id="checkdomain1"/>
                                     		<label for="checkdomain1"><span></span> </label>
                                     	</td>
-                                        <td>www.recent1.com</td>
-                                        <td>2D ago</td>
-                                        <td>campaign 1, campaign 2, campaign 3</td>
-                                        <td>
-                                        	<a class="btn btn-success" href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-                                        	<a class="btn btn-danger" href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
-
-                                        </td>
+                                        <td><?php echo $value['domain_details']['domain_name']; ?></td>
+                                        <td><?php echo $value['domain_details']['campaign_mapped']; ?></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -75,11 +72,13 @@
                     </div>
                 </div>
 			</div>
-
-			<div class="col-md-4 viewSubDomainList hidethisdiv">
+        </div>
+        
+        <div class="row">
+			<div class="col-md-12 viewSubDomainList">
                 <div class="card">
                     <div class="header clearfix">
-                        <h4 class="title">Selected Domains</h4>
+                        <h4 class="title">Sub Domains</h4>
                     </div>
                     <div class="content">
                         <div class="table-responsive">
@@ -89,37 +88,18 @@
                                         <input type="checkbox" class="checkallsubdomains" name="checkallsubdomains1" id="checkallsubdomains1"/>
                                         <label for="checkallsubdomains1"><span></span> </label>
                                     </th>
-                                    <th>www.recent1.com</th>
+                                    <th><?php echo $value['domain_details']['domain_name']; ?></th>
                                 </thead>
                                 <tbody class="subDomainList">
+                                    <?php foreach ($value['domain_details']['sub_domains'] as $domain => $sub) {?>
                                     <tr>
                                         <td>
                                             <input type="checkbox" name="check1subdomain1" id="check1subdomain1"/>
                                             <label for="check1subdomain1"><span></span> </label>
                                         </td>
-                                        <td>sub1.recent1.com</td>
+                                        <td><?php echo $sub['subdomain_name']?></td>
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox" name="check1subdomain2" id="check1subdomain2"/>
-                                            <label for="check1subdomain2"><span></span> </label>
-                                        </td>
-                                        <td>sub2.recent1.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox" name="check1subdomain3" id="check1subdomain3"/>
-                                            <label for="check1subdomain3"><span></span> </label>
-                                        </td>
-                                        <td>sub3.recent1.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input type="checkbox" name="check1subdomain4" id="check1subdomain4"/>
-                                            <label for="check1subdomain4"><span></span> </label>
-                                        </td>
-                                        <td>sub4.recent1.com</td>
-                                    </tr>
+                                    <?php } ?>
                                 </tbody>
                             </table>
                         </div>
@@ -127,8 +107,11 @@
                 </div>
             </div>
 		</div>
-
-
+        <?php
+                }
+            }
+        ?>
+        
 
 
         <div class="stepFooter clearfix">
@@ -161,6 +144,7 @@
                 <li><i class="fa fa-chevron-right"></i></li>
             </ul>
         </div> 
+    </div>
 </div>
 
 <?php include('../includes/innerFooter.php'); ?>
