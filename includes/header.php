@@ -101,6 +101,7 @@
                     <?php echo"<a class='navbar-brand' href='#'>".$pagename."</a>"; ?>
 
                     <?php 
+                    //get list name
                     if(isset($_REQUEST['listid'])){
 
                     $json = file_get_contents('listdata.json');

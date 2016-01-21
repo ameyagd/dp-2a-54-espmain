@@ -5,7 +5,7 @@
 	<link rel="icon" type="image/png" href="../assets/img/favicon.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Email Zilla - <?php echo $pagetitle; ?></title>
+	<title>Email Interface -- <?php echo $pagetitle; ?></title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -94,6 +94,9 @@
                         <span class="icon-bar"></span>
                     </button>
                     <?php echo"<a class='navbar-brand' href='#'>".$pagename."</a>"; ?>
+                    <?php
+                        echo"<div class='navbar-brand'><span class='innerpage' href='#'>".$campnamefin."</span></div>";                    
+                    ?>
                 </div>
                 <div class="collapse navbar-collapse">       
                     

@@ -1,4 +1,11 @@
 <?php 
+    @($camp_id=$_REQUEST['id']);
+    $campnamejson=file_get_contents('../campaign.json');
+    $campnameobj=json_decode($campnamejson, true);
+    $campnamedata = $campnameobj['campaign'];
+    $campnameid=$camp_id-1;
+    $campnamefin=$campnamedata[$campnameid]['info']['camp_name'];
+
     $pagename="Campaigns";
     $pagetitle="Campaigns";
     include('../includes/innerHeader.php'); 
@@ -7,14 +14,14 @@
 <div class="content">
      
 	<div class="container-fluid domainsContainer">
-        <?php
-            @($camp_id=$_REQUEST['id']);
+        <?php            
             $str = file_get_contents('../campaign.json');
             $json = json_decode($str, true);
 
             foreach ($json['campaign'] as $field => $value) {
                 if($value['info']['camp_id']==$camp_id){
         ?>  
+        
 		<div class="row">
 			<div class="col-md-12">
 				<div class="card">
