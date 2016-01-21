@@ -231,6 +231,12 @@ div#zclip-ZeroClipboardMovie_1{bottom:0 !important}
 .filterDD{display: inline-block;}
 
 .popCreativeImage{width: 100%}
+
+.absRight{position: absolute;right: 5%}
+
+@media not all and (min-width: 992px){
+    .campaignFullRes{margin-top: 20px;margin-left: 13px}
+}
 /*----------------------CREATE CAMPAIGN--------------------*/
 .createCampaignForm .posRel{padding:0 15px 20px 15px}
 .bootstrap-datetimepicker-widget.dropdown-menu{opacity:1 !important;visibility:visible !important}

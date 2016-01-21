@@ -65,12 +65,12 @@
                                             <div class="pull-left">
                                                 <input type="checkbox" id="list<?php echo $checkID; ?>Check" name="list<?php echo $checkID; ?>Check" ><label for="list<?php echo $checkID; ?>Check"><span></span></label>
                                             </div>
-                                            <div class="col-md-5">
+                                            <div class="col-md-5 col-sm-11 col-xs-11">
                                                 <h5><a href="#"><?php echo $value['info']['camp_name']; ?> </a></h5>
                                                 <span class="listCreatedOn"><b>Created On:</b> <?php echo $value['info']['created_on']; ?></span>
                                                 <span class="listCreatedBy"><b>Created By:</b> <?php echo $value['info']['created_by']; ?></span>
                                             </div>
-                                            <div class="col-md-5">
+                                            <div class="col-md-5 col-sm-11 col-xs-11 campaignFullRes">
                                                 <div class="col-sm-5 col-xs-6">
                                                     <span class="listOpens"><?php echo $value['domain_details']['domain_name']; ?></span>
                                                     <span class="listLabel">Domain Mapped</span>
@@ -84,7 +84,7 @@
                                                     <span class="listLabel">Opens</span>
                                                 </div>
                                             </div>
-                                            <div class="col-md-2">
+                                            <div class="absRight">
                                                 <div class="pull-right">
                                                     <div class="btn-group">
                                                       <a href="editCampaign/editCampaignSetup.php?id=<?php echo $value['info']['camp_id']?>" class="btn btn-default">Edit</a>
