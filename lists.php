@@ -5,7 +5,7 @@
 ?>
                      
                      
-        <div class="content">
+        <div class="content listsall">
             <div class="container-fluid"> 
                
 
@@ -51,7 +51,7 @@
                             <div class="pull-left">
                                 <input type="checkbox" id="list<?php echo $checkID; ?>Check" name="list<?php echo $checkID; ?>Check" ><label for="list<?php echo $checkID; ?>Check"><span></span></label>
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-5 listsname">
                                 <h5><a href="list.php?listid=<?php echo $value['info']['list_id'] ?>"><?php echo $value['info']['list_name']; ?></a></h5>
                                 <span class="listCreatedOn"><b>Created On:</b> <?php echo $value['info']['created_at']; ?></span>
                                 <span class="listCreatedBy"><b>Created By:</b> <?php echo $value['info']['created_by']; ?></span>
@@ -70,7 +70,7 @@
                                     <span class="listLabel">Clicks</span>
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-2 editlists">
                                 <div class="pull-right">
                                     <div class="btn-group">
                                       <button type="button" class="btn btn-default">Edit</button>

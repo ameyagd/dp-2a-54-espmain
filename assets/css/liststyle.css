@@ -193,6 +193,8 @@ table.dataTable thead th, table.dataTable thead td{border-bottom: 0px!important}
 @media screen and (max-width: 1280px) {
 .adduser{width: 38px;margin-right: 2px}
 .listmetaaction .btn-group{width: 100px}
+.listsall .listsname{width: 200px!important}
+.listsall .editlists{width: 170px!important}
 }
 @media screen and (max-width: 1200px) {
 .listboxcontainer{width: 90%}
