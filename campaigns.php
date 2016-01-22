@@ -65,7 +65,7 @@
                                             <div class="pull-left">
                                                 <input type="checkbox" id="list<?php echo $checkID; ?>Check" name="list<?php echo $checkID; ?>Check" ><label for="list<?php echo $checkID; ?>Check"><span></span></label>
                                             </div>
-                                            <div class="col-md-5 col-sm-11 col-xs-11">
+                                            <div class="col-md-5 col-sm-11 col-xs-11 campaignTitleRes">
                                                 <h5><a href="#"><?php echo $value['info']['camp_name']; ?> </a></h5>
                                                 <span class="listCreatedOn"><b>Created On:</b> <?php echo $value['info']['created_on']; ?></span>
                                                 <span class="listCreatedBy"><b>Created By:</b> <?php echo $value['info']['created_by']; ?></span>

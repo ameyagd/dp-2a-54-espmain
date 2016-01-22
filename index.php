@@ -94,12 +94,12 @@
                                 <div class="topPerformingCampaignWrap">
                                     <div class="card clearfix">
                                         <div class="listDetails clearfix">
-                                            <div class="col-md-7">
+                                            <div class="col-md-7 campaignTitleRes">
                                                 <h5><a href="#">Campaign 1</a></h5>
                                                 <span class="listCreatedOn">Created May 20,2013 03:14am</span>
                                                 <span class="listRating">No rating yet</span>
                                             </div>
-                                            <div class="col-md-5 listStats">
+                                            <div class="col-md-5 listStats campaignFullRes">
                                                 <div class="col-sm-5 col-xs-6">
                                                     <span class="listOpens">www.Domain1.com</span>
                                                     <span class="listLabel">Domain Mapped</span>
@@ -117,12 +117,12 @@
                                     </div>
                                     <div class="card clearfix">
                                         <div class="listDetails clearfix">
-                                            <div class="col-md-7">
+                                            <div class="col-md-7 campaignTitleRes">
                                                 <h5><a href="#">Campaign 2</a></h5>
                                                 <span class="listCreatedOn">Created May 20,2013 03:14am</span>
                                                 <span class="listRating">No rating yet</span>
                                             </div>
-                                            <div class="col-md-5 listStats">
+                                            <div class="col-md-5 listStats campaignFullRes">
                                                 <div class="col-sm-5 col-xs-6">
                                                     <span class="listOpens">www.Domain2.com</span>
                                                     <span class="listLabel">Domain Mapped</span>
@@ -150,12 +150,12 @@
                                 <div class="topPerformingListsWrap">
                                     <div class="card clearfix">
                                         <div class="listDetails clearfix">
-                                            <div class="col-md-7">
+                                            <div class="col-md-7 campaignTitleRes">
                                                 <h5><a href="#">List 1</a></h5>
                                                 <span class="listCreatedOn">Created May 20,2013 03:14am</span>
                                                 <span class="listRating">No rating yet</span>
                                             </div>
-                                            <div class="col-md-5 listStats">
+                                            <div class="col-md-5 listStats campaignFullRes">
                                                 <div class="col-xs-4">
                                                     <span class="listSubs">50</span>
                                                     <span class="listLabel">Subscribers</span>
@@ -173,12 +173,12 @@
                                     </div>
                                     <div class="card clearfix">
                                         <div class="listDetails clearfix">
-                                            <div class="col-md-7">
+                                            <div class="col-md-7 campaignTitleRes">
                                                 <h5><a href="#">List 2</a></h5>
                                                 <span class="listCreatedOn">Created Nov 09,2015 10:26pm</span>
                                                 <span class="listRating">No rating yet</span>
                                             </div>
-                                            <div class="col-md-5 listStats">
+                                            <div class="col-md-5 listStats campaignFullRes">
                                                 <div class="col-xs-4">
                                                     <span class="listSubs">40</span>
                                                     <span class="listLabel">Subscribers</span>
@@ -196,12 +196,12 @@
                                     </div>
                                     <div class="card clearfix">
                                         <div class="listDetails clearfix">
-                                            <div class="col-md-7">
+                                            <div class="col-md-7 campaignTitleRes">
                                                 <h5><a href="#">List 3</a></h5>
                                                 <span class="listCreatedOn">Created Nov 06,2015 01:26pm</span>
                                                 <span class="listRating">No rating yet</span>
                                             </div>
-                                            <div class="col-md-5 listStats">
+                                            <div class="col-md-5 listStats campaignFullRes">
                                                 <div class="col-xs-4">
                                                     <span class="listSubs">30</span>
                                                     <span class="listLabel">Subscribers</span>
