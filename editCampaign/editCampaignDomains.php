@@ -17,7 +17,7 @@
         <?php            
             $str = file_get_contents('../campaign.json');
             $json = json_decode($str, true);
-
+            $checkboxID=1;
             foreach ($json['campaign'] as $field => $value) {
                 if($value['info']['camp_id']==$camp_id){
         ?>  
@@ -101,12 +101,12 @@
                                     <?php foreach ($value['domain_details']['sub_domains'] as $domain => $sub) {?>
                                     <tr>
                                         <td>
-                                            <input type="checkbox" name="check1subdomain1" id="check1subdomain1"/>
-                                            <label for="check1subdomain1"><span></span> </label>
+                                            <input type="checkbox" name="check<?php echo $checkboxID; ?>subdomain1" id="check<?php echo $checkboxID; ?>subdomain1"/>
+                                            <label for="check<?php echo $checkboxID; ?>subdomain1"><span></span> </label>
                                         </td>
                                         <td><?php echo $sub['subdomain_name']?></td>
                                     </tr>
-                                    <?php } ?>
+                                    <?php $checkboxID++;}  ?>
                                 </tbody>
                             </table>
                         </div>

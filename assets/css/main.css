@@ -152,6 +152,7 @@ div#zclip-ZeroClipboardMovie_1{bottom:0 !important}
 
 /*----------------------DASHBOARD--------------------*/
 /*.statsWrap .col-md-3 .card{margin-bottom: 25px}*/
+
 .card hr{margin-top: 0}
 .subHeading{font-size: 16px !important;text-align: center;line-height: 20px;text-transform: capitalize !important}
 .campTitle{padding-bottom: 15px}
@@ -186,9 +187,21 @@ div#zclip-ZeroClipboardMovie_1{bottom:0 !important}
 .listLabel{display: block;color: #999999}
 
 .listStats .col-xs-4, .listStats .col-xs-6{padding-left: 0}
+@media not all and (min-width: 1450px){
+.statsWrap .card {height: 130px}
+.statsWrap .title.subHeading {height: 45px}
+}
 @media not all and (min-width: 1250px){
     .card .statistics{font-size: 1.6em}
     .card .content{padding: 20px 5px 5px 5px}
+    .statsWrap .card {height: 115px}
+}
+@media not all and (min-width: 1090px){
+    .statsWrap .title.subHeading {font-size: 14px !important; line-height: 18px}
+}
+@media not all and (min-width: 990px){
+    .statsWrap .card {height: auto}
+    .statsWrap .title.subHeading {font-size: 16px !important; line-height: 20px;height: auto}
 }
 
 /*----------------------CAMPAIGNS--------------------*/
