@@ -99,7 +99,11 @@
                         <span class="icon-bar"></span>
                     </button>
                     <?php echo"<a class='navbar-brand' href='#'>".$pagename."</a>"; ?>
-
+                    <?php
+                    if(isset($campnamefin)){
+                        echo"<div class='navbar-brand'><span class='innerpage' href='#'>".$campnamefin."</span></div>";
+                        }
+                    ?>
                     <?php 
                     //get list name
                     if(isset($_REQUEST['listid'])){

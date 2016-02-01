@@ -191,13 +191,14 @@ div#zclip-ZeroClipboardMovie_1{bottom:0 !important}
 .statsWrap .card {height: 130px}
 .statsWrap .title.subHeading {height: 45px}
 }
-@media not all and (min-width: 1250px){
-    .card .statistics{font-size: 1.6em}
+@media not all and (min-width: 1285px){
+    .card .statistics{font-size: 2em}
     .card .content{padding: 20px 5px 5px 5px}
+    .content.table-responsive{padding: 0}
     .statsWrap .card {height: 115px}
 }
 @media not all and (min-width: 1090px){
-    .statsWrap .title.subHeading {font-size: 14px !important; line-height: 18px}
+    .statsWrap .title.subHeading {font-size: 14px !important; line-height: auto}
 }
 @media not all and (min-width: 990px){
     .statsWrap .card {height: auto}
@@ -251,9 +252,7 @@ div#zclip-ZeroClipboardMovie_1{bottom:0 !important}
     .campaignFullRes{width: 91.66666667%; margin-left: 13px; margin-top: 15px}
     .listStats.campaignFullRes{margin-left: 0}
 }
-@media not all and (min-width: 992px){
 
-}
 /*----------------------CREATE CAMPAIGN--------------------*/
 .createCampaignForm{padding-bottom: 100px}
 .createCampaignForm .posRel{padding:0 15px 20px 15px}
@@ -328,3 +327,14 @@ button.btn.dropdown-toggle.btn-select {color: #000; background-color: #fff;borde
 .hidethisdiv{display: none}
 .domainsContainer .table > thead> tr> th{background-color: #eeeeee}
 
+/*------------------------------------CAMPAIGN DETAILS--------------------------------------*/
+
+.singleCampaignDetails span{display: block !important;margin-bottom: 10px}
+.campDetailsLabel{font-weight: bold}
+.creativePreview{width: 100%}
+.numTD{width: 80px;text-align: center}
+.subDomainListTable th, .subDomainListTable td { padding: 10px !important}
+.singleCampaignDetailsContent .col-md-4{padding-left:0}
+@media (min-width: 992px){
+    .table-responsive{margin: 0 10px}
+}

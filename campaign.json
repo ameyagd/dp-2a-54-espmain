@@ -16,23 +16,11 @@
           },
     "campaign_stats": {
           "opens": "80.0",
-          "clean_emails": "int",
-          "unsubscribed": " int",
-          "marked_spam": "int",
-          "invalid": "int",
-          "campaign_count": "int"
-          },
-    "performance_details": {
-          "delivery_rate": "int",
-          "open_rate": "int",
-          "click_rate": "int",
-          "conversion_rate": "int",
-          "RPM": "int",
-          "revenue": "int",
-          "bounce_rate": "int",
-          "average_unsubscribe_rate": "int",
-          "RPCV": "int",
-          "RPC": "int"
+          "CTR": "80.0",
+          "RPC": "80.5",
+          "CPM": "80.1",
+          "RPM": "80.0",
+          "revenue": "800"
           },
     "creative_details":{
           "creative_id":"Creative ID",
@@ -83,23 +71,11 @@
           },
     "campaign_stats": {
           "opens": "50.0",
-          "clean_emails": "int",
-          "unsubscribed": " int",
-          "marked_spam": "int",
-          "invalid": "int",
-          "campaign_count": "int"
-          },
-    "performance_details": {
-          "delivery_rate": "int",
-          "open_rate": "int",
-          "click_rate": "int",
-          "conversion_rate": "int",
-          "RPM": "int",
-          "revenue": "int",
-          "bounce_rate": "int",
-          "average_unsubscribe_rate": "int",
-          "RPCV": "int",
-          "RPC": "int"
+          "CTR": "50.0",
+          "RPC": "50.5",
+          "CPM": "50.1",
+          "RPM": "50.0",
+          "revenue": "500"
           },
     "creative_details":{
           "creative_id":"Creative ID",
@@ -152,23 +128,11 @@
           },
     "campaign_stats": {
           "opens": "30.0",
-          "clean_emails": "int",
-          "unsubscribed": " int",
-          "marked_spam": "int",
-          "invalid": "int",
-          "campaign_count": "int"
-          },
-    "performance_details": {
-          "delivery_rate": "int",
-          "open_rate": "int",
-          "click_rate": "int",
-          "conversion_rate": "int",
-          "RPM": "int",
-          "revenue": "int",
-          "bounce_rate": "int",
-          "average_unsubscribe_rate": "int",
-          "RPCV": "int",
-          "RPC": "int"
+          "CTR": "35.0",
+          "RPC": "30.5",
+          "CPM": "31.1",
+          "RPM": "30.0",
+          "revenue": "300"
           },
     "creative_details":{
           "creative_id":"Creative ID",
@@ -218,23 +182,11 @@
           },
     "campaign_stats": {
           "opens": "90.0",
-          "clean_emails": "int",
-          "unsubscribed": " int",
-          "marked_spam": "int",
-          "invalid": "int",
-          "campaign_count": "int"
-          },
-    "performance_details": {
-          "delivery_rate": "int",
-          "open_rate": "int",
-          "click_rate": "int",
-          "conversion_rate": "int",
-          "RPM": "int",
-          "revenue": "int",
-          "bounce_rate": "int",
-          "average_unsubscribe_rate": "int",
-          "RPCV": "int",
-          "RPC": "int"
+          "CTR": "95.0",
+          "RPC": "80.5",
+          "CPM": "81.1",
+          "RPM": "80.0",
+          "revenue": "10088"
           },
     "creative_details":{
           "creative_id":"Creative ID",
@@ -281,23 +233,11 @@
           },
     "campaign_stats": {
           "opens": "10.0",
-          "clean_emails": "int",
-          "unsubscribed": " int",
-          "marked_spam": "int",
-          "invalid": "int",
-          "campaign_count": "int"
-          },
-    "performance_details": {
-          "delivery_rate": "int",
-          "open_rate": "int",
-          "click_rate": "int",
-          "conversion_rate": "int",
-          "RPM": "int",
-          "revenue": "int",
-          "bounce_rate": "int",
-          "average_unsubscribe_rate": "int",
-          "RPCV": "int",
-          "RPC": "int"
+          "CTR": "45.0",
+          "RPC": "40.5",
+          "CPM": "31.1",
+          "RPM": "50.0",
+          "revenue": "188"
           },
     "creative_details":{
           "creative_id":"Creative ID",
