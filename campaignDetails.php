@@ -88,7 +88,7 @@
                 <div class="card">
                     <div class="clearfix">
                         <div class="content">
-                            <div id="campChart" style="width:100%; height:400px;"></div>
+                            <div id="singleCampChart" style="width:100%; height:400px;"></div>
                         </div>
                     </div>
                 </div>
@@ -266,3 +266,82 @@
     </div>
 </div>
 <?php include('includes/Footer.php'); ?>
+<script type="text/javascript">
+
+	$(document).ready(function() {
+	
+	var getUrlParameter = function getUrlParameter(sParam) {
+	    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+	        sURLVariables = sPageURL.split('&'),
+	        sParameterName,
+	        i;
+
+	    for (i = 0; i < sURLVariables.length; i++) {
+	        sParameterName = sURLVariables[i].split('=');
+
+	        if (sParameterName[0] === sParam) {
+	            return sParameterName[1] === undefined ? true : sParameterName[1];
+	        }
+	    }
+	};
+
+
+	var id = getUrlParameter('id');
+	
+// $.getJSON( "campaign.json", function( data ) {
+//  	$.each(data, function (item, value) {
+//         $.each(value, function (i, object) {
+//         	if (i == id-1) {
+// 	            $.each(object, function (subI, subObject) {
+// 	            	if(subI=="campaign_stats"){
+// 	            		$.each(subObject, function (sub1I, subObject1) {
+// 							console.log(sub1I + "=" + subObject1);
+// 	            		});
+// 	            	}
+// 	            });
+//         	}
+//         });	    
+// 	});
+// });
+
+
+
+	
+	var options = {
+	    chart: {
+	        renderTo: 'singleCampChart',
+	        defaultSeriesType: 'column'
+	    },
+	    series:[{
+	        datas: []
+	    }]
+	};
+
+
+    
+    
+    
+	$.getJSON( "campaign.json", function( data ) {
+	 	$.each(data, function (item, value) {
+	        $.each(value, function (i, object) {
+	        	if (i == id-1) {
+		            $.each(object, function (subI, subObject) {
+		            	if(subI=="campaign_stats"){
+		            		$.each(subObject, function (sub1I, subObject1) {
+								console.log(sub1I + "=" + subObject1);
+								// options.xAxis.categories.push(sub1I);
+								options.series[0].datas = {sub1I};	
+								var chart = new Highcharts.Chart(options);							
+		            		});
+		            	}
+		            });
+	        	}
+	        });	    
+		});
+
+	});
+ 
+ 
+
+});
+</script>
