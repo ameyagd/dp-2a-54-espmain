@@ -13,7 +13,7 @@
 ?>
     <div class="content">
         <div class="container-fluid"> 
-        <form class="createCampaignForm" method="post">
+        <form class="createCampaignForm" method="post" action="saveCampaignSetup.php">
             <?php
                 
                 $str = file_get_contents('../campaign.json');
@@ -30,7 +30,7 @@
                         </div>
 
                         <div class="content"> 
-                            
+                            <input type="hidden" name="campID" value="<?php echo $camp_id; ?>"/>
                              <div class="posRel">
                                 <label>Campaign Name</label>
                                 <input type="text" name="campaignName" class="form-control" value="<?php echo $value['info']['camp_name']; ?>"/>

@@ -158,7 +158,7 @@ div#zclip-ZeroClipboardMovie_1{bottom:0 !important}
 .campTitle{padding-bottom: 15px}
 .card .statistics {text-align: center; font-size: 2.5em; color: #757474; font-weight: 300}
 .topPerformingCampaignWrap, .topPerformingListsWrap{padding: 0px 15px 0px 15px}
-.topPerformingCampaignWrap .card{padding: 10px}
+.topPerformingCampaignWrap .card{padding: 15px 5px}
 .topPerformingCampaignWrap .accordion-section-title.active{border-bottom: 1px solid #ccc}
 
 .topPerformingListsWrap .card{padding: 10px}
@@ -177,12 +177,12 @@ div#zclip-ZeroClipboardMovie_1{bottom:0 !important}
 
 .listTable th{font-size: 15px !important;padding-bottom: 12px !important}
 
-.listDetails h5{margin-bottom: 10px}
+.listDetails h5{margin-bottom: 10px;margin-top: 0}
 .listCreatedOn{display: block;color: #555555}
 .listCreatedBy{display: block;color: #555555}
 .listRating{display: block;color: #999999}
 
-.listStats{margin-top: 10px}
+/*.listStats{margin-top: 10px}*/
 .listSubs, .listOpens, .listClicks{display: block;margin-bottom: 6px;word-wrap:break-word;}
 .listLabel{display: block;color: #999999}
 

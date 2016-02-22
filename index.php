@@ -95,7 +95,7 @@
                                     <div class="card clearfix">
                                         <div class="listDetails clearfix">
                                             <div class="col-md-7 campaignTitleRes">
-                                                <h5><a href="#">Campaign 1</a></h5>
+                                                <h5><a href="campaignDetails.php?id=1">Campaign 1</a></h5>
                                                 <span class="listCreatedOn">Created May 20,2013 03:14am</span>
                                                 <span class="listRating">No rating yet</span>
                                             </div>
@@ -118,7 +118,7 @@
                                     <div class="card clearfix">
                                         <div class="listDetails clearfix">
                                             <div class="col-md-7 campaignTitleRes">
-                                                <h5><a href="#">Campaign 2</a></h5>
+                                                <h5><a href="campaignDetails.php?id=2">Campaign 2</a></h5>
                                                 <span class="listCreatedOn">Created May 20,2013 03:14am</span>
                                                 <span class="listRating">No rating yet</span>
                                             </div>

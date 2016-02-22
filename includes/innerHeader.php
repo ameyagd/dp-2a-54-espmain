@@ -95,7 +95,9 @@
                     </button>
                     <?php echo"<a class='navbar-brand' href='#'>".$pagename."</a>"; ?>
                     <?php
+                    if(isset($campnamefin)){
                         echo"<div class='navbar-brand'><span class='innerpage' href='#'>".$campnamefin."</span></div>";                    
+                    }
                     ?>
                 </div>
                 <div class="collapse navbar-collapse">       

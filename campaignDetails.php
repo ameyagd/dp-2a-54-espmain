@@ -313,7 +313,7 @@
 	        defaultSeriesType: 'column'
 	    },
 	    series:[{
-	        datas: []
+	        data: []
 	    }]
 	};
 
@@ -330,7 +330,7 @@
 		            		$.each(subObject, function (sub1I, subObject1) {
 								console.log(sub1I + "=" + subObject1);
 								// options.xAxis.categories.push(sub1I);
-								options.series[0].datas = {sub1I};	
+								options.series[0].data = {sub1I};	
 								var chart = new Highcharts.Chart(options);							
 		            		});
 		            	}
