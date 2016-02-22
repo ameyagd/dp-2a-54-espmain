@@ -17,10 +17,12 @@
     {
 		if($value['info']['camp_id']==$campaignID)
 		{
-        	// echo $json['campaign'][$field]['info']['camp_name'];
         	$json['campaign'][$field]['info']['camp_name']=$campaignName;
-        	// echo " Changed To ";
-    	 	// echo $json['campaign'][$field]['info']['camp_name'];
+            $json['campaign'][$field]['info']['from_name']=$fromName;
+            $json['campaign'][$field]['info']['from_email_address']=$fromEmailAddress;
+            $json['campaign'][$field]['info']['start_date']=$campaignStartDate;
+            $json['campaign'][$field]['info']['end_date']=$campaignEndDate;
+            $json['campaign'][$field]['info']['email_subject']=$emailSubject;
         	break;
         }   	
         
