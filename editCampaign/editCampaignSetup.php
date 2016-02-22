@@ -1,4 +1,8 @@
 <?php 
+$pagename="Campaigns";
+    $pagetitle="Campaigns";
+    include('../includes/innerHeader.php'); 
+
     @($camp_id=$_REQUEST['id']);
     $campnamejson=file_get_contents('../campaign.json');
     $campnameobj=json_decode($campnamejson, true);
@@ -6,15 +10,20 @@
     $campnameid=$camp_id-1;
     $campnamefin=$campnamedata[$campnameid]['info']['camp_name'];
 
-    $pagename="Campaigns";
-    $pagetitle="Campaigns";
-    
-    include('../includes/innerHeader.php'); 
+   
 ?>
     <div class="content">
         <div class="container-fluid"> 
         <form class="createCampaignForm" method="post" action="saveCampaignSetup.php">
             <?php
+                @($msg=$_REQUEST['error']);
+                if($msg=='u'){
+                    echo "<div class='alert alert-success alert-dismissible' role='alert'>
+              <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+              <span aria-hidden='true'>&times;</span></button>
+              <strong>Success!</strong> Campaign details updated.
+            </div>";
+                }
                 
                 $str = file_get_contents('../campaign.json');
                 $json = json_decode($str, true);

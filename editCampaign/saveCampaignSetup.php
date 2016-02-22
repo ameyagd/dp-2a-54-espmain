@@ -31,8 +31,7 @@
     $newjson= json_encode($json);
     file_put_contents('../campaign.json', $newjson);
 
-
-
+    header('Location:editCampaignSetup.php?id='.$campaignID.'&error=u');
     //TEST JSON FILE CODE - WORKING
     // $jsonString = file_get_contents('../test.json');
     // $data = json_decode($jsonString, true);

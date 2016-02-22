@@ -3,6 +3,7 @@ body{background:#f8f9fc; background-size:cover; color:#353a3e}
 .table-striped>tbody>tr:nth-of-type(odd){background:rgba(0,0,0,0.5);}
 table{background:rgba(255,255,255,0.9); color:#000;}
 
+.alert{position: relative;}
 .navbar{margin-bottom: 0; position: fixed; top: 0; width: 100%; z-index: 999}
 .navbar-header{margin-left: 50px !important}
 .navbar-brand{text-transform: uppercase;font-size: 25px !important}

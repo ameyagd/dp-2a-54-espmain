@@ -106,8 +106,9 @@
                                         <div class="listDetails clearfix">
                                             <div class="col-md-7 campaignTitleRes">
                                                 <h5><a href="campaignDetails.php?id=<?php echo $value['info']['camp_id']; ?>"><?php echo $value['info']['camp_name']; ?></a></h5>
-                                                <span class="listCreatedOn">Created <?php echo $value['info']['created_on']; ?></span>
+                                                <span class="listCreatedOn"><b>Created On:</b><?php echo $value['info']['created_on']; ?></span>
                                                 <!-- <span class="listRating">No rating yet</span> -->
+                                                <span class="listCreatedBy"><b>Created By:</b> <?php echo $value['info']['created_by']; ?></span>
                                             </div>
                                             <div class="col-md-5 listStats campaignFullRes">
                                                 <div class="col-sm-5 col-xs-6">

@@ -951,7 +951,7 @@ body > .navbar-collapse[data-color="purple"]:after {
 .alert {
   border: 0;
   border-radius: 0;
-  color: #FFFFFF;
+  /*color: #FFFFFF;*/
   padding: 10px 15px;
   font-size: 14px;
 }
@@ -984,7 +984,7 @@ body > .navbar-collapse[data-color="purple"]:after {
   top: 50%;
   margin-top: -13px;
   z-index: 1033;
-  background-color: #FFFFFF;
+  /*background-color: #FFFFFF;*/
   display: block;
   border-radius: 50%;
   opacity: .4;
@@ -994,7 +994,9 @@ body > .navbar-collapse[data-color="purple"]:after {
   outline: 0 !important;
   text-align: center;
   padding: 3px;
-  font-weight: 300;
+  /*font-weight: 300;*/
+  font-weight: 600;
+  color: #000
 }
 .alert button.close:hover {
   opacity: .55;
@@ -1016,7 +1018,7 @@ body > .navbar-collapse[data-color="purple"]:after {
 }
 
 .alert-success {
-  background-color: #a1e82c;
+  /*background-color: #a1e82c;*/
 }
 
 .alert-warning {
